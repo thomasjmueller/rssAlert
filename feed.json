@@ -1,9 +1,23 @@
 [
   {
-    "title": "Sample RSS Feed Item",
-    "link": "https://example.com/article-1",
-    "date": "2025-11-06T12:00:00",
-    "source": "example.com",
-    "description": "This is a sample RSS feed item description. When you run the fetch script with your actual RSS feed URL, this will be replaced with real article summaries and previews from your feed."
+    "title": "TSA reveals futuristic virtual reality technology for airport security checkpoints - MSN",
+    "link": "https://www.msn.com/en-ae/news/other/tsa-reveals-futuristic-virtual-reality-technology-for-airport-security-checkpoints/ar-AA1Gherq",
+    "date": "2025-11-05T13:52:52",
+    "source": "www.msn.com",
+    "description": "The contour detection data runs through a mapping algorithm... then relayed to the back surface that contacts the user's hand through haptic feedback ..."
+  },
+  {
+    "title": "iPhone 17's Subtle Improvements Apple Didn't Put in the Spotlight - The Hans India",
+    "link": "https://www.thehansindia.com/technology/gadgets/iphone-17s-subtle-improvements-apple-didnt-put-in-the-spotlight-1020719",
+    "date": "2025-11-05T07:24:04",
+    "source": "www.thehansindia.com",
+    "description": "Tap Settings → Sounds & Haptics → Keyboard Feedback and turn off Sound but keep Haptic turned on. You'll still get the light vibration feedback ..."
+  },
+  {
+    "title": "Future Electronics Launches Digital Campaign Showcasing Panasonic Industry's Medical Technology Solutions",
+    "link": "https://markets.financialcontent.com/wral/article/getnews-2025-11-5-future-electronics-launches-digital-campaign-showcasing-panasonic-industrys-medical-technology-solutions",
+    "date": "2025-11-05T06:13:05",
+    "source": "markets.financialcontent.com",
+    "description": "Tactile Switches: Provide crisp, tactile feedback for dependable user input in critical medical devices. Fine-Pitch & Optical Connectors ..."
   }
 ]

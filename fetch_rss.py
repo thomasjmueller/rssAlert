@@ -76,20 +76,30 @@ def fetch_rss(feed_url):
         source = get_domain(link)
 
         # Extract description/summary
+        # Google Alerts uses 'content', other feeds may use 'summary' or 'description'
         description = ""
-        if hasattr(entry, "summary"):
+        if hasattr(entry, "content") and isinstance(entry.content, list) and len(entry.content) > 0:
+            # Google Alerts and Atom feeds use content
+            description = entry.content[0].get("value", "")
+        elif hasattr(entry, "summary"):
             description = entry.summary
         elif hasattr(entry, "description"):
             description = entry.description
-        elif hasattr(entry, "content"):
-            # Some feeds use content instead
-            if isinstance(entry.content, list) and len(entry.content) > 0:
-                description = entry.content[0].get("value", "")
 
-        # Clean up HTML tags from description (basic cleaning)
+        # Clean up HTML tags from description
         import re
-        description = re.sub(r'<[^>]+>', '', description)
+        from html import unescape
+
+        # Remove HTML tags but preserve spacing
+        description = re.sub(r'<br\s*/?>', '\n', description)  # Convert <br> to newlines
+        description = re.sub(r'<[^>]+>', ' ', description)  # Remove all other tags
+        description = unescape(description)  # Decode HTML entities like &amp; &nbsp;
+        description = re.sub(r'\s+', ' ', description)  # Normalize whitespace
         description = description.strip()
+
+        # Limit to first 300 characters for preview
+        if len(description) > 300:
+            description = description[:300].rsplit(' ', 1)[0] + '...'
 
         items.append({
             "title": title,
