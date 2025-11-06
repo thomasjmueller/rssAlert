@@ -75,11 +75,28 @@ def fetch_rss(feed_url):
         # Get source domain
         source = get_domain(link)
 
+        # Extract description/summary
+        description = ""
+        if hasattr(entry, "summary"):
+            description = entry.summary
+        elif hasattr(entry, "description"):
+            description = entry.description
+        elif hasattr(entry, "content"):
+            # Some feeds use content instead
+            if isinstance(entry.content, list) and len(entry.content) > 0:
+                description = entry.content[0].get("value", "")
+
+        # Clean up HTML tags from description (basic cleaning)
+        import re
+        description = re.sub(r'<[^>]+>', '', description)
+        description = description.strip()
+
         items.append({
             "title": title,
             "link": link,
             "date": date,
-            "source": source
+            "source": source,
+            "description": description
         })
 
     print(f"Fetched {len(items)} items from feed")

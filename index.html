@@ -43,7 +43,7 @@
             <input
                 type="text"
                 id="searchBox"
-                placeholder="Search by title or source..."
+                placeholder="Search by title, description, or source..."
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition"
             />
         </div>
@@ -63,10 +63,10 @@
                                 Date <span id="sortIndicator">▼</span>
                             </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
-                                Title
+                                Title & Preview
                             </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider hidden sm:table-cell">
-                                Source
+                                Link
                             </th>
                         </tr>
                     </thead>
@@ -141,7 +141,8 @@
             if (currentSearchQuery) {
                 filtered = filtered.filter(item =>
                     item.title.toLowerCase().includes(currentSearchQuery) ||
-                    item.source.toLowerCase().includes(currentSearchQuery)
+                    item.source.toLowerCase().includes(currentSearchQuery) ||
+                    (item.description && item.description.toLowerCase().includes(currentSearchQuery))
                 );
             }
 
@@ -189,22 +190,33 @@
                     day: 'numeric'
                 });
 
+                const description = item.description || '';
+                const truncatedDesc = description.length > 200
+                    ? description.substring(0, 200) + '...'
+                    : description;
+
                 return `
                     <tr class="hover:bg-gray-50 transition">
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 align-top">
                             ${formattedDate}
                         </td>
                         <td class="px-6 py-4 text-sm">
                             <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                               class="text-gray-800 hover:text-gray-600 hover:underline">
+                               class="text-gray-800 hover:text-gray-600 hover:underline font-medium">
                                 ${escapeHtml(item.title)}
                             </a>
-                            <div class="sm:hidden text-xs text-gray-500 mt-1">
-                                ${escapeHtml(item.source)}
+                            ${truncatedDesc ? `<div class="text-gray-500 text-xs mt-2 leading-relaxed">${escapeHtml(truncatedDesc)}</div>` : ''}
+                            <div class="sm:hidden text-xs text-gray-400 mt-2">
+                                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                    ${escapeHtml(item.link)}
+                                </a>
                             </div>
                         </td>
-                        <td class="px-6 py-4 text-sm text-gray-600 hidden sm:table-cell">
-                            ${escapeHtml(item.source)}
+                        <td class="px-6 py-4 text-sm text-gray-600 hidden sm:table-cell align-top">
+                            <a href="${item.link}" target="_blank" rel="noopener noreferrer"
+                               class="text-blue-600 hover:underline text-xs break-all">
+                                ${escapeHtml(item.link)}
+                            </a>
                         </td>
                     </tr>
                 `;

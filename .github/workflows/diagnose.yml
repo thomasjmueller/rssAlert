@@ -1,0 +1,73 @@
+name: Diagnose Setup
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check if RSS_FEED_URL is set
+        env:
+          RSS_FEED_URL: ${{ secrets.RSS_FEED_URL }}
+        run: |
+          echo "=== Checking RSS_FEED_URL Secret ==="
+          if [ -z "$RSS_FEED_URL" ]; then
+            echo "❌ RSS_FEED_URL is NOT set"
+            echo "Go to Settings → Secrets and variables → Actions"
+            echo "Add a new secret named RSS_FEED_URL with your feed URL"
+          else
+            echo "✅ RSS_FEED_URL is set"
+            echo "URL length: ${#RSS_FEED_URL} characters"
+            echo "URL starts with: ${RSS_FEED_URL:0:20}..."
+          fi
+          echo ""
+
+      - name: Check current feed.json
+        run: |
+          echo "=== Current feed.json Content ==="
+          if [ -f "feed.json" ]; then
+            echo "✅ feed.json exists"
+            cat feed.json
+            echo ""
+            ITEM_COUNT=$(grep -o '"title"' feed.json | wc -l)
+            echo "Number of items: $ITEM_COUNT"
+
+            if grep -q "Sample RSS Feed Item" feed.json; then
+              echo "⚠️  WARNING: Still contains sample data!"
+            fi
+          else
+            echo "❌ feed.json does not exist"
+          fi
+          echo ""
+
+      - name: Check repository permissions
+        run: |
+          echo "=== Repository Permissions ==="
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Token permissions: ${{ toJson(github.token) != '' && 'Token available' || 'No token' }}"
+          echo ""
+
+      - name: Test RSS fetch (if URL is set)
+        env:
+          RSS_FEED_URL: ${{ secrets.RSS_FEED_URL }}
+        run: |
+          echo "=== Testing RSS Fetch ==="
+          if [ -z "$RSS_FEED_URL" ]; then
+            echo "⚠️  Skipping - RSS_FEED_URL not set"
+          else
+            echo "Setting up Python..."
+            pip install feedparser requests
+
+            echo "Attempting to fetch RSS feed..."
+            python3 fetch_rss.py
+
+            echo ""
+            echo "=== Updated feed.json Content ==="
+            cat feed.json
+          fi

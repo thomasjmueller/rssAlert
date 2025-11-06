@@ -3,6 +3,7 @@
     "title": "Sample RSS Feed Item",
     "link": "https://example.com/article-1",
     "date": "2025-11-06T12:00:00",
-    "source": "example.com"
+    "source": "example.com",
+    "description": "This is a sample RSS feed item description. When you run the fetch script with your actual RSS feed URL, this will be replaced with real article summaries and previews from your feed."
   }
 ]
