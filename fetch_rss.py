@@ -127,12 +127,16 @@ def fetch_rss(feed_url):
 
 
 def deduplicate_items(new_items, existing_items):
-    """Deduplicate items by URL"""
-    # Create a set of existing URLs
+    """Deduplicate items by URL and title"""
+    # Create sets of existing URLs and titles
     existing_urls = {item["link"] for item in existing_items}
+    existing_titles = {item["title"] for item in existing_items}
 
-    # Filter out duplicates
-    unique_items = [item for item in new_items if item["link"] not in existing_urls]
+    # Filter out duplicates (skip if URL or title already exists)
+    unique_items = [
+        item for item in new_items
+        if item["link"] not in existing_urls and item["title"] not in existing_titles
+    ]
 
     print(f"Found {len(unique_items)} new unique items")
     return unique_items
