@@ -13,10 +13,23 @@ import requests
 
 
 def get_domain(url):
-    """Extract domain from URL"""
+    """Extract clean domain name from URL (without www and suffix)"""
     try:
         parsed = urlparse(url)
-        return parsed.netloc or parsed.path
+        domain = parsed.netloc or parsed.path
+
+        # Remove www. prefix
+        if domain.startswith('www.'):
+            domain = domain[4:]
+
+        # Remove common TLD suffixes (.com, .org, .net, etc.)
+        # Split by last dot and take everything before it
+        parts = domain.split('.')
+        if len(parts) > 1:
+            # Keep only the main domain name (remove TLD)
+            domain = parts[0]
+
+        return domain if domain else "unknown"
     except Exception:
         return "unknown"
 

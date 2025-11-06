@@ -196,7 +196,7 @@
 
                 return `
                     <tr class="hover:bg-gray-50 transition">
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 align-top">
+                        <td class="px-6 py-4 whitespace-nowrap text-xs text-gray-400 align-top">
                             ${formattedDate}
                         </td>
                         <td class="px-6 py-4 text-sm">
@@ -206,14 +206,14 @@
                             </a>
                             ${truncatedDesc ? `<div class="text-gray-500 text-xs mt-2 leading-relaxed">${escapeHtml(truncatedDesc)}</div>` : ''}
                             <div class="sm:hidden text-xs text-gray-400 mt-2">
-                                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:underline text-gray-400">
                                     ${escapeHtml(item.source)}
                                 </a>
                             </div>
                         </td>
-                        <td class="px-6 py-4 text-sm text-gray-600 hidden sm:table-cell align-top">
+                        <td class="px-6 py-4 text-sm hidden sm:table-cell align-top">
                             <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                               class="text-blue-600 hover:underline text-sm">
+                               class="text-gray-400 hover:text-gray-600 hover:underline text-sm">
                                 ${escapeHtml(item.source)}
                             </a>
                         </td>
