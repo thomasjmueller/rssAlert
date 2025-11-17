@@ -39,7 +39,7 @@ def generate_haptic_summary(title, description, url, api_key):
 
     # Configure Gemini
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-flash-latest')
 
     # Fetch article content for better context
     article_content = fetch_article_content(url)
