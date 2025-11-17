@@ -14,7 +14,16 @@ import requests
 
 def get_domain(url):
     """Extract clean domain name from URL (without www and suffix)"""
+    from urllib.parse import parse_qs
     try:
+        # Handle Google redirect URLs
+        if 'google.com/url' in url:
+            parsed_google = urlparse(url)
+            query_params = parse_qs(parsed_google.query)
+            # Extract the actual destination URL from 'url' parameter
+            if 'url' in query_params:
+                url = query_params['url'][0]
+
         parsed = urlparse(url)
         domain = parsed.netloc or parsed.path
 

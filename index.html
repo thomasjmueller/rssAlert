@@ -183,13 +183,23 @@
                 return;
             }
 
-            tbody.innerHTML = items.map(item => {
+            let lastDate = null;
+            tbody.innerHTML = items.map((item, index) => {
                 const date = new Date(item.date);
+                const dateString = date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'numeric',
+                    day: 'numeric'
+                });
                 const formattedDate = date.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric'
                 });
+
+                // Check if this is a new day
+                const isNewDay = lastDate !== null && lastDate !== dateString;
+                lastDate = dateString;
 
                 const description = item.description || '';
                 const aiSummary = item.ai_summary || '';
@@ -198,10 +208,17 @@
 
                 // Generate keyword pills
                 const keywordPills = keywords.length > 0
-                    ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-gray-300 text-gray-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
+                    ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-gray-100 text-gray-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
                     : '';
 
-                return `
+                // Add day separator row
+                const daySeparator = isNewDay ? `
+                    <tr class="day-separator">
+                        <td colspan="3" class="py-3"></td>
+                    </tr>
+                ` : '';
+
+                return daySeparator + `
                     <tr class="hover:bg-gray-50 transition">
                         <td class="px-6 py-4 text-xs text-gray-400 align-top">
                             <div class="whitespace-nowrap mb-2">${formattedDate}</div>
