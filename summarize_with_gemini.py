@@ -34,8 +34,8 @@ def fetch_article_content(url, timeout=10):
         return None
 
 
-def generate_haptic_summary(title, description, url, api_key):
-    """Generate a haptic-focused summary using Gemini API"""
+def generate_haptic_summary(title, description, url, api_key, max_retries=3):
+    """Generate a haptic-focused summary using Gemini API with retry logic"""
 
     # Configure Gemini
     genai.configure(api_key=api_key)
@@ -61,19 +61,35 @@ Description: {description}
 - Keep it under 150 words
 - Do not use phrases like "this article discusses" - just provide the facts"""
 
-    try:
-        response = model.generate_content(prompt)
-        summary = response.text.strip()
+    for attempt in range(max_retries):
+        try:
+            response = model.generate_content(prompt)
+            summary = response.text.strip()
 
-        # Fallback if response is too long
-        if len(summary) > 500:
-            summary = summary[:497] + "..."
+            # Fallback if response is too long
+            if len(summary) > 500:
+                summary = summary[:497] + "..."
 
-        return summary
+            return summary
 
-    except Exception as e:
-        print(f"  ⚠️  Gemini API error: {e}")
-        return None
+        except Exception as e:
+            error_msg = str(e)
+
+            # Check if it's a rate limit error
+            if "429" in error_msg or "quota" in error_msg.lower():
+                if attempt < max_retries - 1:
+                    wait_time = (2 ** attempt) * 10  # 10s, 20s, 40s
+                    print(f"  ⏳ Rate limit hit, waiting {wait_time}s before retry {attempt + 2}/{max_retries}...")
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    print(f"  ⚠️  Rate limit exceeded after {max_retries} attempts")
+                    return None
+            else:
+                print(f"  ⚠️  Gemini API error: {e}")
+                return None
+
+    return None
 
 
 def load_feed(filename="feed.json"):
@@ -123,8 +139,15 @@ def main():
         print("✨ All items already have summaries!")
         return
 
+    # Batch processing to respect rate limits
+    batch_size = int(os.environ.get("BATCH_SIZE", "10"))
+    if len(items_to_process) > batch_size:
+        print(f"⚠️  Processing only {batch_size} items this run (set BATCH_SIZE to change)")
+        items_to_process = items_to_process[:batch_size]
+
     # Process items
     print()
+    processed_count = 0
     for idx, item in enumerate(items_to_process, 1):
         print(f"[{idx}/{len(items_to_process)}] Processing: {item['title'][:60]}...")
 
@@ -138,19 +161,26 @@ def main():
         if summary:
             item["ai_summary"] = summary
             print(f"  ✅ Generated summary")
+            processed_count += 1
         else:
             item["ai_summary"] = "Unable to generate summary"
             print(f"  ⚠️  Failed to generate summary")
 
-        # Rate limiting - Gemini free tier: 60 requests per minute
+        # Save progress every 5 items
+        if idx % 5 == 0:
+            save_feed(items)
+            print(f"  💾 Progress saved ({idx} items processed)")
+
+        # Rate limiting - Gemini free tier: 10 requests per minute
         if idx < len(items_to_process):
-            time.sleep(1.5)  # ~40 requests per minute to be safe
+            print(f"  ⏳ Waiting 7 seconds (rate limit: 10/min)...")
+            time.sleep(7)  # ~8-9 requests per minute to be safe
 
     # Save updated feed
     print()
     print("=" * 60)
     save_feed(items)
-    print("✅ Summary generation complete!")
+    print(f"✅ Summary generation complete! Processed {processed_count} items successfully.")
 
 
 if __name__ == "__main__":

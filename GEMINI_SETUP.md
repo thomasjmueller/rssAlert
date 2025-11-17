@@ -20,9 +20,10 @@ This guide explains how to set up Gemini API for automatic haptic-focused summar
 4. Copy your API key
 
 **Gemini API Free Tier:**
-- 60 requests per minute
+- 10 requests per minute (strictly enforced)
 - 1,500 requests per day
 - No credit card required
+- Script processes ~8 requests/min to stay within limits
 
 ### 2. Add API Key to GitHub Secrets
 
@@ -44,7 +45,13 @@ export GEMINI_API_KEY="your-api-key-here"
 
 # Run the summarizer (requires feed.json to exist)
 python summarize_with_gemini.py
+
+# Process only 5 items (useful for testing)
+export BATCH_SIZE=5
+python summarize_with_gemini.py
 ```
+
+**Note:** The script processes 10 items per run by default due to rate limits. Run multiple times to process all items.
 
 ### 4. How It Works
 
@@ -121,10 +128,27 @@ The script fetches the first 10KB of each article. For paywalled content:
 
 ### Rate Limiting
 
-The script processes ~40 articles/minute. For larger batches:
-- Workflow will take longer
-- Free tier daily limit: 1,500 articles
-- Adjust `time.sleep(1.5)` in script to go slower
+**Free tier has strict limits:**
+- 10 requests per minute (hard limit)
+- Script waits 7 seconds between requests (~8/min)
+- Processes 10 items per run by default
+- Automatic retry with exponential backoff on 429 errors
+
+**To process more items:**
+```bash
+# Increase batch size (use with caution)
+export BATCH_SIZE=20
+python summarize_with_gemini.py
+
+# Or run multiple times - script only processes items without summaries
+python summarize_with_gemini.py
+# Wait 1-2 minutes
+python summarize_with_gemini.py
+```
+
+**For large feeds (100+ items):**
+- Let GitHub Actions run weekly - it will gradually process all items
+- Or manually run multiple times with breaks
 
 ## Disabling AI Summaries
 

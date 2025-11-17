@@ -43,7 +43,7 @@
             <input
                 type="text"
                 id="searchBox"
-                placeholder="Search by title, description, or source..."
+                placeholder="Search by title, summary, description, or source..."
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition"
             />
         </div>
@@ -137,7 +137,8 @@
                 filtered = filtered.filter(item =>
                     item.title.toLowerCase().includes(currentSearchQuery) ||
                     item.source.toLowerCase().includes(currentSearchQuery) ||
-                    (item.description && item.description.toLowerCase().includes(currentSearchQuery))
+                    (item.description && item.description.toLowerCase().includes(currentSearchQuery)) ||
+                    (item.ai_summary && item.ai_summary.toLowerCase().includes(currentSearchQuery))
                 );
             }
 
@@ -196,7 +197,7 @@
                         <td class="px-6 py-4 text-sm">
                             <a href="${item.link}" target="_blank" rel="noopener noreferrer"
                                class="text-gray-800 hover:text-gray-600 hover:underline font-medium">
-                                ${escapeHtml(item.title)}
+                                ${stripHtml(item.title)}
                             </a>
                             ${aiSummary ? `<div class="text-gray-700 text-sm mt-2 leading-relaxed bg-blue-50 p-3 rounded border-l-4 border-blue-400">
                                 <div class="text-xs font-semibold text-blue-600 mb-1">🤖 HAPTIC SUMMARY</div>
@@ -225,6 +226,13 @@
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
+        }
+
+        // Strip HTML tags and decode entities (for titles)
+        function stripHtml(html) {
+            const div = document.createElement('div');
+            div.innerHTML = html;
+            return div.textContent || div.innerText || '';
         }
 
         // Update stats
