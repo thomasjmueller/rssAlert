@@ -67,6 +67,7 @@ Keyword Instructions:
 - Extract up to 4 keywords (device names, software names, person names, or abstract words like: review, gaming, test, design, prototyping, research, accessibility, VR, AR, wearable, etc.)
 - Keep keywords short (1-2 words max)
 - Use lowercase
+- DO NOT use generic haptic terms: haptic, haptics, vibration, vibrations, tactile
 """
 
     if existing_keywords:
@@ -85,6 +86,9 @@ KEYWORDS: keyword1, keyword2, keyword3, keyword4"""
             summary = ""
             keywords = []
 
+            # Excluded keywords (too generic for haptics research)
+            excluded_keywords = {'haptic', 'haptics', 'vibration', 'vibrations', 'tactile'}
+
             lines = result.split('\n')
             for line in lines:
                 line = line.strip()
@@ -92,7 +96,11 @@ KEYWORDS: keyword1, keyword2, keyword3, keyword4"""
                     summary = line.replace('SUMMARY:', '').strip()
                 elif line.startswith('KEYWORDS:'):
                     keywords_str = line.replace('KEYWORDS:', '').strip()
-                    keywords = [k.strip().lower() for k in keywords_str.split(',') if k.strip()]
+                    keywords = [
+                        k.strip().lower()
+                        for k in keywords_str.split(',')
+                        if k.strip() and k.strip().lower() not in excluded_keywords
+                    ]
                     keywords = keywords[:4]  # Max 4 keywords
 
             # Fallback if parsing fails

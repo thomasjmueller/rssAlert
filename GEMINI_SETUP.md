@@ -114,6 +114,8 @@ The system extracts these types of keywords:
 
 Keywords are automatically normalized to lowercase and limited to 1-2 words for consistency.
 
+**Excluded keywords**: The system automatically filters out generic haptic terms (haptic, haptics, vibration, vibrations, tactile) since these appear in nearly every article and aren't useful for analysis. Use `python clean_keywords.py` to remove these from existing entries.
+
 ## Cost Considerations
 
 **Free Tier** (recommended for personal use):
