@@ -64,7 +64,12 @@ Description: {description}
 - Do not use phrases like "this article discusses" or "the text introduces" - just provide the facts in a highly concise manner
 
 Keyword Instructions:
-- Extract up to 4 keywords (device names, software names, person names, or abstract words like: review, gaming, test, design, prototyping, research, accessibility, VR, AR, wearable, etc.)
+- Extract up to 4 keywords with PRIORITY ORDER:
+  1. FIRST: Device name (iPhone, DualSense, Quest 3, Apple Watch, etc.)
+  2. SECOND: Game/Software name (Gran Turismo, Unity, Unreal Engine, etc.)
+  3. THIRD: Technology/Platform (VR, AR, wearable, controller, headset, etc.)
+  4. FOURTH: Abstract concepts (gaming, review, research, accessibility, prototyping, etc.)
+- Always include the specific device/game/software name if mentioned
 - Keep keywords short (1-2 words max)
 - Use lowercase
 - DO NOT use generic haptic terms: haptic, haptics, vibration, vibrations, tactile
@@ -223,10 +228,9 @@ def main():
             save_feed(items)
             print(f"  💾 Progress saved ({idx} items processed)")
 
-        # Rate limiting - Gemini free tier: 10 requests per minute
+        # Rate limiting - DISABLED for faster processing
         if idx < len(items_to_process):
-            print(f"  ⏳ Waiting 7 seconds (rate limit: 10/min)...")
-            time.sleep(7)  # ~8-9 requests per minute to be safe
+            time.sleep(0.5)  # Minimal delay to avoid overwhelming API
 
     # Save updated feed
     print()

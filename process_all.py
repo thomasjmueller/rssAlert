@@ -65,9 +65,8 @@ def main():
             break
 
         if new_remaining > 0:
-            wait_time = 90  # 90 seconds between batches
+            wait_time = 2  # Minimal wait between batches
             print(f"\n⏳ Waiting {wait_time} seconds before next batch...")
-            print(f"   (Rate limit: 10 requests/min)")
             time.sleep(wait_time)
 
     print("\n🎉 Processing complete!")
