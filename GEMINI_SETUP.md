@@ -6,9 +6,11 @@ This guide explains how to set up Gemini API for automatic haptic-focused summar
 
 - **AI-Powered Summaries**: Uses Google's Gemini AI to analyze articles
 - **Haptic Focus**: Summaries specifically extract haptic/tactile feedback information
+- **Smart Keyword Extraction**: Automatically extracts up to 4 relevant keywords (devices, software, people, abstract concepts)
+- **Keyword Reuse**: System learns and reuses existing keywords for consistency
 - **Smart Processing**: Fetches full article content for better context
 - **Incremental Updates**: Only processes new items without summaries
-- **Rate Limited**: Respects Gemini API free tier limits (~40 requests/minute)
+- **Rate Limited**: Respects Gemini API free tier limits (~8 requests/minute)
 
 ## Setup Instructions
 
@@ -77,21 +79,40 @@ After the workflow runs:
   "date": "2025-11-17T10:00:00",
   "source": "example",
   "description": "Apple announces new haptic technology...",
-  "ai_summary": "Apple's new Taptic Engine 2.0 features 50% faster response time (8ms) and supports 16 distinct haptic patterns. The system uses dual linear actuators for directional feedback. Testing shows improved user perception accuracy from 72% to 89%."
+  "ai_summary": "Apple's new Taptic Engine 2.0 features 50% faster response time (8ms) and supports 16 distinct haptic patterns. The system uses dual linear actuators for directional feedback. Testing shows improved user perception accuracy from 72% to 89%.",
+  "keywords": ["iphone", "taptic engine", "actuators", "review"]
 }
 ```
 
+Keywords appear as gray pills below the date on the webpage and are searchable.
+
 ## Customizing the Prompt
 
-To modify what the AI focuses on, edit `summarize_with_gemini.py:36-51`:
+To modify what the AI focuses on, edit the prompt in `summarize_with_gemini.py` (around line 48-77):
 
 ```python
 prompt = f"""Your custom prompt here...
+Summary Instructions:
 - Focus on specific aspects
 - Change summary length
 - Adjust tone
+
+Keyword Instructions:
+- Modify keyword types (add industries, technologies, etc.)
+- Change keyword count (currently max 4)
+- Adjust keyword style
 """
 ```
+
+### Keyword Categories
+
+The system extracts these types of keywords:
+- **Device names**: iPhone, Quest 3, DualSense, etc.
+- **Software/Frameworks**: Unity, Unreal Engine, WebVR, etc.
+- **Person names**: Researchers, designers, company leaders
+- **Abstract concepts**: gaming, accessibility, prototyping, research, VR, wearable, etc.
+
+Keywords are automatically normalized to lowercase and limited to 1-2 words for consistency.
 
 ## Cost Considerations
 
@@ -184,6 +205,61 @@ python -c "import json; data=json.load(open('feed.json')); [item.pop('ai_summary
 export GEMINI_API_KEY="your-key"
 python summarize_with_gemini.py
 ```
+
+## Analyzing Keywords
+
+Keywords are stored in `feed.json` and can be extracted for analysis:
+
+### Get All Unique Keywords
+
+```bash
+# Extract all unique keywords with counts
+python -c "
+import json
+from collections import Counter
+
+with open('feed.json') as f:
+    items = json.load(f)
+
+keywords = []
+for item in items:
+    keywords.extend(item.get('keywords', []))
+
+counts = Counter(keywords)
+print('\nKeyword Frequency:')
+for keyword, count in counts.most_common(20):
+    print(f'{keyword}: {count}')
+"
+```
+
+### Export Keywords to CSV
+
+```bash
+python -c "
+import json
+import csv
+
+with open('feed.json') as f:
+    items = json.load(f)
+
+with open('keywords_export.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['Title', 'Date', 'Keywords', 'Source'])
+
+    for item in items:
+        keywords = ', '.join(item.get('keywords', []))
+        writer.writerow([item['title'], item['date'], keywords, item['source']])
+
+print('Exported to keywords_export.csv')
+"
+```
+
+### Use Cases for Keywords
+
+- **Trend Analysis**: Track which devices/concepts are most mentioned over time
+- **Content Filtering**: Use search to find all articles about specific devices or concepts
+- **Topic Clustering**: Group similar articles by shared keywords
+- **Research Planning**: Identify gaps in coverage by analyzing keyword distribution
 
 ## Support
 

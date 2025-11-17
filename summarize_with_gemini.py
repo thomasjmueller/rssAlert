@@ -34,8 +34,8 @@ def fetch_article_content(url, timeout=10):
         return None
 
 
-def generate_haptic_summary(title, description, url, api_key, max_retries=3):
-    """Generate a haptic-focused summary using Gemini API with retry logic"""
+def generate_haptic_summary_and_keywords(title, description, url, api_key, existing_keywords=None, max_retries=3):
+    """Generate a haptic-focused summary and extract keywords using Gemini API"""
 
     # Configure Gemini
     genai.configure(api_key=api_key)
@@ -45,7 +45,9 @@ def generate_haptic_summary(title, description, url, api_key, max_retries=3):
     article_content = fetch_article_content(url)
 
     # Build prompt
-    prompt = f"""Analyze this article and create a concise summary (2-3 sentences) focused ONLY on haptic/tactile feedback content.
+    prompt = f"""Analyze this article and provide:
+1. A concise summary (2-3 sentences) focused ONLY on haptic/tactile feedback content
+2. Up to 4 keywords
 
 Title: {title}
 Description: {description}
@@ -55,22 +57,49 @@ Description: {description}
     if article_content:
         prompt += f"Article Content (excerpt): {article_content[:3000]}\n\n"
 
-    prompt += """Instructions:
+    prompt += """Summary Instructions:
 - Focus exclusively on haptic, tactile, or touch feedback related content
 - Be specific about haptic technologies, techniques, devices, or findings mentioned
 - Keep it under 150 words
-- Do not use phrases like "this article discusses" or "the text introduces" - just provide the facts in a highly concise manner"""
+- Do not use phrases like "this article discusses" or "the text introduces" - just provide the facts in a highly concise manner
+
+Keyword Instructions:
+- Extract up to 4 keywords (device names, software names, person names, or abstract words like: review, gaming, test, design, prototyping, research, accessibility, VR, AR, wearable, etc.)
+- Keep keywords short (1-2 words max)
+- Use lowercase
+"""
+
+    if existing_keywords:
+        prompt += f"\nPreferred keywords (REUSE these when applicable): {', '.join(sorted(existing_keywords))}\n"
+
+    prompt += """\nOutput format (use exactly this format):
+SUMMARY: [your summary here]
+KEYWORDS: keyword1, keyword2, keyword3, keyword4"""
 
     for attempt in range(max_retries):
         try:
             response = model.generate_content(prompt)
-            summary = response.text.strip()
+            result = response.text.strip()
 
-            # Fallback if response is too long
-            if len(summary) > 500:
-                summary = summary[:497] + "..."
+            # Parse the response
+            summary = ""
+            keywords = []
 
-            return summary
+            lines = result.split('\n')
+            for line in lines:
+                line = line.strip()
+                if line.startswith('SUMMARY:'):
+                    summary = line.replace('SUMMARY:', '').strip()
+                elif line.startswith('KEYWORDS:'):
+                    keywords_str = line.replace('KEYWORDS:', '').strip()
+                    keywords = [k.strip().lower() for k in keywords_str.split(',') if k.strip()]
+                    keywords = keywords[:4]  # Max 4 keywords
+
+            # Fallback if parsing fails
+            if not summary:
+                summary = result[:500] if len(result) <= 500 else result[:497] + "..."
+
+            return summary, keywords
 
         except Exception as e:
             error_msg = str(e)
@@ -84,12 +113,12 @@ Description: {description}
                     continue
                 else:
                     print(f"  ⚠️  Rate limit exceeded after {max_retries} attempts")
-                    return None
+                    return None, []
             else:
                 print(f"  ⚠️  Gemini API error: {e}")
-                return None
+                return None, []
 
-    return None
+    return None, []
 
 
 def load_feed(filename="feed.json"):
@@ -128,6 +157,15 @@ def main():
     items = load_feed()
     print(f"📂 Loaded {len(items)} items from feed.json")
 
+    # Collect existing keywords for reuse
+    existing_keywords = set()
+    for item in items:
+        if item.get("keywords"):
+            existing_keywords.update(item["keywords"])
+
+    if existing_keywords:
+        print(f"📋 Found {len(existing_keywords)} existing keywords to reuse")
+
     # Check which items need summaries
     items_to_process = [item for item in items if not item.get("ai_summary")]
     items_with_summaries = len(items) - len(items_to_process)
@@ -151,19 +189,25 @@ def main():
     for idx, item in enumerate(items_to_process, 1):
         print(f"[{idx}/{len(items_to_process)}] Processing: {item['title'][:60]}...")
 
-        summary = generate_haptic_summary(
+        summary, keywords = generate_haptic_summary_and_keywords(
             item["title"],
             item.get("description", ""),
             item["link"],
-            api_key
+            api_key,
+            existing_keywords
         )
 
         if summary:
             item["ai_summary"] = summary
-            print(f"  ✅ Generated summary")
+            item["keywords"] = keywords
+            print(f"  ✅ Generated summary + keywords: {', '.join(keywords) if keywords else 'none'}")
+
+            # Add new keywords to existing set
+            existing_keywords.update(keywords)
             processed_count += 1
         else:
             item["ai_summary"] = "Unable to generate summary"
+            item["keywords"] = []
             print(f"  ⚠️  Failed to generate summary")
 
         # Save progress every 5 items

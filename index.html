@@ -43,7 +43,7 @@
             <input
                 type="text"
                 id="searchBox"
-                placeholder="Search by title, summary, description, or source..."
+                placeholder="Search by keyword, title, summary, or source..."
                 class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition"
             />
         </div>
@@ -134,12 +134,17 @@
 
             // Apply search filter
             if (currentSearchQuery) {
-                filtered = filtered.filter(item =>
-                    item.title.toLowerCase().includes(currentSearchQuery) ||
-                    item.source.toLowerCase().includes(currentSearchQuery) ||
-                    (item.description && item.description.toLowerCase().includes(currentSearchQuery)) ||
-                    (item.ai_summary && item.ai_summary.toLowerCase().includes(currentSearchQuery))
-                );
+                filtered = filtered.filter(item => {
+                    const keywordsMatch = item.keywords && item.keywords.some(kw =>
+                        kw.toLowerCase().includes(currentSearchQuery)
+                    );
+
+                    return item.title.toLowerCase().includes(currentSearchQuery) ||
+                        item.source.toLowerCase().includes(currentSearchQuery) ||
+                        (item.description && item.description.toLowerCase().includes(currentSearchQuery)) ||
+                        (item.ai_summary && item.ai_summary.toLowerCase().includes(currentSearchQuery)) ||
+                        keywordsMatch;
+                });
             }
 
             displayItems(filtered);
@@ -189,11 +194,18 @@
                 const description = item.description || '';
                 const aiSummary = item.ai_summary || '';
                 const displayText = aiSummary || description;
+                const keywords = item.keywords || [];
+
+                // Generate keyword pills
+                const keywordPills = keywords.length > 0
+                    ? keywords.map(kw => `<span class="inline-block px-2 py-1 text-xs bg-gray-200 text-gray-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
+                    : '';
 
                 return `
                     <tr class="hover:bg-gray-50 transition">
-                        <td class="px-6 py-4 whitespace-nowrap text-xs text-gray-400 align-top">
-                            ${formattedDate}
+                        <td class="px-6 py-4 text-xs text-gray-400 align-top">
+                            <div class="whitespace-nowrap mb-2">${formattedDate}</div>
+                            ${keywordPills ? `<div class="flex flex-wrap gap-1 max-w-[120px]">${keywordPills}</div>` : ''}
                         </td>
                         <td class="px-6 py-4 text-sm">
                             <a href="${item.link}" target="_blank" rel="noopener noreferrer"
