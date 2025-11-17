@@ -38,6 +38,17 @@ jobs:
           fi
           python fetch_rss.py
 
+      - name: Generate AI summaries with Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "⚠️  WARNING: GEMINI_API_KEY secret is not set!"
+            echo "Skipping AI summary generation. Add GEMINI_API_KEY in Settings → Secrets"
+          else
+            python summarize_with_gemini.py
+          fi
+
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

@@ -186,8 +186,7 @@
                 });
 
                 const description = item.description || '';
-                // No need to truncate here since Python script already limits it
-                const truncatedDesc = description;
+                const aiSummary = item.ai_summary || '';
 
                 return `
                     <tr class="hover:bg-gray-50 transition">
@@ -199,7 +198,11 @@
                                class="text-gray-800 hover:text-gray-600 hover:underline font-medium">
                                 ${escapeHtml(item.title)}
                             </a>
-                            ${truncatedDesc ? `<div class="text-gray-500 text-xs mt-2 leading-relaxed">${escapeHtml(truncatedDesc)}</div>` : ''}
+                            ${aiSummary ? `<div class="text-gray-700 text-sm mt-2 leading-relaxed bg-blue-50 p-3 rounded border-l-4 border-blue-400">
+                                <div class="text-xs font-semibold text-blue-600 mb-1">🤖 HAPTIC SUMMARY</div>
+                                ${escapeHtml(aiSummary)}
+                            </div>` : ''}
+                            ${description && !aiSummary ? `<div class="text-gray-500 text-xs mt-2 leading-relaxed">${escapeHtml(description)}</div>` : ''}
                             <div class="sm:hidden text-xs text-gray-400 mt-2">
                                 <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:underline text-gray-400">
                                     ${escapeHtml(item.source)}

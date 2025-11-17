@@ -1,0 +1,168 @@
+# Gemini AI Summary Setup
+
+This guide explains how to set up Gemini API for automatic haptic-focused summaries.
+
+## Features
+
+- **AI-Powered Summaries**: Uses Google's Gemini AI to analyze articles
+- **Haptic Focus**: Summaries specifically extract haptic/tactile feedback information
+- **Smart Processing**: Fetches full article content for better context
+- **Incremental Updates**: Only processes new items without summaries
+- **Rate Limited**: Respects Gemini API free tier limits (~40 requests/minute)
+
+## Setup Instructions
+
+### 1. Get Your Gemini API Key
+
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy your API key
+
+**Gemini API Free Tier:**
+- 60 requests per minute
+- 1,500 requests per day
+- No credit card required
+
+### 2. Add API Key to GitHub Secrets
+
+1. Go to your repository on GitHub
+2. Navigate to **Settings → Secrets and variables → Actions**
+3. Click "New repository secret"
+4. Name: `GEMINI_API_KEY`
+5. Value: Paste your API key
+6. Click "Add secret"
+
+### 3. Test Locally (Optional)
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Set your Gemini API key
+export GEMINI_API_KEY="your-api-key-here"
+
+# Run the summarizer (requires feed.json to exist)
+python summarize_with_gemini.py
+```
+
+### 4. How It Works
+
+The workflow now has these steps:
+1. Fetch RSS feed → `feed.json`
+2. Generate AI summaries for new items
+3. Update `feed.json` with `ai_summary` field
+4. Commit and push changes
+
+### 5. Verify Summaries
+
+After the workflow runs:
+1. Check `feed.json` - items should have an `ai_summary` field
+2. Visit your GitHub Pages site
+3. Summaries appear in blue boxes labeled "🤖 HAPTIC SUMMARY"
+
+## Example Output
+
+```json
+{
+  "title": "New iPhone Haptic Engine Breakthrough",
+  "link": "https://example.com/article",
+  "date": "2025-11-17T10:00:00",
+  "source": "example",
+  "description": "Apple announces new haptic technology...",
+  "ai_summary": "Apple's new Taptic Engine 2.0 features 50% faster response time (8ms) and supports 16 distinct haptic patterns. The system uses dual linear actuators for directional feedback. Testing shows improved user perception accuracy from 72% to 89%."
+}
+```
+
+## Customizing the Prompt
+
+To modify what the AI focuses on, edit `summarize_with_gemini.py:36-51`:
+
+```python
+prompt = f"""Your custom prompt here...
+- Focus on specific aspects
+- Change summary length
+- Adjust tone
+"""
+```
+
+## Cost Considerations
+
+**Free Tier** (recommended for personal use):
+- 1,500 requests/day
+- Enough for ~50 articles per day
+- No cost
+
+**Paid Tier** (for high-volume):
+- $0.00025 per 1K characters input
+- $0.0005 per 1K characters output
+- ~$0.001-0.01 per article depending on length
+
+## Troubleshooting
+
+### Summaries Not Generated
+
+Check GitHub Actions logs:
+```
+Actions → Update RSS Feed → Latest run → Generate AI summaries
+```
+
+Common issues:
+- `GEMINI_API_KEY` not set in secrets
+- API rate limit exceeded
+- Article URLs blocked or inaccessible
+
+### Low Quality Summaries
+
+The script fetches the first 10KB of each article. For paywalled content:
+- Summaries rely on the RSS description
+- May be less detailed
+- Consider adding custom content extraction
+
+### Rate Limiting
+
+The script processes ~40 articles/minute. For larger batches:
+- Workflow will take longer
+- Free tier daily limit: 1,500 articles
+- Adjust `time.sleep(1.5)` in script to go slower
+
+## Disabling AI Summaries
+
+To temporarily disable without removing the code:
+
+**Option 1**: Remove the secret
+- Go to Settings → Secrets → Actions
+- Delete `GEMINI_API_KEY`
+- Workflow will skip summarization
+
+**Option 2**: Comment out workflow step
+Edit `.github/workflows/update-feed.yml`:
+```yaml
+# - name: Generate AI summaries with Gemini
+#   env:
+#     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+#   run: |
+#     python summarize_with_gemini.py
+```
+
+## Advanced: Batch Processing Existing Items
+
+To regenerate all summaries (clears existing ones):
+
+```bash
+# Backup first
+cp feed.json feed.json.backup
+
+# Clear existing summaries
+python -c "import json; data=json.load(open('feed.json')); [item.pop('ai_summary', None) for item in data]; json.dump(data, open('feed.json', 'w'), indent=2)"
+
+# Regenerate all
+export GEMINI_API_KEY="your-key"
+python summarize_with_gemini.py
+```
+
+## Support
+
+- **Gemini API Docs**: https://ai.google.dev/docs
+- **API Key Management**: https://makersuite.google.com/app/apikey
+- **Rate Limits**: https://ai.google.dev/pricing
