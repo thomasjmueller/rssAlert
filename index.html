@@ -15,11 +15,24 @@
                 <p class="text-gray-500">Haptics feed</p>
             </div>
 
-            <!-- Top Keywords Widget -->
-            <div class="bg-white rounded-lg shadow-sm border border-gray-300 p-4 min-w-[280px]">
-                <h2 class="text-sm font-semibold text-gray-600 mb-3 uppercase tracking-wide">Top Keywords</h2>
-                <div id="topKeywords" class="space-y-2 text-sm">
-                    <div class="text-gray-400 text-xs">Loading...</div>
+            <!-- Top Keywords & Devices Widget -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-300 p-4 min-w-[320px]">
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Top Devices -->
+                    <div>
+                        <h2 class="text-sm font-semibold text-gray-600 mb-2 uppercase tracking-wide">Top Devices</h2>
+                        <div id="topDevices" class="space-y-1 text-sm">
+                            <div class="text-gray-400 text-xs">Loading...</div>
+                        </div>
+                    </div>
+
+                    <!-- Top Keywords -->
+                    <div>
+                        <h2 class="text-sm font-semibold text-gray-600 mb-3 uppercase tracking-wide">Top Keywords</h2>
+                        <div id="topKeywords" class="space-y-2 text-sm">
+                            <div class="text-gray-400 text-xs">Loading...</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,6 +181,7 @@
             displayItems(filtered);
             updateStats(filtered.length, allItems.length);
             updateTopKeywords(filtered);
+            updateTopDevices(filtered);
         }
 
         // Filter by time period
@@ -327,16 +341,55 @@
             }
 
             container.innerHTML = topKeywords.map(([keyword, count]) => {
-                const percentage = Math.round((count / items.length) * 100);
                 return `
-                    <div class="flex items-center justify-between">
-                        <span class="font-medium text-gray-700">${escapeHtml(keyword)}</span>
-                        <div class="flex items-center gap-2">
-                            <div class="w-16 bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full" style="width: ${percentage}%"></div>
-                            </div>
-                            <span class="text-xs text-gray-500 w-8 text-right">${count}</span>
-                        </div>
+                    <div class="flex items-center justify-between text-gray-700">
+                        <span>${escapeHtml(keyword)}</span>
+                        <span class="text-gray-500">${count}</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Update top devices widget
+        function updateTopDevices(items) {
+            // Common device keywords
+            const deviceKeywords = [
+                'iphone', 'android', 'dualsense', 'xbox', 'quest', 'ps5', 'playstation',
+                'switch', 'steam deck', 'apple watch', 'pixel', 'oneplus', 'samsung',
+                'controller', 'headset', 'watch', 'phone', 'console', 'vr', 'ar'
+            ];
+
+            const deviceCounts = {};
+
+            // Count device keyword frequency
+            items.forEach(item => {
+                if (item.keywords && Array.isArray(item.keywords)) {
+                    item.keywords.forEach(keyword => {
+                        // Check if keyword matches any device keyword
+                        if (deviceKeywords.some(device => keyword.toLowerCase().includes(device) || device.includes(keyword.toLowerCase()))) {
+                            deviceCounts[keyword] = (deviceCounts[keyword] || 0) + 1;
+                        }
+                    });
+                }
+            });
+
+            // Sort by frequency and get top 5
+            const topDevices = Object.entries(deviceCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 5);
+
+            // Display minimal list
+            const container = document.getElementById('topDevices');
+            if (topDevices.length === 0) {
+                container.innerHTML = '<div class="text-gray-400 text-xs">No devices yet</div>';
+                return;
+            }
+
+            container.innerHTML = topDevices.map(([device, count]) => {
+                return `
+                    <div class="flex items-center justify-between text-gray-700">
+                        <span>${escapeHtml(device)}</span>
+                        <span class="text-gray-500">${count}</span>
                     </div>
                 `;
             }).join('');
