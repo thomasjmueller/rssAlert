@@ -59,7 +59,7 @@ Description: {description}
 - Focus exclusively on haptic, tactile, or touch feedback related content
 - Be specific about haptic technologies, techniques, devices, or findings mentioned
 - Keep it under 150 words
-- Do not use phrases like "this article discusses" - just provide the facts"""
+- Do not use phrases like "this article discusses" or "the text introduces" - just provide the facts in a highly concise manner"""
 
     for attempt in range(max_retries):
         try:
