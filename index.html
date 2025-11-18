@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900 min-h-screen">
-    <div class="container mx-auto px-4 py-8 max-w-6xl">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
         <!-- Header -->
         <div class="mb-8 flex justify-between items-start gap-8">
             <div>
@@ -69,31 +69,12 @@
             <span id="itemCount">Loading...</span>
         </div>
 
-        <!-- Table -->
-        <div class="bg-white rounded-lg shadow-sm border border-gray-300 overflow-hidden">
-            <div class="overflow-x-auto">
-                <table class="w-full">
-                    <thead class="bg-gray-200 border-b border-gray-300">
-                        <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider" style="width: 55%">
-                                Title & Preview
-                            </th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider" style="width: 45%">
-                                Source & Keywords
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody id="feedTable">
-                        <!-- Content will be loaded here -->
-                        <tr>
-                            <td colspan="2" class="px-6 py-8 text-center text-gray-500">
-                                Loading feed...
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <!-- Feed Items -->
+        <div id="feedTable">
+            <!-- Content will be loaded here -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-300 px-6 py-8 text-center text-gray-500">
+                Loading feed...
             </div>
-        </div>
     </div>
 
     <script>
@@ -114,11 +95,9 @@
             } catch (error) {
                 console.error('Error loading feed:', error);
                 document.getElementById('feedTable').innerHTML = `
-                    <tr>
-                        <td colspan="2" class="px-6 py-8 text-center text-gray-500">
-                            No feed data available. Run the Python script to fetch your RSS feed.
-                        </td>
-                    </tr>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-300 px-6 py-8 text-center text-gray-500">
+                        No feed data available. Run the Python script to fetch your RSS feed.
+                    </div>
                 `;
                 document.getElementById('itemCount').textContent = 'No items';
             }
@@ -184,104 +163,101 @@
             applyFilters();
         }
 
-        // Display items in table
+        // Display items in groups
         function displayItems(items) {
-            const tbody = document.getElementById('feedTable');
+            const container = document.getElementById('feedTable');
 
             if (items.length === 0) {
-                tbody.innerHTML = `
-                    <tr>
-                        <td colspan="2" class="px-6 py-8 text-center text-gray-500">
-                            No items match your filters
-                        </td>
-                    </tr>
+                container.innerHTML = `
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-300 px-6 py-8 text-center text-gray-500">
+                        No items match your filters
+                    </div>
                 `;
                 return;
             }
 
-            let lastDate = null;
-            tbody.innerHTML = items.map((item, index) => {
+            // Group items by date
+            const groupedItems = {};
+            items.forEach(item => {
                 const date = new Date(item.date);
                 const dateString = date.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'numeric',
                     day: 'numeric'
                 });
+                if (!groupedItems[dateString]) {
+                    groupedItems[dateString] = [];
+                }
+                groupedItems[dateString].push(item);
+            });
+
+            // Render each date group as a card
+            container.innerHTML = Object.entries(groupedItems).map(([dateString, groupItems]) => {
+                const date = new Date(groupItems[0].date);
                 const formattedDate = date.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric'
                 });
 
-                // Check if this is a new day
-                const isNewDay = lastDate !== dateString;
-                const isFirstItem = index === 0;
-                lastDate = dateString;
+                const postsHtml = groupItems.map((item, index) => {
+                    const description = item.description || '';
+                    const aiSummary = item.ai_summary || '';
+                    const displayText = aiSummary || description;
+                    const keywords = item.keywords || [];
 
-                const description = item.description || '';
-                const aiSummary = item.ai_summary || '';
-                const displayText = aiSummary || description;
-                const keywords = item.keywords || [];
+                    // Generate keyword pills
+                    const keywordPills = keywords.length > 0
+                        ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-gray-100 text-gray-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
+                        : '';
 
-                // Generate keyword pills
-                const keywordPills = keywords.length > 0
-                    ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-gray-100 text-gray-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
-                    : '';
+                    const separator = index > 0 ? '<div class="border-t border-gray-200"></div>' : '';
 
-                // Add spacing before new date group (except first)
-                const groupSpacer = isNewDay && !isFirstItem ? `
-                    <tr class="group-spacer">
-                        <td colspan="2" class="h-4"></td>
-                    </tr>
-                ` : '';
-
-                // Add date header row
-                const dateHeader = isNewDay ? `
-                    <tr class="date-header bg-white">
-                        <td colspan="2" class="px-6 pt-4 pb-3 border-t border-gray-200">
-                            <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide cursor-pointer hover:text-gray-800 transition" onclick="sortByDate()">
-                                ${formattedDate} <span id="sortIndicator-${dateString}" class="text-gray-400">${currentSort === 'desc' ? '▼' : '▲'}</span>
-                            </div>
-                        </td>
-                    </tr>
-                ` : '';
-
-                return groupSpacer + dateHeader + `
-                    <tr class="hover:bg-gray-50 transition bg-white">
-                        <td class="px-6 py-4 text-sm border-l border-r border-gray-200">
-                            <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                               class="text-gray-800 hover:text-gray-600 hover:underline font-medium">
-                                ${stripHtml(item.title)}
-                            </a>
-                            ${displayText ? `<div class="text-gray-600 text-sm mt-2 leading-relaxed">${escapeHtml(displayText)}</div>` : ''}
-                        </td>
-                        <td class="px-6 py-4 text-sm align-top border-r border-gray-200">
-                            <div class="flex items-start gap-2 mb-2">
+                    return `
+                        ${separator}
+                        <div class="flex hover:bg-gray-50 transition">
+                            <div class="px-6 py-4 text-sm" style="width: 55%">
                                 <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                                   class="text-gray-400 hover:text-gray-600 hover:underline text-sm">
-                                    ${escapeHtml(item.source)}
+                                   class="text-gray-800 hover:text-gray-600 hover:underline font-medium">
+                                    ${stripHtml(item.title)}
                                 </a>
-                                ${description && aiSummary ? `
-                                    <div class="relative group">
-                                        <div class="w-5 h-5 rounded-full bg-gray-300 hover:bg-gray-400 flex items-center justify-center cursor-help transition">
-                                            <span class="text-xs text-white">i</span>
-                                        </div>
-                                        <div class="absolute right-0 top-8 w-80 bg-gray-800 text-white text-xs p-3 rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10 pointer-events-none">
-                                            <div class="font-semibold mb-1">Original Preview:</div>
-                                            ${escapeHtml(description)}
-                                        </div>
-                                    </div>
-                                ` : ''}
+                                ${displayText ? `<div class="text-gray-600 text-sm mt-2 leading-relaxed">${escapeHtml(displayText)}</div>` : ''}
                             </div>
-                            ${keywordPills ? `<div class="flex flex-wrap gap-1">${keywordPills}</div>` : ''}
-                        </td>
-                    </tr>
+                            <div class="px-6 py-4 text-sm" style="width: 45%">
+                                <div class="flex items-start gap-2 mb-2">
+                                    <a href="${item.link}" target="_blank" rel="noopener noreferrer"
+                                       class="text-gray-400 hover:text-gray-600 hover:underline text-sm">
+                                        ${escapeHtml(item.source)}
+                                    </a>
+                                    ${description && aiSummary ? `
+                                        <div class="relative group">
+                                            <div class="w-5 h-5 rounded-full bg-gray-300 hover:bg-gray-400 flex items-center justify-center cursor-help transition">
+                                                <span class="text-xs text-white">i</span>
+                                            </div>
+                                            <div class="absolute right-0 top-8 w-80 bg-gray-800 text-white text-xs p-3 rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10 pointer-events-none">
+                                                <div class="font-semibold mb-1">Original Preview:</div>
+                                                ${escapeHtml(description)}
+                                            </div>
+                                        </div>
+                                    ` : ''}
+                                </div>
+                                ${keywordPills ? `<div class="flex flex-wrap gap-1">${keywordPills}</div>` : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                return `
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-300 overflow-hidden mb-6">
+                        <div class="px-6 py-3 bg-gray-50 border-b border-gray-200">
+                            <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide cursor-pointer hover:text-gray-800 transition" onclick="sortByDate()">
+                                ${formattedDate} <span class="text-gray-400">${currentSort === 'desc' ? '▼' : '▲'}</span>
+                            </div>
+                        </div>
+                        ${postsHtml}
+                    </div>
                 `;
-            }).join('') + `
-                <tr class="group-end bg-white">
-                    <td colspan="2" class="h-4 border-l border-r border-b border-gray-200"></td>
-                </tr>
-            `;
+            }).join('');
         }
 
         // Escape HTML to prevent XSS
