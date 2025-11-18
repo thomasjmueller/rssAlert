@@ -15,22 +15,11 @@
                 <p class="text-gray-500">Haptics feed</p>
             </div>
 
-            <!-- Top Keywords & Devices Widget -->
-            <div class="grid grid-cols-2 gap-8">
-                <!-- Top Devices -->
-                <div>
-                    <h2 class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">Top Devices</h2>
-                    <div id="topDevices" class="space-y-0.5 text-sm">
-                        <div class="text-gray-400 text-xs">Loading...</div>
-                    </div>
-                </div>
-
-                <!-- Top Keywords -->
-                <div>
-                    <h2 class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">Top Keywords</h2>
-                    <div id="topKeywords" class="space-y-0.5 text-sm">
-                        <div class="text-gray-400 text-xs">Loading...</div>
-                    </div>
+            <!-- Top Keywords Widget -->
+            <div>
+                <h2 class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">Top Keywords</h2>
+                <div id="topKeywords" class="space-y-0.5 text-sm">
+                    <div class="text-gray-400 text-xs">Loading...</div>
                 </div>
             </div>
         </div>
@@ -176,7 +165,6 @@
             displayItems(filtered);
             updateStats(filtered.length, allItems.length);
             updateTopKeywords(filtered);
-            updateTopDevices(filtered);
         }
 
         // Filter by time period
@@ -239,10 +227,10 @@
                     ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-gray-100 text-gray-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
                     : '';
 
-                // Add date header row
+                // Add date header row with vertical gap
                 const dateHeader = isNewDay ? `
                     <tr class="date-header">
-                        <td colspan="2" class="px-6 py-3 bg-gray-50 border-t-2 border-gray-200">
+                        <td colspan="2" class="px-6 pt-8 pb-3 bg-gray-50 border-t-2 border-gray-200">
                             <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide cursor-pointer hover:text-gray-800 transition" onclick="sortByDate()">
                                 ${formattedDate} <span id="sortIndicator-${dateString}" class="text-gray-400">${currentSort === 'desc' ? '▼' : '▲'}</span>
                             </div>
@@ -335,51 +323,6 @@
                 return `
                     <div class="flex items-center justify-between text-gray-700">
                         <span>${escapeHtml(keyword)}</span>
-                        <span class="text-gray-500">${count}</span>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // Update top devices widget
-        function updateTopDevices(items) {
-            // Generic terms to exclude
-            const excludedTerms = [
-                'hardware', 'wearable', 'vr', 'controller', 'headset',
-                'watch', 'phone', 'console', 'ar', 'device', 'gadget'
-            ];
-
-            const deviceCounts = {};
-
-            // Count all keyword frequencies
-            items.forEach(item => {
-                if (item.keywords && Array.isArray(item.keywords)) {
-                    item.keywords.forEach(keyword => {
-                        const keywordLower = keyword.toLowerCase();
-                        // Exclude generic terms
-                        if (!excludedTerms.some(term => keywordLower === term || keywordLower.includes(term))) {
-                            deviceCounts[keyword] = (deviceCounts[keyword] || 0) + 1;
-                        }
-                    });
-                }
-            });
-
-            // Sort by frequency and get top 5
-            const topDevices = Object.entries(deviceCounts)
-                .sort((a, b) => b[1] - a[1])
-                .slice(0, 5);
-
-            // Display minimal list
-            const container = document.getElementById('topDevices');
-            if (topDevices.length === 0) {
-                container.innerHTML = '<div class="text-gray-400 text-xs">No devices yet</div>';
-                return;
-            }
-
-            container.innerHTML = topDevices.map(([device, count]) => {
-                return `
-                    <div class="flex items-center justify-between text-gray-700">
-                        <span>${escapeHtml(device)}</span>
                         <span class="text-gray-500">${count}</span>
                     </div>
                 `;
