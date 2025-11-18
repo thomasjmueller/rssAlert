@@ -71,6 +71,18 @@ def parse_date(entry):
     return datetime.now().isoformat()
 
 
+def get_feed_name(feed_url):
+    """Extract a friendly name from feed URL"""
+    if "reddit.com" in feed_url:
+        return "Reddit"
+    elif "google.com/alerts" in feed_url:
+        return "Google Alerts"
+    else:
+        # Use domain name
+        domain = urlparse(feed_url).netloc
+        return domain.replace("www.", "")
+
+
 def fetch_rss(feed_url):
     """Fetch and parse RSS feed"""
     print(f"Fetching RSS feed from: {feed_url}")
@@ -81,6 +93,7 @@ def fetch_rss(feed_url):
     if feed.bozo:
         print(f"Warning: Feed might have issues: {feed.bozo_exception}")
 
+    feed_name = get_feed_name(feed_url)
     items = []
     for entry in feed.entries:
         # Extract link
@@ -128,7 +141,8 @@ def fetch_rss(feed_url):
             "link": link,
             "date": date,
             "source": source,
-            "description": description
+            "description": description,
+            "feed_source": feed_name
         })
 
     print(f"Fetched {len(items)} items from feed")
