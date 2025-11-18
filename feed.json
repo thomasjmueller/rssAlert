@@ -12,7 +12,8 @@
       "research",
       "usability",
       "assistance"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Garmin tipped to deliver advanced digital crown hardware on future Fenix smartwatch lookalike",
@@ -27,7 +28,8 @@
       "wearable",
       "hardware",
       "user input"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Question about the <b>Haptics</b> Feedback of the new Steam Controller - Reddit",
@@ -42,7 +44,8 @@
       "dualsense",
       "controller",
       "trackpads"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Samsung Galaxy Buds 4 Pro Limited Innovations Focus on Classic Controls",
@@ -57,7 +60,8 @@
       "buttons",
       "user input",
       "usability"
-    ]
+    ],
+    "relevance_level": "low"
   },
   {
     "title": "Provolver Elite [FR REVIEW] The 2.0 <b>Haptic Feedback</b> Gunstock - YouTube",
@@ -72,7 +76,8 @@
       "vr",
       "review",
       "gaming"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "I used the Logitech MX Master 4 for gaming so you don't have to - Notebookcheck",
@@ -87,7 +92,8 @@
       "gaming",
       "hardware",
       "review"
-    ]
+    ],
+    "relevance_level": "low"
   },
   {
     "title": "DSX - v3.1.5.1 Is Out! BT Audio/<b>Haptics</b> Beta, DSX+, and more! View Release Notes. - Steam News",
@@ -102,7 +108,8 @@
       "bluetooth",
       "controller",
       "update"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Flam and Hyundai unveil haptic mixed reality experience for Hyundai Venue | Advertising",
@@ -117,7 +124,8 @@
       "cars",
       "advertising",
       "interaction"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "How do I turn off the vibration (<b>Haptic Feedback</b>) when I'm playing on my iPhone?",
@@ -132,7 +140,8 @@
       "ios",
       "settings",
       "mobile"
-    ]
+    ],
+    "relevance_level": "low"
   },
   {
     "title": "Entrol to build S-64 FTD for Helicopter Express, boosting critical mission training",
@@ -147,7 +156,8 @@
       "control loading",
       "simulator",
       "training"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "New Steam Controller Review: Features, Ergonomics, and Performance | NoobFeed",
@@ -162,7 +172,8 @@
       "controller",
       "trackpads",
       "review"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Proactive experiences of vibrotactile stimuli enhance learners' task-specific confidence in ...",
@@ -177,7 +188,8 @@
       "research",
       "training",
       "confidence"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Apple iPhone 13 Pro - Turn vibration on or off - Vodafone UK",
@@ -192,7 +204,8 @@
       "ios",
       "guide",
       "settings"
-    ]
+    ],
+    "relevance_level": "low"
   },
   {
     "title": "Logitech MX Master 4 Review: Learning From the Past - TechAcute",
@@ -207,7 +220,8 @@
       "review",
       "controller",
       "input"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Acoustic Metamaterials Driving Advanced Haptic Systems - Electropages",
@@ -222,7 +236,8 @@
       "metamaterials",
       "piezoelectric",
       "unit cells"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Tantalizing Design: Apple's Official iPhone 20 Cases Might Have A Touch Sense - Wccftech",
@@ -237,7 +252,8 @@
       "buttons",
       "apple",
       "report"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Modulating social perception during virtual interactions with affective <b>haptic feedback</b> - IRISA",
@@ -252,7 +268,8 @@
       "research",
       "interaction",
       "social"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Simtec Systems and The Void redefine the dark ride: real motion meets infinite worlds",
@@ -267,7 +284,8 @@
       "simulator",
       "interaction",
       "immersion"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "X-Force <b>Haptics</b> Kit Transforms X-Arcade 2TV-XR VR Experience | Watch - MSN",
@@ -282,7 +300,8 @@
       "x-force",
       "pinball fx vr",
       "vr"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Winter <b>Haptics</b> Tone ringtone by Lyrical Bliss - Download on ZEDGE™ | ed93",
@@ -297,7 +316,8 @@
       "audio",
       "content",
       "platforms"
-    ]
+    ],
+    "relevance_level": "low"
   },
   {
     "title": "Red Dead Redemption is Coming to Current Gen Platforms: Check Details",
@@ -311,7 +331,8 @@
       "platforms",
       "gunplay"
     ],
-    "ai_summary": "The transition of Red Dead Redemption to current generation platforms includes support for integrated haptic feedback. This technology is intended to provide deeper player immersion, contribute to more realistic gunplay mechanics, and enhance the cinematic feel of the open-world environment."
+    "ai_summary": "The transition of Red Dead Redemption to current generation platforms includes support for integrated haptic feedback. This technology is intended to provide deeper player immersion, contribute to more realistic gunplay mechanics, and enhance the cinematic feel of the open-world environment.",
+    "relevance_level": "mid"
   },
   {
     "title": "<b>Haptic Feedback</b> : r/rewasd - Reddit",
@@ -324,7 +345,8 @@
       "controller",
       "gaming"
     ],
-    "ai_summary": "The provided content consists of a user inquiry regarding the capabilities of the software reWASD. Specifically, the user is asking whether the program features the functionality to add haptic feedback, defining this capability in the context of standard controller vibrations."
+    "ai_summary": "The provided content consists of a user inquiry regarding the capabilities of the software reWASD. Specifically, the user is asking whether the program features the functionality to add haptic feedback, defining this capability in the context of standard controller vibrations.",
+    "relevance_level": "mid"
   },
   {
     "title": "OnePlus 15: How to Turn ON/OFF Vibration &amp; <b>Haptics</b> - YouTube",
@@ -338,7 +360,8 @@
       "settings",
       "mobile"
     ],
-    "ai_summary": "The content focuses on user control over tactile feedback functionalities on a specific mobile device. It provides instructions on how to enable, disable, and manage the intensity levels of haptic feedback within the operating system environment of the OnePlus 15 running OxygenOS 16."
+    "ai_summary": "The content focuses on user control over tactile feedback functionalities on a specific mobile device. It provides instructions on how to enable, disable, and manage the intensity levels of haptic feedback within the operating system environment of the OnePlus 15 running OxygenOS 16.",
+    "relevance_level": "low"
   },
   {
     "title": "HOT ! <b>Haptic Technology Haptic Feedback</b> Gloves Vr Vr Haptic Gloves Quest ... - YAO.COM.DO",
@@ -352,7 +375,8 @@
       "gloves",
       "vr"
     ],
-    "ai_summary": "The provided text serves primarily as a product listing identifying various commercial haptic feedback peripherals used for virtual reality environments. Explicit mention is made of general VR Haptic Gloves, devices compatible with the Quest platform, and products specifically identified as Lucid VR Haptic Gloves."
+    "ai_summary": "The provided text serves primarily as a product listing identifying various commercial haptic feedback peripherals used for virtual reality environments. Explicit mention is made of general VR Haptic Gloves, devices compatible with the Quest platform, and products specifically identified as Lucid VR Haptic Gloves.",
+    "relevance_level": "high"
   },
   {
     "title": "A review of the Trezor Safe 5 hardware cryptocurrency wallet - TechTalks",
@@ -366,7 +390,8 @@
       "touchscreen",
       "review"
     ],
-    "ai_summary": "The Trezor Safe 5 hardware cryptocurrency wallet incorporates a screen that delivers haptic feedback, significantly improving the tactile quality of user interactions. This new touchscreen interface, supported by the enhanced feedback, serves as a replacement for the device's previous two-button navigation system."
+    "ai_summary": "The Trezor Safe 5 hardware cryptocurrency wallet incorporates a screen that delivers haptic feedback, significantly improving the tactile quality of user interactions. This new touchscreen interface, supported by the enhanced feedback, serves as a replacement for the device's previous two-button navigation system.",
+    "relevance_level": "high"
   },
   {
     "title": "S21 FE SD 888 Notification Vibration / <b>Haptics</b> not... - Samsung Members Community",
@@ -380,7 +405,8 @@
       "mobile",
       "settings"
     ],
-    "ai_summary": "Haptic feedback functionality, specifically notification vibrations, is reported as non-operational on the Samsung Galaxy S21 FE device. This malfunction occurred following the installation of the OneUI 8 operating system update."
+    "ai_summary": "Haptic feedback functionality, specifically notification vibrations, is reported as non-operational on the Samsung Galaxy S21 FE device. This malfunction occurred following the installation of the OneUI 8 operating system update.",
+    "relevance_level": "low"
   },
   {
     "title": "Amazon.com.br: Razer: Razer Sensa HD <b>Haptics</b>",
@@ -394,7 +420,8 @@
       "gaming",
       "immersion"
     ],
-    "ai_summary": "Razer Sensa HD Haptics is introduced as a specific technology designed to improve gaming immersion. This system promises advanced tactile feedback capabilities intended for future gaming experiences."
+    "ai_summary": "Razer Sensa HD Haptics is introduced as a specific technology designed to improve gaming immersion. This system promises advanced tactile feedback capabilities intended for future gaming experiences.",
+    "relevance_level": "high"
   },
   {
     "title": "Best camera design btry spkr UI Software android 16 <b>haptics</b> offr Fon only 31.5k wid fst chrgr ...",
@@ -408,7 +435,8 @@
       "touchscreen",
       "hardware"
     ],
-    "ai_summary": "Haptic feedback is listed as a feature of a mobile device (\"Fon\") running the Android 16 operating system, mentioned alongside general specifications such as camera design, battery life, and software. The text provides no specific details regarding the device's haptic technology, implementation, or quality."
+    "ai_summary": "Haptic feedback is listed as a feature of a mobile device (\"Fon\") running the Android 16 operating system, mentioned alongside general specifications such as camera design, battery life, and software. The text provides no specific details regarding the device's haptic technology, implementation, or quality.",
+    "relevance_level": "low"
   },
   {
     "title": "How Does <b>Haptic Feedback</b> Work In Wearable Tech Gifts? - Gift Giving Handbook",
@@ -421,7 +449,8 @@
       "tech",
       "gifts"
     ],
-    "ai_summary": "The provided content is an HTML snippet that serves as a redirect to an external video source. The excerpt itself contains no analysis, facts, or descriptions detailing specific haptic feedback technologies, devices, or methods used in wearable technology gifts."
+    "ai_summary": "The provided content is an HTML snippet that serves as a redirect to an external video source. The excerpt itself contains no analysis, facts, or descriptions detailing specific haptic feedback technologies, devices, or methods used in wearable technology gifts.",
+    "relevance_level": "low"
   },
   {
     "title": "Sensit <b>Haptics</b> MTCP, seat question | OverTake.gg",
@@ -435,7 +464,8 @@
       "gaming",
       "chair"
     ],
-    "ai_summary": "The content focuses on the specific purchase and installation compatibility issues of the Sensit Haptics MTCP device. A user requires a new racing rig, such as the Simxpro GT, because the haptic feedback hardware is incompatible with their existing PC gaming chair setup."
+    "ai_summary": "The content focuses on the specific purchase and installation compatibility issues of the Sensit Haptics MTCP device. A user requires a new racing rig, such as the Simxpro GT, because the haptic feedback hardware is incompatible with their existing PC gaming chair setup.",
+    "relevance_level": "high"
   },
   {
     "title": "HOT ! Wireless Gaming Headset Nari Ultimate Overwatch RAZER NARI ULTIMATE ... - Unico Slab",
@@ -449,7 +479,8 @@
       "hardware",
       "gaming"
     ],
-    "ai_summary": "The Razer Nari Ultimate wireless gaming headset is specifically featured for its integration of haptic technology. This feature provides advanced tactile feedback designed for gaming applications, including compatibility with titles such as Overwatch and platforms like the Nintendo Switch."
+    "ai_summary": "The Razer Nari Ultimate wireless gaming headset is specifically featured for its integration of haptic technology. This feature provides advanced tactile feedback designed for gaming applications, including compatibility with titles such as Overwatch and platforms like the Nintendo Switch.",
+    "relevance_level": "high"
   },
   {
     "title": "My apologies if this has been asked before but will <b>haptics</b> work properly on gt7 if you ...",
@@ -463,7 +494,8 @@
       "telemetry",
       "gaming"
     ],
-    "ai_summary": "The content presents a technical query regarding the integration and performance of haptic feedback in racing simulation. The user is specifically questioning whether the native haptic features within Gran Turismo 7 will function correctly and without interference when the game's output is connected to or processed via the external telemetry software, SimHub."
+    "ai_summary": "The content presents a technical query regarding the integration and performance of haptic feedback in racing simulation. The user is specifically questioning whether the native haptic features within Gran Turismo 7 will function correctly and without interference when the game's output is connected to or processed via the external telemetry software, SimHub.",
+    "relevance_level": "mid"
   },
   {
     "title": "Sony WH-1000XM6 Headphones: Sound Through the Chaos of NFL Stadiums - Instagram",
@@ -477,7 +509,8 @@
       "hardware",
       "tech"
     ],
-    "ai_summary": "The haptic performance of specific smartphones was compared. The Apple iPhone Air features a less intense and less firm vibration experience compared to standard models. Conversely, the Galaxy S25 Edge is noted for possessing tactile feedback that is described as far more prominent and forceful."
+    "ai_summary": "The haptic performance of specific smartphones was compared. The Apple iPhone Air features a less intense and less firm vibration experience compared to standard models. Conversely, the Galaxy S25 Edge is noted for possessing tactile feedback that is described as far more prominent and forceful.",
+    "relevance_level": "high"
   },
   {
     "title": "My gripe with the pixel 10 pro XL <b>haptics</b>. : r/GooglePixel - Reddit",
@@ -491,7 +524,8 @@
       "review",
       "settings"
     ],
-    "ai_summary": "The tactile feedback on the Pixel 10 Pro XL is criticized for being excessively loud when compared to the preceding Pixel 6 Pro model. This disruptive noise associated with the haptics remains present and audible even when the phone’s main volume is fully muted. The issue points to a significant flaw in either the vibration motor hardware quality or the software control used to manage the intensity and noise profile of the feedback."
+    "ai_summary": "The tactile feedback on the Pixel 10 Pro XL is criticized for being excessively loud when compared to the preceding Pixel 6 Pro model. This disruptive noise associated with the haptics remains present and audible even when the phone’s main volume is fully muted. The issue points to a significant flaw in either the vibration motor hardware quality or the software control used to manage the intensity and noise profile of the feedback.",
+    "relevance_level": "mid"
   },
   {
     "title": "Valve تكشف عن Steam Machine الجديد.. قوة 4K تعيد المنافسة للأجهزة الهجينة - رأي اليوم",
@@ -505,7 +539,8 @@
       "grip sense",
       "pressure"
     ],
-    "ai_summary": "The new Steam Machine controller integrates multiple advanced tactile technologies, including HD Haptics specifically designed for precise and detailed vibrations. The input mechanisms feature pressure-sensitive buttons alongside Grip Sense technology, enabling the device to detect user interaction through both touch and applied pressure."
+    "ai_summary": "The new Steam Machine controller integrates multiple advanced tactile technologies, including HD Haptics specifically designed for precise and detailed vibrations. The input mechanisms feature pressure-sensitive buttons alongside Grip Sense technology, enabling the device to detect user interaction through both touch and applied pressure.",
+    "relevance_level": "high"
   },
   {
     "title": "Haptic touch android. What is <b>Haptic Feedback</b>? | FEELBELT - clsvazbh.study",
@@ -519,7 +554,8 @@
       "ios",
       "mobile"
     ],
-    "ai_summary": "The content addresses the fundamental definition of haptic feedback and identifies it as a basic example of haptic technology. This technology is implemented for smartphone applications, specifically targeting both the iOS and Android platforms."
+    "ai_summary": "The content addresses the fundamental definition of haptic feedback and identifies it as a basic example of haptic technology. This technology is implemented for smartphone applications, specifically targeting both the iOS and Android platforms.",
+    "relevance_level": "mid"
   },
   {
     "title": "iQOO 15 got the best and most powerful <b>haptics</b> motor this time in smartphone Good work @IqooInd",
@@ -532,7 +568,8 @@
       "mobile",
       "hardware"
     ],
-    "ai_summary": "The iQOO 15 smartphone is specifically highlighted for incorporating the best and most powerful haptics motor currently available in a mobile device. This enhancement focuses on a significant hardware upgrade intended to deliver superior quality and strength of tactile feedback within the smartphone category."
+    "ai_summary": "The iQOO 15 smartphone is specifically highlighted for incorporating the best and most powerful haptics motor currently available in a mobile device. This enhancement focuses on a significant hardware upgrade intended to deliver superior quality and strength of tactile feedback within the smartphone category.",
+    "relevance_level": "high"
   },
   {
     "title": "PlayStation DualSense Wireless Controller, <b>Haptic Feedback</b>, Adaptive Triggers &amp; Multi ... - Snoonu",
@@ -546,7 +583,8 @@
       "hardware",
       "gaming"
     ],
-    "ai_summary": "The PlayStation DualSense Wireless Controller utilizes cutting-edge haptics for its feedback system. This Haptic Feedback is implemented via dual actuators, which are designed to replace and upgrade the functionality of traditional rumble motors typically found in older controllers."
+    "ai_summary": "The PlayStation DualSense Wireless Controller utilizes cutting-edge haptics for its feedback system. This Haptic Feedback is implemented via dual actuators, which are designed to replace and upgrade the functionality of traditional rumble motors typically found in older controllers.",
+    "relevance_level": "high"
   },
   {
     "title": "Microsoft might soon add <b>haptic feedback</b> to laptops, all we know - MSN",
@@ -560,7 +598,8 @@
       "tech",
       "platforms"
     ],
-    "ai_summary": "Microsoft is actively pursuing the integration of haptic feedback capabilities into its laptop hardware. The company’s research and development efforts toward implementing haptics in this computing platform have been underway since at least 2022."
+    "ai_summary": "Microsoft is actively pursuing the integration of haptic feedback capabilities into its laptop hardware. The company’s research and development efforts toward implementing haptics in this computing platform have been underway since at least 2022.",
+    "relevance_level": "high"
   },
   {
     "title": "<b>Haptic Feedback</b> How To Turn Digital Crown On Iwatch Apple Watch Series Review",
@@ -574,7 +613,8 @@
       "review",
       "digital crown"
     ],
-    "ai_summary": "The content focuses on the application of haptic feedback specifically within the Apple Watch ecosystem, detailing how users can manage or enable these features. Key components involved in the tactile interaction include the device's vibrate function and settings related to the Digital Crown. The discussion appears framed as a review or guide for device configuration."
+    "ai_summary": "The content focuses on the application of haptic feedback specifically within the Apple Watch ecosystem, detailing how users can manage or enable these features. Key components involved in the tactile interaction include the device's vibrate function and settings related to the Digital Crown. The discussion appears framed as a review or guide for device configuration.",
+    "relevance_level": "mid"
   },
   {
     "title": "Maxim Bondar Ungkap Kesempatan Logitech Perkenalkan MX Master Series!",
@@ -588,7 +628,8 @@
       "controller",
       "tech"
     ],
-    "ai_summary": "Logitech introduced new haptic feedback technology at a specialized festival designed for creators, designers, and coders. This launch accompanied the introduction of the MX Master series. The available excerpt does not detail the specific implementation or devices utilizing this new feedback system."
+    "ai_summary": "Logitech introduced new haptic feedback technology at a specialized festival designed for creators, designers, and coders. This launch accompanied the introduction of the MX Master series. The available excerpt does not detail the specific implementation or devices utilizing this new feedback system.",
+    "relevance_level": "high"
   },
   {
     "title": "DSX just announced a beta that they can do Bluetooth Audio and <b>Haptic Feedback</b> on PC ... - Reddit",
@@ -602,7 +643,8 @@
       "gaming",
       "platforms"
     ],
-    "ai_summary": "DSX has announced a beta feature enabling specialized haptic feedback capabilities for DualSense controllers connected to a PC. This update allows PC users to experience the advanced tactile effects of the controller, which are supported via a Bluetooth connection."
+    "ai_summary": "DSX has announced a beta feature enabling specialized haptic feedback capabilities for DualSense controllers connected to a PC. This update allows PC users to experience the advanced tactile effects of the controller, which are supported via a Bluetooth connection.",
+    "relevance_level": "high"
   },
   {
     "title": "Does Cyube use <b>haptic feedback</b> and adaptive triggers? : r/PSVR - Reddit",
@@ -616,7 +658,8 @@
       "psvr",
       "controller"
     ],
-    "ai_summary": "The provided content references inquiries into the usage of adaptive triggers and haptic feedback specific to the game Cyube, likely within the PSVR ecosystem. A separate discussion thread focuses on assessing the quality of haptic output available on the Ipod Classic device, along with a mention of related smart cube technology."
+    "ai_summary": "The provided content references inquiries into the usage of adaptive triggers and haptic feedback specific to the game Cyube, likely within the PSVR ecosystem. A separate discussion thread focuses on assessing the quality of haptic output available on the Ipod Classic device, along with a mention of related smart cube technology.",
+    "relevance_level": "mid"
   },
   {
     "title": "<b>Haptics</b> This phone has to be one of the best <b>haptics</b> I have experienced in the 30K INR ...",
@@ -630,7 +673,8 @@
       "review",
       "hardware"
     ],
-    "ai_summary": "The analyzed mobile device features a highly-rated tactile system incorporating the proprietary O-Haptics technology. The implementation provides excellent haptic feedback and integration, resulting in a premium touch experience that users ranked among the best available in its 30K INR price category."
+    "ai_summary": "The analyzed mobile device features a highly-rated tactile system incorporating the proprietary O-Haptics technology. The implementation provides excellent haptic feedback and integration, resulting in a premium touch experience that users ranked among the best available in its 30K INR price category.",
+    "relevance_level": "high"
   },
   {
     "title": "Enhancing Pseudo-<b>Haptics</b> on the Hand by Viewpoint Shifts in VR - ResearchGate",
@@ -644,7 +688,8 @@
       "design",
       "viewpoint"
     ],
-    "ai_summary": "Research explored the enhancement of pseudo-haptics delivered to the hand within VR environments. The primary technique utilized visual viewpoint shifts to improve the subjective perception of tactile feedback, supported by a survey of existing haptic feedback designs and application proposals."
+    "ai_summary": "Research explored the enhancement of pseudo-haptics delivered to the hand within VR environments. The primary technique utilized visual viewpoint shifts to improve the subjective perception of tactile feedback, supported by a survey of existing haptic feedback designs and application proposals.",
+    "relevance_level": "mid"
   },
   {
     "title": "New Species of Parasitic Flatworm Discovered on Catfish in Peru's Itaya River Basin",
@@ -657,7 +702,8 @@
       "ar",
       "immersion"
     ],
-    "ai_summary": "Haptic feedback mechanisms are integrated and utilized specifically for the purpose of enhancing user immersion and overall sensory experiences within augmented reality (AR) and virtual reality (VR) platforms. The accessible content does not specify the particular devices, research findings, or implementation techniques employed to deliver this enhanced tactile sensation."
+    "ai_summary": "Haptic feedback mechanisms are integrated and utilized specifically for the purpose of enhancing user immersion and overall sensory experiences within augmented reality (AR) and virtual reality (VR) platforms. The accessible content does not specify the particular devices, research findings, or implementation techniques employed to deliver this enhanced tactile sensation.",
+    "relevance_level": "mid"
   },
   {
     "title": "<b>Haptics</b> on the controller from Apexinno; however, it makes more noise than <b>haptics</b> - YouTube",
@@ -671,7 +717,8 @@
       "review",
       "noise"
     ],
-    "ai_summary": "Physical feedback technology is integrated into a gaming controller manufactured by Apexinno. The system is critically assessed for generating excessive operational noise, compromising the quality of the intended tactile sensations."
+    "ai_summary": "Physical feedback technology is integrated into a gaming controller manufactured by Apexinno. The system is critically assessed for generating excessive operational noise, compromising the quality of the intended tactile sensations.",
+    "relevance_level": "mid"
   },
   {
     "title": "Woojer - Made for Meta High Fidelity Haptic Vest 3 - Special Gamer Bundle - Gray",
@@ -685,7 +732,8 @@
       "wearable",
       "vr"
     ],
-    "ai_summary": "The product detailed is the Woojer High Fidelity Haptic Vest 3, which is marketed as a special gamer bundle device \"Made for Meta.\" This wearable technology utilizes advanced haptic technology to deliver comprehensive 360-degree haptic feedback, designed to enhance user immersion during gaming experiences."
+    "ai_summary": "The product detailed is the Woojer High Fidelity Haptic Vest 3, which is marketed as a special gamer bundle device \"Made for Meta.\" This wearable technology utilizes advanced haptic technology to deliver comprehensive 360-degree haptic feedback, designed to enhance user immersion during gaming experiences.",
+    "relevance_level": "high"
   },
   {
     "title": "How Do Phone <b>Haptics</b> Improve Accessibility? - Phone Fix and Features - YouTube",
@@ -699,7 +747,8 @@
       "platforms",
       "settings"
     ],
-    "ai_summary": "The content focuses on defining haptic feedback and detailing its function within modern smartphone technology. Haptic technology is discussed specifically regarding its role in enhancing accessibility and improving interaction for individuals with visual or hearing impairments."
+    "ai_summary": "The content focuses on defining haptic feedback and detailing its function within modern smartphone technology. Haptic technology is discussed specifically regarding its role in enhancing accessibility and improving interaction for individuals with visual or hearing impairments.",
+    "relevance_level": "mid"
   },
   {
     "title": "Logitech sukses unjuk evolusi di MX Fest 2025 | IndoTelko Mobile",
@@ -713,7 +762,8 @@
       "hardware",
       "tech"
     ],
-    "ai_summary": "Logitech's MX Fest 2025 featured the evolution of its peripherals, specifically highlighting the inclusion of haptic feedback capabilities. This sensory technology was showcased alongside related innovations like Action Rings. The presentation emphasized advanced specifications, including 8,000 DPI sensors and multi-device operating system connectivity."
+    "ai_summary": "Logitech's MX Fest 2025 featured the evolution of its peripherals, specifically highlighting the inclusion of haptic feedback capabilities. This sensory technology was showcased alongside related innovations like Action Rings. The presentation emphasized advanced specifications, including 8,000 DPI sensors and multi-device operating system connectivity.",
+    "relevance_level": "high"
   },
   {
     "title": "Valve Umumkan 3 Produk Baru, Ini 7 Fakta Menariknya | IDN Times",
@@ -727,7 +777,8 @@
       "pressure",
       "gaming"
     ],
-    "ai_summary": "The Steam Controller features integrated haptic feedback capabilities. Key components of this device also include a trackpad, pressure sensitivity, and a gyroscope."
+    "ai_summary": "The Steam Controller features integrated haptic feedback capabilities. Key components of this device also include a trackpad, pressure sensitivity, and a gyroscope.",
+    "relevance_level": "mid"
   },
   {
     "title": "These Pedals Should NOT Be This Good… Simsonn Pro X Ultra Review + BIG Giveaway!",
@@ -741,7 +792,8 @@
       "hardware",
       "review"
     ],
-    "ai_summary": "The article description refers to haptic components integrated into a Simsonn Pro X Ultra pedal kit designed for sim racing hardware. A associated giveaway explicitly excludes these tactile components, offering the \"full pedal kit\" to the recipient minus the specialized haptics hardware."
+    "ai_summary": "The article description refers to haptic components integrated into a Simsonn Pro X Ultra pedal kit designed for sim racing hardware. A associated giveaway explicitly excludes these tactile components, offering the \"full pedal kit\" to the recipient minus the specialized haptics hardware.",
+    "relevance_level": "high"
   },
   {
     "title": "Why isn't there <b>haptic feedback</b> during fights? : r/persona3reload - Reddit",
@@ -755,7 +807,8 @@
       "dualsense",
       "gaming"
     ],
-    "ai_summary": "A PlayStation 5 player observed the omission of haptic feedback and vibration during combat sequences in the game *Persona 3 Reload*. The user suggested integrating these tactile elements into the fights to increase engagement and overall immersion."
+    "ai_summary": "A PlayStation 5 player observed the omission of haptic feedback and vibration during combat sequences in the game *Persona 3 Reload*. The user suggested integrating these tactile elements into the fights to increase engagement and overall immersion.",
+    "relevance_level": "mid"
   },
   {
     "title": "Google Launches New AI Shopping Features Across Search and Gemini Ahead of Holiday Season",
@@ -769,7 +822,8 @@
       "platforms",
       "launch"
     ],
-    "ai_summary": "The provided article excerpt consists only of a title and a web page redirect, offering no substantive content regarding haptic or tactile feedback technology. The only reference to the field is the metadata descriptor \"Haptics for AI,\" indicating that haptic technology is a potential topic of discussion in the full, inaccessible article regarding Google's new AI shopping features."
+    "ai_summary": "The provided article excerpt consists only of a title and a web page redirect, offering no substantive content regarding haptic or tactile feedback technology. The only reference to the field is the metadata descriptor \"Haptics for AI,\" indicating that haptic technology is a potential topic of discussion in the full, inaccessible article regarding Google's new AI shopping features.",
+    "relevance_level": "low"
   },
   {
     "title": "Knightscope Unveils the All-New K7 Autonomous Security Robot - AI Insider",
@@ -783,7 +837,8 @@
       "security",
       "launch"
     ],
-    "ai_summary": "The provided metadata mentions \"Haptics for AI,\" indicating a focus on the integration of tactile feedback systems within artificial intelligence applications. Although this concept is introduced, the article excerpt itself is a redirect page and contains no specific information detailing the nature of the haptic technology, devices, or implementation findings. Therefore, no specific haptic systems or devices are described within the visible content."
+    "ai_summary": "The provided metadata mentions \"Haptics for AI,\" indicating a focus on the integration of tactile feedback systems within artificial intelligence applications. Although this concept is introduced, the article excerpt itself is a redirect page and contains no specific information detailing the nature of the haptic technology, devices, or implementation findings. Therefore, no specific haptic systems or devices are described within the visible content.",
+    "relevance_level": "low"
   },
   {
     "title": "Woojer Vest 4 High-Fidelity <b>Haptics</b> - for VR, Games, Music, Movies, and Wellness. - Sam's Club",
@@ -797,7 +852,8 @@
       "vr",
       "wearable"
     ],
-    "ai_summary": "The Woojer Vest 4 is advertised as a device providing high-fidelity tactile feedback. This wearable is designed to integrate haptic experiences across various uses, including VR, gaming, movies, music consumption, and wellness applications."
+    "ai_summary": "The Woojer Vest 4 is advertised as a device providing high-fidelity tactile feedback. This wearable is designed to integrate haptic experiences across various uses, including VR, gaming, movies, music consumption, and wellness applications.",
+    "relevance_level": "high"
   },
   {
     "title": "HF8 Pro is very good - Petter's blog - Gamereactor",
@@ -811,7 +867,8 @@
       "simulator",
       "review"
     ],
-    "ai_summary": "The new HF8 Pro utilizes haptic feedback driven by significantly more powerful motors, making it notably better suited for its intended use compared to previous models. The haptic intensity of the device, specified here at 100%, is managed and controlled via the Simhub software platform."
+    "ai_summary": "The new HF8 Pro utilizes haptic feedback driven by significantly more powerful motors, making it notably better suited for its intended use compared to previous models. The haptic intensity of the device, specified here at 100%, is managed and controlled via the Simhub software platform.",
+    "relevance_level": "high"
   },
   {
     "title": "Touching the Virtual Dog: Effects of Active and Passive <b>Haptic Feedback</b> on Social Presence ...",
@@ -825,7 +882,8 @@
       "research",
       "social"
     ],
-    "ai_summary": "The article investigates both active and passive haptic feedback mechanisms in virtual pet interaction research. Current active haptic technology employs motors specifically to simulate various tactile sensations. Passive haptics are also utilized as a method that has long been established to enhance interaction and social presence."
+    "ai_summary": "The article investigates both active and passive haptic feedback mechanisms in virtual pet interaction research. Current active haptic technology employs motors specifically to simulate various tactile sensations. Passive haptics are also utilized as a method that has long been established to enhance interaction and social presence.",
+    "relevance_level": "mid"
   },
   {
     "title": "Simnet <b>Haptics</b> - which one for each pedal? : r/simracing - Reddit",
@@ -839,7 +897,8 @@
       "hardware",
       "feedback"
     ],
-    "ai_summary": "The content focuses on optimizing haptic feedback configurations within simracing setups, specifically comparing the effectiveness of tactile units placed at four corners versus a setup utilizing two units dedicated exclusively to the pedals. The central inquiry is determining the superior deployment method for Simnet Haptics to enhance pedal feedback and overall simulator immersion."
+    "ai_summary": "The content focuses on optimizing haptic feedback configurations within simracing setups, specifically comparing the effectiveness of tactile units placed at four corners versus a setup utilizing two units dedicated exclusively to the pedals. The central inquiry is determining the superior deployment method for Simnet Haptics to enhance pedal feedback and overall simulator immersion.",
+    "relevance_level": "mid"
   },
   {
     "title": "MX Fest 2025: Logitech Hadirkan Sembilan Sesi Masterclass untuk Kreator dan Coder",
@@ -853,7 +912,8 @@
       "input",
       "design"
     ],
-    "ai_summary": "A new mouse, announced in the context of MX Fest 2025 by Logitech, is highlighted for its inclusion of feedback features. This integration is designed to enhance the professional working experience, making interactions more lively."
+    "ai_summary": "A new mouse, announced in the context of MX Fest 2025 by Logitech, is highlighted for its inclusion of feedback features. This integration is designed to enhance the professional working experience, making interactions more lively.",
+    "relevance_level": "mid"
   },
   {
     "title": "PS5 How to TURN ON/OFF <b>Haptic Feedback</b> During Console Navigation - YouTube",
@@ -867,7 +927,8 @@
       "settings",
       "gaming"
     ],
-    "ai_summary": "Instructions are provided detailing how users can enable or disable haptic feedback functionality specifically for console navigation on the PS5 system. This capability allows owners to customize the tactile responses received while moving through the PlayStation interface, separate from in-game haptic effects."
+    "ai_summary": "Instructions are provided detailing how users can enable or disable haptic feedback functionality specifically for console navigation on the PS5 system. This capability allows owners to customize the tactile responses received while moving through the PlayStation interface, separate from in-game haptic effects.",
+    "relevance_level": "low"
   },
   {
     "title": "If Apple Revived the Touch Bar, It Would Finally Make Sense - The Mac Observer",
@@ -881,7 +942,8 @@
       "hardware",
       "design"
     ],
-    "ai_summary": "Apple is recognized for embedding superior haptic feedback technology in its phones and trackpads, making the lack of effective implementation in another product (the Touch Bar, inferred) a significant oversight. The text suggests that incorporating a haptic version of the device featuring defined feedback zones could successfully address these shortcomings."
+    "ai_summary": "Apple is recognized for embedding superior haptic feedback technology in its phones and trackpads, making the lack of effective implementation in another product (the Touch Bar, inferred) a significant oversight. The text suggests that incorporating a haptic version of the device featuring defined feedback zones could successfully address these shortcomings.",
+    "relevance_level": "mid"
   },
   {
     "title": "How to Disable Call Pickup <b>Haptics</b> on iPhone [easy] - YouTube",
@@ -895,7 +957,8 @@
       "ios",
       "mobile"
     ],
-    "ai_summary": "The content focuses on managing system feedback on the iPhone, detailing how users can disable specific haptic features. This is achieved by toggling a setting switch to the off position, which stops the quick vibration feedback typically associated with system interactions, such as call pickup notifications."
+    "ai_summary": "The content focuses on managing system feedback on the iPhone, detailing how users can disable specific haptic features. This is achieved by toggling a setting switch to the off position, which stops the quick vibration feedback typically associated with system interactions, such as call pickup notifications.",
+    "relevance_level": "low"
   },
   {
     "title": "How Will <b>Haptic Feedback</b> Transform Soundbar Features? - Audio Gear Insider - YouTube",
@@ -909,7 +972,8 @@
       "immersion",
       "review"
     ],
-    "ai_summary": "The content focuses on the prospective transformation of soundbar features through the integration of haptic feedback technology. This explores how adding tactile sensation can enhance and change the overall home audio experience."
+    "ai_summary": "The content focuses on the prospective transformation of soundbar features through the integration of haptic feedback technology. This explores how adding tactile sensation can enhance and change the overall home audio experience.",
+    "relevance_level": "mid"
   },
   {
     "title": "Sondgasm वीडियो Joi Soundgasm Joi In Search For Search - BMW-Autoersatzteile",
@@ -923,7 +987,8 @@
       "test",
       "content"
     ],
-    "ai_summary": "The provided description references a resource offering a free haptics guide and test, supported through the Patreon platform. This material is noted as a 'fill' associated with the user /u/Earesistible."
+    "ai_summary": "The provided description references a resource offering a free haptics guide and test, supported through the Patreon platform. This material is noted as a 'fill' associated with the user /u/Earesistible.",
+    "relevance_level": "mid"
   },
   {
     "title": "Your opinion on the <b>haptic feedback</b> of the OnePlus 15 - Reddit",
@@ -937,7 +1002,8 @@
       "mobile",
       "review"
     ],
-    "ai_summary": "A user expressed significant disappointment regarding the implementation and quality of the haptic feedback on the newly acquired OnePlus 15 smartphone. This performance was compared negatively to the haptic experience on the predecessor, the OnePlus 13, which the user highly praised as being \"unmatched.\""
+    "ai_summary": "A user expressed significant disappointment regarding the implementation and quality of the haptic feedback on the newly acquired OnePlus 15 smartphone. This performance was compared negatively to the haptic experience on the predecessor, the OnePlus 13, which the user highly praised as being \"unmatched.\"",
+    "relevance_level": "mid"
   },
   {
     "title": "What To Do If Your PS5 Controller Won't Update - MSN",
@@ -951,7 +1017,8 @@
       "gaming",
       "guide"
     ],
-    "ai_summary": "The PS5 controller utilizes advanced haptic feedback technology, which is a key feature of the device. Despite this high-tech implementation, the controller is not immune to technical issues, as gamers have reported glitches related to firmware updates."
+    "ai_summary": "The PS5 controller utilizes advanced haptic feedback technology, which is a key feature of the device. Despite this high-tech implementation, the controller is not immune to technical issues, as gamers have reported glitches related to firmware updates.",
+    "relevance_level": "mid"
   },
   {
     "title": "Choose alert sounds and <b>haptics</b> on Apple Watch",
@@ -965,7 +1032,8 @@
       "settings",
       "wearable"
     ],
-    "ai_summary": "The Apple Watch provides dedicated user interfaces for managing haptic settings, specifically located under a \"Sounds & Haptics\" menu. These features allow users to choose alert sounds and customize the device's tactile responses. Furthermore, the settings include a specific function enabling haptic feedback to communicate the current time."
+    "ai_summary": "The Apple Watch provides dedicated user interfaces for managing haptic settings, specifically located under a \"Sounds & Haptics\" menu. These features allow users to choose alert sounds and customize the device's tactile responses. Furthermore, the settings include a specific function enabling haptic feedback to communicate the current time.",
+    "relevance_level": "low"
   },
   {
     "title": "<b>Tactile Feedback</b> Technology, LLC v ZTE (USA) Inc | 2:14-CV-00943 - UniCourt",
@@ -979,7 +1047,8 @@
       "research",
       "tech"
     ],
-    "ai_summary": "An intellectual property patent infringement lawsuit was filed in 2014 by Tactile Feedback Technology, LLC against ZTE USA Inc. The case establishes the existence of a commercial entity dedicated to defending intellectual property rights concerning touch feedback systems, but provides no specific details regarding the underlying technology, devices, or findings of the feedback mechanisms themselves."
+    "ai_summary": "An intellectual property patent infringement lawsuit was filed in 2014 by Tactile Feedback Technology, LLC against ZTE USA Inc. The case establishes the existence of a commercial entity dedicated to defending intellectual property rights concerning touch feedback systems, but provides no specific details regarding the underlying technology, devices, or findings of the feedback mechanisms themselves.",
+    "relevance_level": "low"
   },
   {
     "title": "As far as I know, TLOU2 supports wireless <b>haptic feedback</b> with Dualsense on PC, but as it ... - Reddit",
@@ -993,7 +1062,8 @@
       "controller",
       "gaming"
     ],
-    "ai_summary": "The content concerns the implementation of haptic feedback via the DualSense controller for the game *The Last of Us Part II* when running on PC. While wireless haptics functionality is reportedly supported, the text suggests that utilizing certain advanced features, specifically the adaptive trigger settings, may require a wired connection (cable)."
+    "ai_summary": "The content concerns the implementation of haptic feedback via the DualSense controller for the game *The Last of Us Part II* when running on PC. While wireless haptics functionality is reportedly supported, the text suggests that utilizing certain advanced features, specifically the adaptive trigger settings, may require a wired connection (cable).",
+    "relevance_level": "high"
   },
   {
     "title": "What Is <b>Haptic Feedback</b> For Input Devices? - Emerging Tech Insider - YouTube",
@@ -1007,7 +1077,8 @@
       "tech",
       "input"
     ],
-    "ai_summary": "The content serves as a guide defining what haptic feedback is specifically in the context of input devices. Haptic technology is emphasized for its crucial role in enhancing overall digital experiences and improving device usability, particularly when utilized in challenging or specific environments."
+    "ai_summary": "The content serves as a guide defining what haptic feedback is specifically in the context of input devices. Haptic technology is emphasized for its crucial role in enhancing overall digital experiences and improving device usability, particularly when utilized in challenging or specific environments.",
+    "relevance_level": "mid"
   },
   {
     "title": "<b>Haptic feedback</b> – AgroNews",
@@ -1021,7 +1092,8 @@
       "tech",
       "platforms"
     ],
-    "ai_summary": "The provided text consists exclusively of a title referencing \"Haptic feedback\" and a script designed to redirect the user to a topic tag page on an external news site. The excerpt contains no substantive descriptive content regarding specific haptic devices, technologies, applications, or research findings."
+    "ai_summary": "The provided text consists exclusively of a title referencing \"Haptic feedback\" and a script designed to redirect the user to a topic tag page on an external news site. The excerpt contains no substantive descriptive content regarding specific haptic devices, technologies, applications, or research findings.",
+    "relevance_level": "low"
   },
   {
     "title": "Edge 50 Neo <b>haptics</b> : r/motorola - Reddit",
@@ -1035,7 +1107,8 @@
       "android",
       "settings"
     ],
-    "ai_summary": "Discussion centers on the haptic feedback quality of the Edge 50 Neo mobile device. Users experiencing issues are directed to adjust the intensity of the feedback through the device's system controls. This modification process involves navigating the Android settings menu via Sound & vibration to access the Vibration & haptics submenu."
+    "ai_summary": "Discussion centers on the haptic feedback quality of the Edge 50 Neo mobile device. Users experiencing issues are directed to adjust the intensity of the feedback through the device's system controls. This modification process involves navigating the Android settings menu via Sound & vibration to access the Vibration & haptics submenu.",
+    "relevance_level": "mid"
   },
   {
     "title": "Consistent Increase in <b>Haptic Technology</b> for Mobile Devices Market with a Forecasted ... - LinkedIn",
@@ -1049,7 +1122,8 @@
       "usability",
       "market"
     ],
-    "ai_summary": "The market for haptic technology specifically integrated into mobile devices is experiencing a consistent increase. This growth is driven by the technology's ability to enhance user experience and interaction through the provision of effective tactile feedback."
+    "ai_summary": "The market for haptic technology specifically integrated into mobile devices is experiencing a consistent increase. This growth is driven by the technology's ability to enhance user experience and interaction through the provision of effective tactile feedback.",
+    "relevance_level": "mid"
   },
   {
     "title": "Will <b>Haptic Feedback</b> Transform Robotics For Longevity? - Long Life Blueprint - YouTube",
@@ -1063,7 +1137,8 @@
       "longevity",
       "tech"
     ],
-    "ai_summary": "The provided content excerpt consists solely of an HTML script initiating a redirect to an external YouTube video source and therefore contains no textual information detailing specific haptic devices, findings, or techniques related to robotics or longevity."
+    "ai_summary": "The provided content excerpt consists solely of an HTML script initiating a redirect to an external YouTube video source and therefore contains no textual information detailing specific haptic devices, findings, or techniques related to robotics or longevity.",
+    "relevance_level": "low"
   },
   {
     "title": "How to Turn On <b>Haptics</b> on Successful Authentication on iPhone | Touch Feedback Settings",
@@ -1077,7 +1152,8 @@
       "guide",
       "settings"
     ],
-    "ai_summary": "This content provides instructions for configuring touch feedback settings on the iPhone. It specifically focuses on activating the feature that provides sensory confirmation (haptic feedback) upon successful authentication, accessible via the device’s Access & Haptics menu."
+    "ai_summary": "This content provides instructions for configuring touch feedback settings on the iPhone. It specifically focuses on activating the feature that provides sensory confirmation (haptic feedback) upon successful authentication, accessible via the device’s Access & Haptics menu.",
+    "relevance_level": "low"
   },
   {
     "title": "What Is <b>Haptic Feedback</b> In Robotic Assistance? - Long Life Blueprint - YouTube",
@@ -1091,7 +1167,8 @@
       "force",
       "assistance"
     ],
-    "ai_summary": "Haptic feedback enables users controlling remote robotic systems to feel physical sensations. This technology transmits sensory information such as pressure and force, enhancing control capabilities during robotic assistance tasks."
+    "ai_summary": "Haptic feedback enables users controlling remote robotic systems to feel physical sensations. This technology transmits sensory information such as pressure and force, enhancing control capabilities during robotic assistance tasks.",
+    "relevance_level": "mid"
   },
   {
     "title": "<b>Haptic feedback</b> stopped working when connecting a call - Letem světem Applem",
@@ -1105,7 +1182,8 @@
       "mobile",
       "settings"
     ],
-    "ai_summary": "Haptic feedback on the iPhone 16 Pro reportedly ceased functioning during the moment of connecting a phone call. This specific tactile alert failure was attributed by the user to the installation of the device’s recent system update, version 26.1."
+    "ai_summary": "Haptic feedback on the iPhone 16 Pro reportedly ceased functioning during the moment of connecting a phone call. This specific tactile alert failure was attributed by the user to the installation of the device’s recent system update, version 26.1.",
+    "relevance_level": "low"
   },
   {
     "title": "Can <b>Haptic Feedback</b> Make Metaverse Interactions More Real? - Everyday-Networking",
@@ -1119,7 +1197,8 @@
       "immersion",
       "tech"
     ],
-    "ai_summary": "Haptic feedback technology is becoming more affordable and widespread, positioning it as a key element for enhancing the realism and immersion of interactions within the metaverse."
+    "ai_summary": "Haptic feedback technology is becoming more affordable and widespread, positioning it as a key element for enhancing the realism and immersion of interactions within the metaverse.",
+    "relevance_level": "mid"
   },
   {
     "title": "How Will <b>Haptic Feedback</b> Enhance Metaverse Networking? - YouTube",
@@ -1133,7 +1212,8 @@
       "immersion",
       "wearable"
     ],
-    "ai_summary": "Haptic technology is set to enhance digital social networking by adding a new sensory dimension to the metaverse. This integration of tactile feedback aims to transition digital social spaces into fully sensory environments for improved interaction."
+    "ai_summary": "Haptic technology is set to enhance digital social networking by adding a new sensory dimension to the metaverse. This integration of tactile feedback aims to transition digital social spaces into fully sensory environments for improved interaction.",
+    "relevance_level": "mid"
   },
   {
     "title": "A R Rahman's 'Le Musk' debuts at IGDC 2025 in Chennai - NewsDrum",
@@ -1147,7 +1227,8 @@
       "launch",
       "platforms"
     ],
-    "ai_summary": "The provided text is a redirect HTML snippet and contains no substantive article content. Therefore, no information regarding specific haptic devices, technologies, techniques, or findings is available for analysis."
+    "ai_summary": "The provided text is a redirect HTML snippet and contains no substantive article content. Therefore, no information regarding specific haptic devices, technologies, techniques, or findings is available for analysis.",
+    "relevance_level": "low"
   },
   {
     "title": "Zohran Mamdani mocked for 'uncivilized' eating habit—how science says it's actually healthy.",
@@ -1161,7 +1242,8 @@
       "viewpoint",
       "content"
     ],
-    "ai_summary": "Tactile feedback generated through direct touch during the act of eating is theorized to engage multiple senses simultaneously. This specific sensory input is reported to trigger a quicker \"I'm full\" response from the brain, potentially assisting in the control of overeating."
+    "ai_summary": "Tactile feedback generated through direct touch during the act of eating is theorized to engage multiple senses simultaneously. This specific sensory input is reported to trigger a quicker \"I'm full\" response from the brain, potentially assisting in the control of overeating.",
+    "relevance_level": "low"
   },
   {
     "title": "The AI-powered Stream Ring is designed for on-the-fly voice notes - Engadget",
@@ -1175,7 +1257,8 @@
       "input",
       "interaction"
     ],
-    "ai_summary": "The Stream Ring, a wearable device designed for voice notes, utilizes feedback to provide sensory confirmation upon the successful recording of a voice note. This confirmation mechanism supports user interaction when holding or tapping the device's sensor."
+    "ai_summary": "The Stream Ring, a wearable device designed for voice notes, utilizes feedback to provide sensory confirmation upon the successful recording of a voice note. This confirmation mechanism supports user interaction when holding or tapping the device's sensor.",
+    "relevance_level": "mid"
   },
   {
     "title": "Tathvamasi Studios Reveals Gameplay For Suri: The Seventh Note, A Rhythm-Action Platformer",
@@ -1189,7 +1272,8 @@
       "controller",
       "gaming"
     ],
-    "ai_summary": "The rhythm-action platformer *Suri: The Seventh Note* integrates a specialized technology called the Rhythm Haptics Engine into its core gameplay. This engine allows players to directly feel the game's beat, with the tactile feedback experience specifically enhanced by the capabilities of the DualSense controller."
+    "ai_summary": "The rhythm-action platformer *Suri: The Seventh Note* integrates a specialized technology called the Rhythm Haptics Engine into its core gameplay. This engine allows players to directly feel the game's beat, with the tactile feedback experience specifically enhanced by the capabilities of the DualSense controller.",
+    "relevance_level": "high"
   },
   {
     "title": "Suri: The Seventh Note PS5 gameplay revealed - PlayStation.Blog",
@@ -1203,7 +1287,8 @@
       "controller",
       "gaming"
     ],
-    "ai_summary": "The game Suri: The Seventh Note employs a specialized Rhythm Haptics Engine designed to run on the PlayStation 5 DualSense controller. This engine is critical to the core gameplay experience, utilizing the advanced haptic feedback system to allow players to perceive every nuance of the rhythm tactilely."
+    "ai_summary": "The game Suri: The Seventh Note employs a specialized Rhythm Haptics Engine designed to run on the PlayStation 5 DualSense controller. This engine is critical to the core gameplay experience, utilizing the advanced haptic feedback system to allow players to perceive every nuance of the rhythm tactilely.",
+    "relevance_level": "high"
   },
   {
     "title": "Suri: The Seventh Note – Tathvamasi Studios Reveals Gameplay Trailer for Its Rhythm ... - IGN India",
@@ -1217,7 +1302,8 @@
       "controller",
       "gaming"
     ],
-    "ai_summary": "The rhythm action platformer, Suri: The Seventh Note, incorporates support for haptic feedback. This feature is specifically designed for the PlayStation 5 DualSense controllers, allowing players to experience and feel the rhythm of the game directly through the peripheral."
+    "ai_summary": "The rhythm action platformer, Suri: The Seventh Note, incorporates support for haptic feedback. This feature is specifically designed for the PlayStation 5 DualSense controllers, allowing players to experience and feel the rhythm of the game directly through the peripheral.",
+    "relevance_level": "high"
   },
   {
     "title": "RUSH: Apex Edition Flies Its Way to PSVR2 Today - COGconnected",
@@ -1231,7 +1317,8 @@
       "vr",
       "controller"
     ],
-    "ai_summary": "RUSH: Apex Edition for the PSVR2 platform incorporates specialized haptic features to enhance user presence and immersion. Key implementations include feedback generated through headset haptics and the use of adaptive triggers."
+    "ai_summary": "RUSH: Apex Edition for the PSVR2 platform incorporates specialized haptic features to enhance user presence and immersion. Key implementations include feedback generated through headset haptics and the use of adaptive triggers.",
+    "relevance_level": "high"
   },
   {
     "title": "Why the Sandbar Stream Ring Might Actually Succeed at AI Wearables - Phandroid",
@@ -1245,7 +1332,8 @@
       "usability",
       "ai"
     ],
-    "ai_summary": "Haptic feedback is utilized by the Sandbar Stream Ring AI wearable specifically to confirm the successful saving of a note. This tactile confirmation facilitates quiet operation of the device, eliminating the necessity for auditory or verbal feedback responses."
+    "ai_summary": "Haptic feedback is utilized by the Sandbar Stream Ring AI wearable specifically to confirm the successful saving of a note. This tactile confirmation facilitates quiet operation of the device, eliminating the necessity for auditory or verbal feedback responses.",
+    "relevance_level": "high"
   },
   {
     "title": "<b>Haptic feedback</b> for my setup (not the norm) : r/simracing - Reddit",
@@ -1259,7 +1347,8 @@
       "hardware",
       "design"
     ],
-    "ai_summary": "Haptic functionality for Moza sim racing pedals requires specialized 3D printed adapters, which can be sourced to achieve compatibility. These custom components enable the pedals to integrate with Sim Magic HPR (Haptic Pedal Reactor) units to enhance the tactile experience."
+    "ai_summary": "Haptic functionality for Moza sim racing pedals requires specialized 3D printed adapters, which can be sourced to achieve compatibility. These custom components enable the pedals to integrate with Sim Magic HPR (Haptic Pedal Reactor) units to enhance the tactile experience.",
+    "relevance_level": "mid"
   },
   {
     "title": "Iphone <b>haptics</b> : r/ios - Reddit",
@@ -1273,7 +1362,8 @@
       "usability",
       "interaction"
     ],
-    "ai_summary": "Users running iOS 26.1 reported experiencing inconsistent performance with iPhone touch feedback signals. Specifically, the designated cues intended to alert the user for phone call acceptance and termination often failed to activate or worked intermittently."
+    "ai_summary": "Users running iOS 26.1 reported experiencing inconsistent performance with iPhone touch feedback signals. Specifically, the designated cues intended to alert the user for phone call acceptance and termination often failed to activate or worked intermittently.",
+    "relevance_level": "mid"
   },
   {
     "title": "constantly <b>haptic feedback</b> WU : r/AppleWatch - Reddit",
@@ -1287,7 +1377,8 @@
       "settings",
       "usability"
     ],
-    "ai_summary": "The content focuses on user discussion regarding the behavior of constant haptic feedback notifications received on the Apple Watch. Users are specifically evaluating the performance and intensity of \"Prominent Haptics\" settings related to utilizing the tactile feedback for reliable wake-up alarms."
+    "ai_summary": "The content focuses on user discussion regarding the behavior of constant haptic feedback notifications received on the Apple Watch. Users are specifically evaluating the performance and intensity of \"Prominent Haptics\" settings related to utilizing the tactile feedback for reliable wake-up alarms.",
+    "relevance_level": "mid"
   },
   {
     "title": "<b>Haptic Feedback</b> in iOS: A Comprehensive Guide | by Maksim Po | Nov, 2025 - Medium",
@@ -1301,7 +1392,8 @@
       "audio",
       "content"
     ],
-    "ai_summary": "The guide provides instruction on implementing custom haptic experiences within the iOS environment. Development capabilities include generating continuous haptics and structured sequences. Furthermore, the platform supports the critical functionality of synchronizing haptic patterns precisely with audio."
+    "ai_summary": "The guide provides instruction on implementing custom haptic experiences within the iOS environment. Development capabilities include generating continuous haptics and structured sequences. Furthermore, the platform supports the critical functionality of synchronizing haptic patterns precisely with audio.",
+    "relevance_level": "high"
   },
   {
     "title": "Can <b>Haptic Technology</b> Provide Virtual Touch In Orthopedic Examinations? - YouTube",
@@ -1315,7 +1407,8 @@
       "robotics",
       "tech"
     ],
-    "ai_summary": "Haptic technology is being investigated for its potential to deliver virtual touch during orthopedic examinations. Key limitations currently hindering adoption include deficits in precise force feedback capabilities and the overall high cost of specialized haptic devices. Ongoing research efforts are specifically targeting improvements in device fidelity and long-term affordability for practical medical application."
+    "ai_summary": "Haptic technology is being investigated for its potential to deliver virtual touch during orthopedic examinations. Key limitations currently hindering adoption include deficits in precise force feedback capabilities and the overall high cost of specialized haptic devices. Ongoing research efforts are specifically targeting improvements in device fidelity and long-term affordability for practical medical application.",
+    "relevance_level": "mid"
   },
   {
     "title": "How to disable <b>haptic feedback</b> rog ally device manger? :: Hardware and Operating Systems",
@@ -1329,7 +1422,8 @@
       "settings",
       "gaming"
     ],
-    "ai_summary": "A user sought instructions for disabling the haptic feedback, also referred to as \"rumble,\" functionality on the ROG Ally handheld gaming PC. The user attempted to manage this feature by searching within the Human Interface Devices section of the Windows Device Manager but was unable to locate the required control for turning off the function."
+    "ai_summary": "A user sought instructions for disabling the haptic feedback, also referred to as \"rumble,\" functionality on the ROG Ally handheld gaming PC. The user attempted to manage this feature by searching within the Human Interface Devices section of the Windows Device Manager but was unable to locate the required control for turning off the function.",
+    "relevance_level": "mid"
   },
   {
     "title": "OriFeel: Origami-Inspired Actuation for Force-Based <b>Tactile Feedback</b> on Ambient Surfaces",
@@ -1343,7 +1437,8 @@
       "origami",
       "research"
     ],
-    "ai_summary": "OriFeel is a force-based tactile feedback mechanism designed for use on ambient surfaces. The technology employs origami-inspired actuation, leveraging the structural properties of the Miura-Ori fold to create foldable structures for surface-based interactions."
+    "ai_summary": "OriFeel is a force-based tactile feedback mechanism designed for use on ambient surfaces. The technology employs origami-inspired actuation, leveraging the structural properties of the Miura-Ori fold to create foldable structures for surface-based interactions.",
+    "relevance_level": "high"
   },
   {
     "title": "How Does the Lack of <b>Haptic Feedback</b> in VR Impact the Psychological Benefits of ...",
@@ -1357,7 +1452,8 @@
       "embodiment",
       "simulated nature"
     ],
-    "ai_summary": "Research focuses on how the lack of sufficient haptic feedback in virtual reality (VR) negatively influences the psychological benefits derived from simulated nature experiences. Poor implementation or absence of appropriate haptics is specifically noted for reducing embodiment, which subsequently diminishes the overall positive impact of the simulation."
+    "ai_summary": "Research focuses on how the lack of sufficient haptic feedback in virtual reality (VR) negatively influences the psychological benefits derived from simulated nature experiences. Poor implementation or absence of appropriate haptics is specifically noted for reducing embodiment, which subsequently diminishes the overall positive impact of the simulation.",
+    "relevance_level": "mid"
   },
   {
     "title": "How Will <b>Haptic Technology</b> Evolve For VR And Cars? - Phone Fix and Features - YouTube",
@@ -1371,7 +1467,8 @@
       "touchscreen",
       "cars"
     ],
-    "ai_summary": "Haptic technology, defined by its creation of physical sensations, is explored regarding its future evolution across multiple platforms, specifically Virtual Reality (VR) and automotive applications. Key integrations include the use of haptics on mobile devices, touchscreens, and steering wheels."
+    "ai_summary": "Haptic technology, defined by its creation of physical sensations, is explored regarding its future evolution across multiple platforms, specifically Virtual Reality (VR) and automotive applications. Key integrations include the use of haptics on mobile devices, touchscreens, and steering wheels.",
+    "relevance_level": "mid"
   },
   {
     "title": "HOT ! <b>Haptic Feedback</b> Sim Racing Rumble Seat Next Level Racing HF8 Pro ... - genussbunker.it",
@@ -1385,7 +1482,8 @@
       "chair",
       "gaming"
     ],
-    "ai_summary": "Specialized rumble seats are featured for enhancing sim racing immersion through integrated force feedback systems. Specific devices mentioned include the Next Level Racing HF8 Pro and the MTC-S1 SimRacing Seat, which incorporates MTC-P Extreme Haptics technology."
+    "ai_summary": "Specialized rumble seats are featured for enhancing sim racing immersion through integrated force feedback systems. Specific devices mentioned include the Next Level Racing HF8 Pro and the MTC-S1 SimRacing Seat, which incorporates MTC-P Extreme Haptics technology.",
+    "relevance_level": "high"
   },
   {
     "title": "How can I enable or disable vibration feedback (<b>haptics</b>)? — Township Help Center - Playrix",
@@ -1399,7 +1497,8 @@
       "guide",
       "gaming"
     ],
-    "ai_summary": "The content provides guidance on managing vibration feedback, explicitly labeled as haptics, within the *Township* game environment. It details the process for users to navigate the application's menu settings to either enable or disable this specific tactile feature."
+    "ai_summary": "The content provides guidance on managing vibration feedback, explicitly labeled as haptics, within the *Township* game environment. It details the process for users to navigate the application's menu settings to either enable or disable this specific tactile feature.",
+    "relevance_level": "mid"
   },
   {
     "title": "<b>Haptics</b> Connect Legacy Apps Retired – SLR Help Center",
@@ -1413,7 +1512,8 @@
       "vr",
       "legacy"
     ],
-    "ai_summary": "The legacy Haptics Connect applications for use on android and iphone devices have been retired and are no longer functional. These apps previously provided the necessary integration framework for delivering synchronized haptic feedback experiences within the VR headset ecosystem."
+    "ai_summary": "The legacy Haptics Connect applications for use on android and iphone devices have been retired and are no longer functional. These apps previously provided the necessary integration framework for delivering synchronized haptic feedback experiences within the VR headset ecosystem.",
+    "relevance_level": "high"
   },
   {
     "title": "This AI smart ring lets you record voice notes with a whisper - MSN",
@@ -1427,7 +1527,8 @@
       "ai",
       "input"
     ],
-    "ai_summary": "The AI smart ring utilizes capacitive touch sensors and haptics to control its features. This includes using a single tap interaction to interrupt the device's voice recording function."
+    "ai_summary": "The AI smart ring utilizes capacitive touch sensors and haptics to control its features. This includes using a single tap interaction to interrupt the device's voice recording function.",
+    "relevance_level": "high"
   },
   {
     "title": "Helldivers 2 Launches New Update for Into The Unjust - Our Culture Mag",
@@ -1439,7 +1540,8 @@
       "helldivers 2",
       "gaming"
     ],
-    "ai_summary": "The provided text is an HTML redirection script and contains no substantive content detailing specific haptic or tactile feedback technologies, implementation techniques, devices, or findings."
+    "ai_summary": "The provided text is an HTML redirection script and contains no substantive content detailing specific haptic or tactile feedback technologies, implementation techniques, devices, or findings.",
+    "relevance_level": "low"
   },
   {
     "title": "TSA reveals futuristic virtual reality technology for airport security checkpoints - MSN",
@@ -1453,7 +1555,8 @@
       "assistance",
       "security"
     ],
-    "ai_summary": "Contour detection data, gathered for the TSA's futuristic virtual reality security checkpoints, is first run through a specialized mapping algorithm. The resultant information is then transmitted to the user in the form of haptic feedback delivered via the surface that contacts the user's hand."
+    "ai_summary": "Contour detection data, gathered for the TSA's futuristic virtual reality security checkpoints, is first run through a specialized mapping algorithm. The resultant information is then transmitted to the user in the form of haptic feedback delivered via the surface that contacts the user's hand.",
+    "relevance_level": "mid"
   },
   {
     "title": "iPhone 17's Subtle Improvements Apple Didn't Put in the Spotlight - The Hans India",
@@ -1467,7 +1570,8 @@
       "ios",
       "usability"
     ],
-    "ai_summary": "Users can configure the device's keyboard feedback settings to disable the audible clicking sound while maintaining the light physical confirmation provided by the haptic motor. This usability feature, accessible through the \"Sounds & Haptics\" menu, allows for silent typing feedback."
+    "ai_summary": "Users can configure the device's keyboard feedback settings to disable the audible clicking sound while maintaining the light physical confirmation provided by the haptic motor. This usability feature, accessible through the \"Sounds & Haptics\" menu, allows for silent typing feedback.",
+    "relevance_level": "mid"
   },
   {
     "title": "Future Electronics Launches Digital Campaign Showcasing Panasonic Industry's Medical Technology Solutions",
@@ -1481,7 +1585,8 @@
       "user input",
       "feedback"
     ],
-    "ai_summary": "Tactile Switches are utilized in critical medical devices to ensure dependable user input. These components are specifically designed to provide crisp tactile feedback, enhancing the reliability of high-stakes medical technology."
+    "ai_summary": "Tactile Switches are utilized in critical medical devices to ensure dependable user input. These components are specifically designed to provide crisp tactile feedback, enhancing the reliability of high-stakes medical technology.",
+    "relevance_level": "mid"
   },
   {
     "title": "Future Electronics Launches Digital Campaign Showcasing Panasonic Industry's Medical ...",
@@ -1495,7 +1600,8 @@
       "user input",
       "usability"
     ],
-    "ai_summary": "The article highlights the importance of using tactile switches in critical medical devices. These switches are specifically utilized to deliver crisp, reliable tactile feedback, which is necessary to ensure dependable and precise user input when operating sensitive equipment."
+    "ai_summary": "The article highlights the importance of using tactile switches in critical medical devices. These switches are specifically utilized to deliver crisp, reliable tactile feedback, which is necessary to ensure dependable and precise user input when operating sensitive equipment.",
+    "relevance_level": "low"
   },
   {
     "title": "Government unveils plan for digital system to curb unfair fees by licensed moneylenders",
@@ -1509,7 +1615,8 @@
       "user input",
       "mobile"
     ],
-    "ai_summary": "The rumored 20th Anniversary iPhone is expected to eliminate physical mechanical buttons. These traditional inputs would instead be replaced by virtual controls that utilize integrated tactile feedback technology."
+    "ai_summary": "The rumored 20th Anniversary iPhone is expected to eliminate physical mechanical buttons. These traditional inputs would instead be replaced by virtual controls that utilize integrated tactile feedback technology.",
+    "relevance_level": "mid"
   },
   {
     "title": "OP15 and haptics \"drama\"",
@@ -1524,7 +1631,8 @@
       "mobile",
       "hardware",
       "tech"
-    ]
+    ],
+    "relevance_level": "low"
   },
   {
     "title": "The Melt Mouse Is A More Functional Version Of Apple's Magic Mouse - Forbes",
@@ -1538,7 +1646,8 @@
       "input",
       "design"
     ],
-    "ai_summary": "The provided text is an HTML redirect and does not contain any substantive content regarding haptic, tactile, or touch feedback technologies, devices, or findings related to the Melt Mouse or Apple's Magic Mouse."
+    "ai_summary": "The provided text is an HTML redirect and does not contain any substantive content regarding haptic, tactile, or touch feedback technologies, devices, or findings related to the Melt Mouse or Apple's Magic Mouse.",
+    "relevance_level": "low"
   },
   {
     "title": "iOS 26.1: Διαθέσιμο το update με μικρές αλλά σημαντικές αλλαγές - Techgear",
@@ -1552,7 +1661,8 @@
       "update",
       "tech"
     ],
-    "ai_summary": "The provided article excerpt serves only as a redirect link to the full content about the iOS 26.1 update and does not contain any substantive details regarding haptic, tactile, or touch feedback implementations or changes."
+    "ai_summary": "The provided article excerpt serves only as a redirect link to the full content about the iOS 26.1 update and does not contain any substantive details regarding haptic, tactile, or touch feedback implementations or changes.",
+    "relevance_level": "low"
   },
   {
     "title": "Korea Haptic Interface Market Report 2033 - Technological Trends and Competitive Forecasts",
@@ -1566,7 +1676,8 @@
       "trends",
       "interface"
     ],
-    "ai_summary": "This market analysis report focuses on the competitive landscape and technological advancements within the Korean haptic interface market, offering detailed forecasts up to the year 2033. The study examines key trends influencing the development and implementation of various tactile feedback systems across the region."
+    "ai_summary": "This market analysis report focuses on the competitive landscape and technological advancements within the Korean haptic interface market, offering detailed forecasts up to the year 2033. The study examines key trends influencing the development and implementation of various tactile feedback systems across the region.",
+    "relevance_level": "mid"
   },
   {
     "title": "Best Wideband Haptic Motor Software • November 2025 - F6S",
@@ -1580,7 +1691,8 @@
       "youtube",
       "hardware"
     ],
-    "ai_summary": "The provided article content consists entirely of a technical script and redirect command aimed at a YouTube video, and therefore offers no substantive discussion, analysis, or specific findings regarding wideband haptic motor software, tactile feedback technologies, or specific touch mechanisms."
+    "ai_summary": "The provided article content consists entirely of a technical script and redirect command aimed at a YouTube video, and therefore offers no substantive discussion, analysis, or specific findings regarding wideband haptic motor software, tactile feedback technologies, or specific touch mechanisms.",
+    "relevance_level": "low"
   },
   {
     "title": "This Logitech keyboard + mouse combo wield real productivity power | Best Buy Blog",
@@ -1594,7 +1706,8 @@
       "interface",
       "laptops"
     ],
-    "ai_summary": "The provided text is solely a redirect link to an external product review for a Logitech MX Master 4 Signature Slim Solar Plus combo. As a result, the provided excerpt contains no descriptive content, analysis, or facts related to haptic, tactile, or touch feedback technologies."
+    "ai_summary": "The provided text is solely a redirect link to an external product review for a Logitech MX Master 4 Signature Slim Solar Plus combo. As a result, the provided excerpt contains no descriptive content, analysis, or facts related to haptic, tactile, or touch feedback technologies.",
+    "relevance_level": "low"
   },
   {
     "title": "iPhone 20 tasarımı nasıl olacak - Bursa Haberleri - BursaAnaliz.com",
@@ -1606,7 +1719,8 @@
       "iphone",
       "design"
     ],
-    "ai_summary": "The provided text consists solely of a redirect script linking to an article titled \"How will the iPhone 20 design be\" and contains no substantive content analyzing or detailing haptic, tactile, or touch feedback technologies."
+    "ai_summary": "The provided text consists solely of a redirect script linking to an article titled \"How will the iPhone 20 design be\" and contains no substantive content analyzing or detailing haptic, tactile, or touch feedback technologies.",
+    "relevance_level": "low"
   },
   {
     "title": "Examining Immersive Audio's Role in Flow and Gaze Behavior in Pseudo-VR Environments",
@@ -1620,7 +1734,8 @@
       "audio",
       "viewpoint"
     ],
-    "ai_summary": "The provided text is solely an HTML redirect stub and does not contain any substantive information regarding haptic, tactile, or touch feedback technologies, devices, or research findings. No specific haptic techniques or outcomes related to touch are discussed in this excerpt."
+    "ai_summary": "The provided text is solely an HTML redirect stub and does not contain any substantive information regarding haptic, tactile, or touch feedback technologies, devices, or research findings. No specific haptic techniques or outcomes related to touch are discussed in this excerpt.",
+    "relevance_level": "low"
   },
   {
     "title": "Japan Mobility Show 2025 : Honda Just Made The Akira Bike! - ZigWheels.com",
@@ -1634,7 +1749,8 @@
       "review",
       "market"
     ],
-    "ai_summary": "The provided text is an HTML redirect script and does not contain any readable article content. Consequently, no information regarding haptic or tactile feedback technologies, devices, or findings can be extracted or summarized."
+    "ai_summary": "The provided text is an HTML redirect script and does not contain any readable article content. Consequently, no information regarding haptic or tactile feedback technologies, devices, or findings can be extracted or summarized.",
+    "relevance_level": "low"
   },
   {
     "title": "Bocoran iPhone 20 Tanpa Tombol Fisik Sama Sekali, Pakai Teknologi Canggih yang Belum ...",
@@ -1648,7 +1764,8 @@
       "user input",
       "tech"
     ],
-    "ai_summary": "The provided article excerpt is an HTML redirect script and contains no descriptive body text detailing any specific findings, techniques, or devices related to haptic or tactile feedback technology. While the title suggests the future iPhone 20 will eliminate all physical buttons using sophisticated, new technology, the mechanism (likely simulated tactile feedback) is not elaborated upon in the available content."
+    "ai_summary": "The provided article excerpt is an HTML redirect script and contains no descriptive body text detailing any specific findings, techniques, or devices related to haptic or tactile feedback technology. While the title suggests the future iPhone 20 will eliminate all physical buttons using sophisticated, new technology, the mechanism (likely simulated tactile feedback) is not elaborated upon in the available content.",
+    "relevance_level": "low"
   },
   {
     "title": "Palmplug - F6S",
@@ -1662,7 +1779,8 @@
       "networking",
       "content"
     ],
-    "ai_summary": "The provided content is a JavaScript and HTML snippet designed purely for redirecting the browser to an external website (grupojindama.com). Consequently, the excerpt contains no textual analysis, specifications, findings, or mentions related to haptic technology, tactile feedback devices, or touch interaction techniques."
+    "ai_summary": "The provided content is a JavaScript and HTML snippet designed purely for redirecting the browser to an external website (grupojindama.com). Consequently, the excerpt contains no textual analysis, specifications, findings, or mentions related to haptic technology, tactile feedback devices, or touch interaction techniques.",
+    "relevance_level": "low"
   },
   {
     "title": "M4 vs. M5 iPad Pro Buyer's Guide: 20 Differences Compared - StartupNews.fyi",
@@ -1676,7 +1794,8 @@
       "hardware",
       "tech"
     ],
-    "ai_summary": "The provided text is an HTML redirect script leading to a buyer's guide comparing M4 and M5 iPad Pro models. The excerpt itself contains no substantive content, therefore offering no discussion or analysis related to haptic, tactile, or touch feedback technologies."
+    "ai_summary": "The provided text is an HTML redirect script leading to a buyer's guide comparing M4 and M5 iPad Pro models. The excerpt itself contains no substantive content, therefore offering no discussion or analysis related to haptic, tactile, or touch feedback technologies.",
+    "relevance_level": "low"
   },
   {
     "title": "iPhone 20 senza pulsanti fisici: Apple punta tutto sul feedback aptico - iSpazio",
@@ -1690,7 +1809,8 @@
       "user input",
       "design"
     ],
-    "ai_summary": "Apple's strategy for the iPhone 20 involves a complete removal of physical buttons, shifting user interaction entirely to simulated touch. The device will rely heavily on integrated haptic feedback mechanisms to provide the necessary tactile sensation for user input. This move signifies Apple's full commitment to using haptics as the primary replacement for mechanical controls."
+    "ai_summary": "Apple's strategy for the iPhone 20 involves a complete removal of physical buttons, shifting user interaction entirely to simulated touch. The device will rely heavily on integrated haptic feedback mechanisms to provide the necessary tactile sensation for user input. This move signifies Apple's full commitment to using haptics as the primary replacement for mechanical controls.",
+    "relevance_level": "high"
   },
   {
     "title": "iOS 26.1 RC Now Available Ahead Of Next Week's Release - BGR",
@@ -1702,7 +1822,8 @@
       "ios",
       "update"
     ],
-    "ai_summary": "The provided content is solely a JavaScript redirect snippet leading to an article about the iOS 26.1 RC download. The excerpt contains no textual analysis, discussion, or facts related to haptic, tactile, or touch feedback technologies, implementations, or features."
+    "ai_summary": "The provided content is solely a JavaScript redirect snippet leading to an article about the iOS 26.1 RC download. The excerpt contains no textual analysis, discussion, or facts related to haptic, tactile, or touch feedback technologies, implementations, or features.",
+    "relevance_level": "low"
   },
   {
     "title": "Vibrating Stones Lead Expo Visitors — Exploring Murata's Future Through MIRAISENS' 3D ...",
@@ -1716,7 +1837,8 @@
       "3d",
       "guide"
     ],
-    "ai_summary": "The article focuses on a \"3D haptic innovation\" developed by MIRAISENS in partnership with Murata. This technology utilizes functional hardware described as \"vibrating stones\" to guide visitors through an expo environment, illustrating a practical application of tactile feedback for spatial navigation and experiential interaction."
+    "ai_summary": "The article focuses on a \"3D haptic innovation\" developed by MIRAISENS in partnership with Murata. This technology utilizes functional hardware described as \"vibrating stones\" to guide visitors through an expo environment, illustrating a practical application of tactile feedback for spatial navigation and experiential interaction.",
+    "relevance_level": "high"
   },
   {
     "title": "iPhone 18 to Feature Simplified Camera Control Button [Rumor] - iClarified",
@@ -1730,7 +1852,8 @@
       "input",
       "tech"
     ],
-    "ai_summary": "The provided article excerpt is an HTML redirection script and contains no substantive textual content. Consequently, no details regarding haptic or tactile feedback technologies, features, implementation, or findings related to the rumored iPhone 18 camera control button could be analyzed or summarized."
+    "ai_summary": "The provided article excerpt is an HTML redirection script and contains no substantive textual content. Consequently, no details regarding haptic or tactile feedback technologies, features, implementation, or findings related to the rumored iPhone 18 camera control button could be analyzed or summarized.",
+    "relevance_level": "low"
   },
   {
     "title": "How does the haptics feel?",
@@ -1745,7 +1868,8 @@
       "android",
       "whatsapp",
       "review"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "No Point Waiting For The M5 MacBook Air, Because The 13-Inch & 15-Inch M4 ... - Wccftech",
@@ -1759,7 +1883,8 @@
       "tech",
       "m4"
     ],
-    "ai_summary": "The provided article excerpt consists solely of a JavaScript redirection script and a metadata refresh tag pointing to an external link about the M4 MacBook Air. The text contains zero discussion, details, or mentions of haptic feedback, tactile technologies, devices, or related findings."
+    "ai_summary": "The provided article excerpt consists solely of a JavaScript redirection script and a metadata refresh tag pointing to an external link about the M4 MacBook Air. The text contains zero discussion, details, or mentions of haptic feedback, tactile technologies, devices, or related findings.",
+    "relevance_level": "low"
   },
   {
     "title": "Apple to Debut Solid-State Buttons With iPhone 20 in 2027 [Report] - iClarified",
@@ -1773,7 +1898,8 @@
       "buttons",
       "hardware"
     ],
-    "ai_summary": "Apple is reportedly planning to debut solid-state buttons on the iPhone 20 model in 2027. This architectural shift eliminates mechanical switches, relying instead on internal actuators to generate simulated tactile feedback for user input when controls like volume and power are pressed."
+    "ai_summary": "Apple is reportedly planning to debut solid-state buttons on the iPhone 20 model in 2027. This architectural shift eliminates mechanical switches, relying instead on internal actuators to generate simulated tactile feedback for user input when controls like volume and power are pressed.",
+    "relevance_level": "high"
   },
   {
     "title": "British gamers test iQOO 15 gaming mode performance - Tech Sputit -",
@@ -1787,7 +1913,8 @@
       "test",
       "mobile"
     ],
-    "ai_summary": "The provided content is a technical redirect link to an external website URL titled \"British gamers test iQOO 15 gaming mode performance.\" The excerpt itself does not contain any substantive article text, thus providing zero information or findings related to haptic, tactile, or touch feedback technologies."
+    "ai_summary": "The provided content is a technical redirect link to an external website URL titled \"British gamers test iQOO 15 gaming mode performance.\" The excerpt itself does not contain any substantive article text, thus providing zero information or findings related to haptic, tactile, or touch feedback technologies.",
+    "relevance_level": "low"
   },
   {
     "title": "The Razer Kishi Ultra adds a Full Set of Controls to your Android Phone, and it's on Sale for ...",
@@ -1801,7 +1928,8 @@
       "controller",
       "gaming"
     ],
-    "ai_summary": "The provided text is solely a technical redirection script and contains no substantive article content. Consequently, there are zero mentions of haptic or tactile feedback technologies, devices, findings, or features regarding the Razer Kishi Ultra or any other system."
+    "ai_summary": "The provided text is solely a technical redirection script and contains no substantive article content. Consequently, there are zero mentions of haptic or tactile feedback technologies, devices, findings, or features regarding the Razer Kishi Ultra or any other system.",
+    "relevance_level": "low"
   },
   {
     "title": "The Future of Immersive Entertainment: VR Gaming Simulators, VR Motorcycles, and 7D Cinema",
@@ -1815,7 +1943,8 @@
       "immersion",
       "platforms"
     ],
-    "ai_summary": "The provided article excerpt consists solely of an HTML script used to immediately redirect the user to an external web page. The excerpt itself contains no body text, specific devices, findings, or discussion related to haptic, tactile, or touch feedback technologies."
+    "ai_summary": "The provided article excerpt consists solely of an HTML script used to immediately redirect the user to an external web page. The excerpt itself contains no body text, specific devices, findings, or discussion related to haptic, tactile, or touch feedback technologies.",
+    "relevance_level": "low"
   },
   {
     "title": "Samsung's Galaxy XR Controllers Sell Out, Now Back in Stock for US Buyers - Bangla news",
@@ -1829,7 +1958,8 @@
       "vr",
       "tech"
     ],
-    "ai_summary": "The provided article excerpt is a redirection script and contains no descriptive text about haptic or tactile feedback. Therefore, no information is available detailing the specific touch features, technologies, or implementation techniques of Samsung's Galaxy XR Controllers."
+    "ai_summary": "The provided article excerpt is a redirection script and contains no descriptive text about haptic or tactile feedback. Therefore, no information is available detailing the specific touch features, technologies, or implementation techniques of Samsung's Galaxy XR Controllers.",
+    "relevance_level": "low"
   },
   {
     "title": "Can Modular Finger Control for In-Hand Object Stabilization be accomplished by ...",
@@ -1843,7 +1973,8 @@
       "finger",
       "modular"
     ],
-    "ai_summary": "The provided document excerpt is an HTML redirect script leading to an external publication hosted by KITopen. Consequently, this text does not contain any specific technical descriptions, research findings, or implementation details regarding haptic, tactile, or touch feedback mechanisms."
+    "ai_summary": "The provided document excerpt is an HTML redirect script leading to an external publication hosted by KITopen. Consequently, this text does not contain any specific technical descriptions, research findings, or implementation details regarding haptic, tactile, or touch feedback mechanisms.",
+    "relevance_level": "low"
   },
   {
     "title": "REDMI K90 Launched in China - ManilaShaker",
@@ -1857,7 +1988,8 @@
       "launch",
       "china"
     ],
-    "ai_summary": "The provided text excerpt consists solely of HTML redirection code referencing an article about the Redmi K90 launch. No specific details regarding haptic, tactile, or touch feedback technologies, components, or user experiences were present within the available content."
+    "ai_summary": "The provided text excerpt consists solely of HTML redirection code referencing an article about the Redmi K90 launch. No specific details regarding haptic, tactile, or touch feedback technologies, components, or user experiences were present within the available content.",
+    "relevance_level": "low"
   },
   {
     "title": "Razer Just Released My New Favorite PC Gaming Controller",
@@ -1871,7 +2003,8 @@
       "gaming",
       "review"
     ],
-    "ai_summary": "The provided text is an HTML redirect script pointing to an external review of the Razer Raiju V3 Pro PlayStation 5 controller. The excerpt contains no substantive article content, and therefore mentions no specific information regarding haptic feedback, tactile technologies, or vibration systems."
+    "ai_summary": "The provided text is an HTML redirect script pointing to an external review of the Razer Raiju V3 Pro PlayStation 5 controller. The excerpt contains no substantive article content, and therefore mentions no specific information regarding haptic feedback, tactile technologies, or vibration systems.",
+    "relevance_level": "low"
   },
   {
     "title": "Razer Raiju V3 Pro review - peak PS5 and PC controller performance - PCGamesN",
@@ -1885,7 +2018,8 @@
       "ps5",
       "review"
     ],
-    "ai_summary": "The provided article excerpt consists only of an HTML redirect script for a review of the Razer Raiju V3 Pro controller, thus containing no specific details regarding haptic or tactile feedback implementation, technology, or performance."
+    "ai_summary": "The provided article excerpt consists only of an HTML redirect script for a review of the Razer Raiju V3 Pro controller, thus containing no specific details regarding haptic or tactile feedback implementation, technology, or performance.",
+    "relevance_level": "low"
   },
   {
     "title": "Japan Haptic Interface Market Economic Impact Report - Measuring Growth Beyond Numbers",
@@ -1899,7 +2033,8 @@
       "interface",
       "report"
     ],
-    "ai_summary": "The provided content is a HTML redirect script leading to an external YouTube video regarding the Japan Haptic Interface Market. No specific technical details, devices, findings, or descriptions concerning haptic or tactile feedback mechanisms are present within the excerpted text itself."
+    "ai_summary": "The provided content is a HTML redirect script leading to an external YouTube video regarding the Japan Haptic Interface Market. No specific technical details, devices, findings, or descriptions concerning haptic or tactile feedback mechanisms are present within the excerpted text itself.",
+    "relevance_level": "mid"
   },
   {
     "title": "Fix: Alarm Only Plays Through Earphones on iOS 26 - The Mac Observer",
@@ -1913,7 +2048,8 @@
       "audio",
       "guide"
     ],
-    "ai_summary": "The provided article excerpt is a short redirection script focusing on fixing an issue where an alarm only plays through earphones on iOS 26. The text contains no discussion, findings, or mentions related to haptic, tactile, or touch feedback technologies, techniques, or devices."
+    "ai_summary": "The provided article excerpt is a short redirection script focusing on fixing an issue where an alarm only plays through earphones on iOS 26. The text contains no discussion, findings, or mentions related to haptic, tactile, or touch feedback technologies, techniques, or devices.",
+    "relevance_level": "low"
   },
   {
     "title": "Logitech MX Master 4 Review - GLITCHED.online",
@@ -1927,7 +2063,8 @@
       "hardware",
       "input"
     ],
-    "ai_summary": "The provided text is a standard web redirect stub for an article reviewing the Logitech MX Master 4. It contains no functional descriptive content, therefore no discussion of haptic implementation, tactile quality, or vibration mechanics is present."
+    "ai_summary": "The provided text is a standard web redirect stub for an article reviewing the Logitech MX Master 4. It contains no functional descriptive content, therefore no discussion of haptic implementation, tactile quality, or vibration mechanics is present.",
+    "relevance_level": "low"
   },
   {
     "title": "FerroZuit among Best Design Exhibitions | UbiComp / ISWC 2025 - MIT Media Lab",
@@ -1941,7 +2078,8 @@
       "mit",
       "design"
     ],
-    "ai_summary": "The provided text is an HTML redirect snippet linking to a post about the recognition of \"FerroZuit\" at the UbiComp / ISWC 2025 conference. This excerpt contains no discernible discussion, mention, or description related to haptic, tactile, or touch feedback technologies, devices, or research findings."
+    "ai_summary": "The provided text is an HTML redirect snippet linking to a post about the recognition of \"FerroZuit\" at the UbiComp / ISWC 2025 conference. This excerpt contains no discernible discussion, mention, or description related to haptic, tactile, or touch feedback technologies, devices, or research findings.",
+    "relevance_level": "low"
   },
   {
     "title": "PS5 generation was worth it just for faster loading times says Sony developer - Metro",
@@ -1955,7 +2093,8 @@
       "gaming",
       "hardware"
     ],
-    "ai_summary": "The provided article excerpt is an HTML redirect page and contains no substantive text regarding haptic, tactile, or touch feedback. Therefore, no information is available detailing specific haptic technologies, devices, or findings."
+    "ai_summary": "The provided article excerpt is an HTML redirect page and contains no substantive text regarding haptic, tactile, or touch feedback. Therefore, no information is available detailing specific haptic technologies, devices, or findings.",
+    "relevance_level": "low"
   },
   {
     "title": "Developing for PS5 Is Easier Than for PC — Creator of Astro Bot - SE7EN.ws",
@@ -1969,7 +2108,8 @@
       "platforms",
       "gaming"
     ],
-    "ai_summary": "The provided content consists solely of an HTML redirect script and does not contain any substantive article text detailing specific implementations, technologies, or findings related to haptic or tactile feedback mechanisms. No information regarding the DualSense controller, PS5 haptics, or related development techniques could be extracted."
+    "ai_summary": "The provided content consists solely of an HTML redirect script and does not contain any substantive article text detailing specific implementations, technologies, or findings related to haptic or tactile feedback mechanisms. No information regarding the DualSense controller, PS5 haptics, or related development techniques could be extracted.",
+    "relevance_level": "low"
   },
   {
     "title": "The PS5 \"really brought something special,\" says AstroBot lead, like a powerful SSD that cut ...",
@@ -1983,7 +2123,8 @@
       "gaming",
       "tech"
     ],
-    "ai_summary": "No haptic or tactile feedback technologies, devices, or findings are described in this text excerpt. The provided content is a standard HTML redirect page pointing to a Yahoo Tech article about the PS5."
+    "ai_summary": "No haptic or tactile feedback technologies, devices, or findings are described in this text excerpt. The provided content is a standard HTML redirect page pointing to a Yahoo Tech article about the PS5.",
+    "relevance_level": "low"
   },
   {
     "title": "Music haptics broken after iOS 26",
@@ -1998,7 +2139,8 @@
       "ios",
       "update",
       "settings"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Olympus launches new surgical energy device for hemostatic cutting, vessel sealing",
@@ -2012,7 +2154,8 @@
       "launch",
       "content"
     ],
-    "ai_summary": "The provided article excerpt consists solely of an HTML redirection script and contains no textual content related to haptic feedback, tactile technologies, force sensing, or user interface touch interactions. Information regarding the surgical energy device launch is unavailable in this excerpt."
+    "ai_summary": "The provided article excerpt consists solely of an HTML redirection script and contains no textual content related to haptic feedback, tactile technologies, force sensing, or user interface touch interactions. Information regarding the surgical energy device launch is unavailable in this excerpt.",
+    "relevance_level": "low"
   },
   {
     "title": "'Rivals MacBooks': This premium haptic trackpad for Windows could finally convince ... - TechRadar",
@@ -2026,7 +2169,8 @@
       "apple",
       "user input"
     ],
-    "ai_summary": "A new premium haptic trackpad is being introduced for Windows devices, specifically designed to offer a tactile experience competitive with the highly regarded simulated feedback found in MacBooks. This solid-state trackpad aims to significantly enhance the overall user input and interaction quality on Windows platforms."
+    "ai_summary": "A new premium haptic trackpad is being introduced for Windows devices, specifically designed to offer a tactile experience competitive with the highly regarded simulated feedback found in MacBooks. This solid-state trackpad aims to significantly enhance the overall user input and interaction quality on Windows platforms.",
+    "relevance_level": "high"
   },
   {
     "title": "iOS 26.1 Beta 4: Das ist neu - Macerkopf.de",
@@ -2038,7 +2182,8 @@
       "ios",
       "update"
     ],
-    "ai_summary": "The provided text is a minimal HTML snippet containing only a script and meta redirect function linking to an article about iOS 26.1 Beta 4. As the excerpt contains no substantive article content, it is impossible to analyze or summarize any information pertaining to haptic technologies or tactile feedback features."
+    "ai_summary": "The provided text is a minimal HTML snippet containing only a script and meta redirect function linking to an article about iOS 26.1 Beta 4. As the excerpt contains no substantive article content, it is impossible to analyze or summarize any information pertaining to haptic technologies or tactile feedback features.",
+    "relevance_level": "low"
   },
   {
     "title": "iOS 26.1 Beta 4 Introduces Key User Interface Customizations - ZoomBangla News",
@@ -2052,7 +2197,8 @@
       "interface",
       "settings"
     ],
-    "ai_summary": "No information regarding haptic feedback, tactile technology, or specific user input mechanisms is present in the provided article excerpt. The text consists solely of an HTML script that executes an immediate browser redirect."
+    "ai_summary": "No information regarding haptic feedback, tactile technology, or specific user input mechanisms is present in the provided article excerpt. The text consists solely of an HTML script that executes an immediate browser redirect.",
+    "relevance_level": "low"
   },
   {
     "title": "Logitech’s MX Master 4 adds haptic feedback, mostly just for fun",
@@ -2067,7 +2213,8 @@
       "mouse",
       "logitech",
       "fun"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "XPPen Unveils Stunning New Artist 12 3rd with X-Dial Shortcut Keys and Upgraded X4 ...",
@@ -2081,7 +2228,8 @@
       "design",
       "user input"
     ],
-    "ai_summary": "The provided text excerpt is a web page redirect script and contains no substantive article content. Consequently, there is no discussion or mention of haptic, tactile, or touch feedback technologies, devices, or findings related to the XPPen product."
+    "ai_summary": "The provided text excerpt is a web page redirect script and contains no substantive article content. Consequently, there is no discussion or mention of haptic, tactile, or touch feedback technologies, devices, or findings related to the XPPen product.",
+    "relevance_level": "low"
   },
   {
     "title": "which haptic solution should i get",
@@ -2096,7 +2244,8 @@
       "simulator",
       "shaker",
       "gaming"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "iQOO 15 Full Specifications Leaked Ahead of October 20 Launch | Udaipur Kiran",
@@ -2110,7 +2259,8 @@
       "mobile",
       "tech"
     ],
-    "ai_summary": "The provided text is solely a technical redirect script and does not contain any accessible content, discussion, or specification details relating to haptic, tactile, or touch feedback technologies, devices, or findings."
+    "ai_summary": "The provided text is solely a technical redirect script and does not contain any accessible content, discussion, or specification details relating to haptic, tactile, or touch feedback technologies, devices, or findings.",
+    "relevance_level": "low"
   },
   {
     "title": "Palmer Luckey showcases ModRetro M64 at RetroGamingExpo - Traders Union",
@@ -2124,7 +2274,8 @@
       "legacy",
       "news"
     ],
-    "ai_summary": "The provided content is solely a web page redirect script linking to an external news article about Palmer Luckey's ModRetro M64 showcase. Consequently, the excerpt contains no descriptive details, discussion, or findings related to haptic, tactile, or touch feedback technologies."
+    "ai_summary": "The provided content is solely a web page redirect script linking to an external news article about Palmer Luckey's ModRetro M64 showcase. Consequently, the excerpt contains no descriptive details, discussion, or findings related to haptic, tactile, or touch feedback technologies.",
+    "relevance_level": "low"
   },
   {
     "title": "MX Master 4 Review: Logitech's popular Mac productivity mouse just got even better",
@@ -2138,7 +2289,8 @@
       "hardware",
       "input"
     ],
-    "ai_summary": "The provided article excerpt consists exclusively of a web page redirection script and contains no analytical or descriptive text. Consequently, there is zero discussion of haptic feedback, tactile technology, or user touch interaction features related to the MX Master 4 mouse."
+    "ai_summary": "The provided article excerpt consists exclusively of a web page redirection script and contains no analytical or descriptive text. Consequently, there is zero discussion of haptic feedback, tactile technology, or user touch interaction features related to the MX Master 4 mouse.",
+    "relevance_level": "low"
   },
   {
     "title": "KnownSimpleHapticsController...",
@@ -2152,7 +2304,8 @@
       "unknown",
       "unknown"
     ],
-    "ai_summary": "The provided text content is solely an HTML redirection script designed to forward the user to a specified Instagram link, and thus contains no substantive information, discussion, data, or findings related to haptic or tactile feedback technologies."
+    "ai_summary": "The provided text content is solely an HTML redirection script designed to forward the user to a specified Instagram link, and thus contains no substantive information, discussion, data, or findings related to haptic or tactile feedback technologies.",
+    "relevance_level": "low"
   },
   {
     "title": "Logitech Rilis Muse, Stylus Khusus Apple Vision Pro - detikInet",
@@ -2166,7 +2319,8 @@
       "stylus",
       "redirection"
     ],
-    "ai_summary": "The provided article excerpt is an HTML redirection script and contains no textual content. Therefore, it is impossible to extract any information regarding haptic, tactile, or touch feedback technologies, devices, or findings from this source."
+    "ai_summary": "The provided article excerpt is an HTML redirection script and contains no textual content. Therefore, it is impossible to extract any information regarding haptic, tactile, or touch feedback technologies, devices, or findings from this source.",
+    "relevance_level": "low"
   },
   {
     "title": "5 reasons you should update your Pixel Watch to Wear OS 6 ASAP - Yahoo! Tech",
@@ -2180,7 +2334,8 @@
       "wearable",
       "update"
     ],
-    "ai_summary": "The provided text is a minimal HTML redirect script and does not contain the full article content. Consequently, the excerpt offers no specific details, findings, or discussions regarding haptic technologies, tactile feedback, or related wearable features."
+    "ai_summary": "The provided text is a minimal HTML redirect script and does not contain the full article content. Consequently, the excerpt offers no specific details, findings, or discussions regarding haptic technologies, tactile feedback, or related wearable features.",
+    "relevance_level": "low"
   },
   {
     "title": "Updated Apple iPad Pro tablets also received the M5 chip - hi-Tech.ua",
@@ -2194,7 +2349,8 @@
       "update",
       "news"
     ],
-    "ai_summary": "The provided content is an HTML redirection script pointing to an article discussing updated Apple iPad Pro tablets featuring the M5 chip. The excerpt contains no actual text, data, or technical details regarding haptic technologies, tactile feedback mechanisms, or touch interfaces."
+    "ai_summary": "The provided content is an HTML redirection script pointing to an article discussing updated Apple iPad Pro tablets featuring the M5 chip. The excerpt contains no actual text, data, or technical details regarding haptic technologies, tactile feedback mechanisms, or touch interfaces.",
+    "relevance_level": "low"
   },
   {
     "title": "Pedal haptics are a game changer",
@@ -2209,7 +2365,8 @@
       "simulator",
       "immersion",
       "gaming"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "NGL I am digging this device",
@@ -2224,7 +2381,8 @@
       "samsung",
       "review",
       "mobile"
-    ]
+    ],
+    "relevance_level": "low"
   },
   {
     "title": "Issue with haptics",
@@ -2239,7 +2397,8 @@
       "settings",
       "feedback",
       "usability"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Apple TV released world’s first ever haptic feedback trailer for iPhones",
@@ -2254,7 +2413,8 @@
       "apple",
       "trailer",
       "advertising"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "SensitHaptics",
@@ -2269,7 +2429,8 @@
       "simulator",
       "gaming",
       "immersion"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Most affordable pedal haptics?",
@@ -2284,7 +2445,8 @@
       "arduino",
       "simulator",
       "immersion"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "The new haptics are driving me nuts",
@@ -2299,7 +2461,8 @@
       "update",
       "mobile",
       "review"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "what do y’all think of music haptics, would you use it or leave it turned off.",
@@ -2314,7 +2477,8 @@
       "music",
       "ios",
       "feedback"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Audience at the UFC 306 in The Sphere was able to feel punches through haptic feedback in the seats.",
@@ -2329,7 +2493,8 @@
       "sphere",
       "ufc",
       "immersion"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Feel the force - Razer's new haptic gaming suit!",
@@ -2344,7 +2509,8 @@
       "wearable",
       "gaming",
       "force"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Soft actuators to be used in haptic gloves to deliver sensation in VR",
@@ -2359,7 +2525,8 @@
       "vr",
       "wearable",
       "force"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "DBOX_HAPTICS",
@@ -2374,7 +2541,8 @@
       "simulator",
       "platform",
       "gaming"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Metro Exodus Enhanced Edition is now the first PC game to officially support DualSense's haptic feedback and adaptive triggers",
@@ -2389,7 +2557,8 @@
       "metro exodus",
       "controller",
       "gaming"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "The TactSuit haptic feedback vest provides physical feedback from gaming content",
@@ -2404,7 +2573,8 @@
       "vest",
       "gaming",
       "wearable"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "PS5 DualSense adaptive triggers, combined with haptic feedback 🔊 (via @YongYea on Twitter/YouTube)",
@@ -2419,7 +2589,8 @@
       "ps5",
       "controller",
       "gaming"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "OFFICIAL: PlayStation 5 to launch Holidays 2020 feat. new controllers with haptic technology and adaptive triggers.",
@@ -2434,7 +2605,8 @@
       "controller",
       "launch",
       "gaming"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Jeff Bezos called the control of the giant robot hand 'weirdly natural', and he was apparently right. The hands are controlled by a haptic-feedback glove. That means that not only do the hands copy what the human controller is doing, they also relay the feeling of touch back to them.",
@@ -2449,7 +2621,8 @@
       "robotics",
       "wearable",
       "interface"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Jeff Bezos demonstrated a pair of remote-controlled giant robotic hands, and was able to perform surprisingly dexterous tasks like stacking cups. The robotic hands not only imitate the movements of the person operating them, they also provide haptic feedback, transmitting the feeling of touch.",
@@ -2464,7 +2637,8 @@
       "controller",
       "control",
       "interaction"
-    ]
+    ],
+    "relevance_level": "high"
   },
   {
     "title": "Full-body Teslasuit allows you to feel VR games using haptic feedback",
@@ -2479,7 +2653,8 @@
       "vr",
       "wearable",
       "gaming"
-    ]
+    ],
+    "relevance_level": "mid"
   },
   {
     "title": "Haptics - Tactile - Force Feedback Technologies",
@@ -2494,6 +2669,7 @@
       "unknown",
       "unknown",
       "unknown"
-    ]
+    ],
+    "relevance_level": "low"
   }
 ]
