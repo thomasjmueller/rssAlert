@@ -19,9 +19,9 @@
     </style>
 </head>
 <body class="text-neutral-900 min-h-screen">
-    <div class="container mx-auto px-4 py-8 max-w-5xl">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
         <!-- Header -->
-        <div class="mb-8 flex justify-between items-start gap-8">
+        <div class="mb-6 flex justify-between items-start gap-8">
             <div>
                 <h1 class="text-2xl mb-1 text-neutral-600">Haptic daily</h1>
             </div>
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Filter Tabs -->
-        <div class="mb-6 space-y-4">
+        <div class="mb-6 flex gap-8">
             <!-- Time Filter -->
             <div>
                 <div class="text-xs text-neutral-500 mb-2 uppercase tracking-wide font-semibold">Time</div>
@@ -117,7 +117,8 @@
         // Load feed data
         async function loadFeed() {
             try {
-                const response = await fetch('feed.json');
+                // Add cache-busting timestamp to avoid stale data
+                const response = await fetch(`feed.json?v=${Date.now()}`);
                 if (!response.ok) {
                     throw new Error('Failed to load feed');
                 }
@@ -302,14 +303,14 @@
                     return `
                         ${separator}
                         <div class="flex hover:bg-neutral-50 transition">
-                            <div class="px-6 py-4" style="width: 55%">
+                            <div class="px-6 py-4" style="width: 75%">
                                 <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                                   class="text-neutral-700 hover:text-neutral-900 hover:underline font-medium text-base">
+                                   class="text-neutral-700 hover:text-neutral-900 hover:underline font-medium text-sm">
                                     ${stripHtml(item.title)}
                                 </a>
-                                ${displayText ? `<div class="text-neutral-600 mt-2 leading-relaxed">${escapeHtml(displayText)}</div>` : ''}
+                                ${displayText ? `<div class="text-neutral-600 text-sm mt-2 leading-relaxed">${escapeHtml(displayText)}</div>` : ''}
                             </div>
-                            <div class="px-6 py-4 text-sm" style="width: 45%">
+                            <div class="px-6 py-4 text-sm" style="width: 25%">
                                 <div class="flex items-start gap-2 mb-2">
                                     <a href="${item.link}" target="_blank" rel="noopener noreferrer"
                                        class="text-neutral-500 hover:text-neutral-700 hover:underline text-sm">
