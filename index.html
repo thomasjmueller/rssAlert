@@ -21,64 +21,65 @@
 <body class="text-neutral-900 min-h-screen">
     <div class="container mx-auto px-4 py-8 max-w-6xl">
         <!-- Header -->
-        <div class="mb-6 flex justify-between items-start gap-8">
-            <div>
-                <h1 class="text-2xl mb-1 text-neutral-600">Haptic daily</h1>
+        <div class="mb-8 flex justify-between items-start gap-12">
+            <!-- Left Column: Title and Selectors -->
+            <div class="flex-1">
+                <h1 class="text-2xl mb-4 text-neutral-600">Haptic daily</h1>
+
+                <!-- Filter Selectors -->
+                <div class="flex gap-6">
+                    <!-- Time Filter -->
+                    <div>
+                        <div class="text-xs text-neutral-500 mb-2 uppercase tracking-wide font-semibold">Time</div>
+                        <div class="flex gap-1.5 flex-wrap">
+                            <button
+                                id="tabAll"
+                                onclick="filterByTime('all')"
+                                class="px-3 py-1.5 font-medium text-xs transition border border-neutral-800 bg-neutral-800 text-white rounded">
+                                All
+                            </button>
+                            <button
+                                id="tabYear"
+                                onclick="filterByTime('year')"
+                                class="px-3 py-1.5 font-medium text-xs transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded">
+                                Year
+                            </button>
+                            <button
+                                id="tabMonth"
+                                onclick="filterByTime('month')"
+                                class="px-3 py-1.5 font-medium text-xs transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded">
+                                Month
+                            </button>
+                            <button
+                                id="tabWeek"
+                                onclick="filterByTime('week')"
+                                class="px-3 py-1.5 font-medium text-xs transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded">
+                                Week
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Feed Source Filter -->
+                    <div>
+                        <div class="text-xs text-neutral-500 mb-2 uppercase tracking-wide font-semibold">Source</div>
+                        <div id="feedSourceFilters" class="flex gap-1.5 flex-wrap">
+                            <button
+                                id="feedAll"
+                                onclick="filterByFeedSource('all')"
+                                class="px-3 py-1.5 font-medium text-xs transition border border-neutral-800 bg-neutral-800 text-white rounded">
+                                All
+                            </button>
+                            <!-- Dynamic feed source buttons will be added here -->
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Top Keywords Widget -->
-            <div>
+            <!-- Right Column: Top Keywords -->
+            <div class="w-64">
                 <h2 class="text-xs font-semibold text-neutral-500 mb-2 uppercase tracking-wide">Top Keywords</h2>
                 <div id="topKeywords" class="space-y-0.5 text-sm">
                     <div class="text-neutral-400 text-xs">Loading...</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Filter Tabs -->
-        <div class="mb-6 flex gap-8">
-            <!-- Time Filter -->
-            <div>
-                <div class="text-xs text-neutral-500 mb-2 uppercase tracking-wide font-semibold">Time</div>
-                <div class="flex gap-2 flex-wrap">
-                    <button
-                        id="tabAll"
-                        onclick="filterByTime('all')"
-                        class="px-4 py-2 font-medium text-sm transition border border-neutral-800 bg-neutral-800 text-white rounded-md">
-                        All
-                    </button>
-                    <button
-                        id="tabYear"
-                        onclick="filterByTime('year')"
-                        class="px-4 py-2 font-medium text-sm transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded-md">
-                        Year
-                    </button>
-                    <button
-                        id="tabMonth"
-                        onclick="filterByTime('month')"
-                        class="px-4 py-2 font-medium text-sm transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded-md">
-                        Month
-                    </button>
-                    <button
-                        id="tabWeek"
-                        onclick="filterByTime('week')"
-                        class="px-4 py-2 font-medium text-sm transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded-md">
-                        Week
-                    </button>
-                </div>
-            </div>
-
-            <!-- Feed Source Filter -->
-            <div>
-                <div class="text-xs text-neutral-500 mb-2 uppercase tracking-wide font-semibold">Source</div>
-                <div id="feedSourceFilters" class="flex gap-2 flex-wrap">
-                    <button
-                        id="feedAll"
-                        onclick="filterByFeedSource('all')"
-                        class="px-4 py-2 font-medium text-sm transition border border-neutral-800 bg-neutral-800 text-white rounded-md">
-                        All
-                    </button>
-                    <!-- Dynamic feed source buttons will be added here -->
                 </div>
             </div>
         </div>
@@ -159,7 +160,7 @@
                 const button = document.createElement('button');
                 button.id = `feed${feedSource.replace(/\s+/g, '')}`;
                 button.onclick = () => filterByFeedSource(feedSource);
-                button.className = 'px-4 py-2 font-medium text-sm transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded-md';
+                button.className = 'px-3 py-1.5 font-medium text-xs transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded';
                 button.textContent = feedSource;
                 container.appendChild(button);
             });
@@ -174,9 +175,9 @@
                 const isActive = (source === 'all' && btn.id === 'feedAll') ||
                                  (source !== 'all' && btn.textContent === source);
                 if (isActive) {
-                    btn.className = 'px-4 py-2 font-medium text-sm transition border border-neutral-800 bg-neutral-800 text-white rounded-md';
+                    btn.className = 'px-3 py-1.5 font-medium text-xs transition border border-neutral-800 bg-neutral-800 text-white rounded';
                 } else {
-                    btn.className = 'px-4 py-2 font-medium text-sm transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded-md';
+                    btn.className = 'px-3 py-1.5 font-medium text-xs transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded';
                 }
             });
 
@@ -241,9 +242,9 @@
                 const isActive = id === 'tab' + period.charAt(0).toUpperCase() + period.slice(1) ||
                                  (period === 'all' && id === 'tabAll');
                 if (isActive) {
-                    tab.className = 'px-4 py-2 font-medium text-sm transition border border-neutral-800 bg-neutral-800 text-white rounded-md';
+                    tab.className = 'px-3 py-1.5 font-medium text-xs transition border border-neutral-800 bg-neutral-800 text-white rounded';
                 } else {
-                    tab.className = 'px-4 py-2 font-medium text-sm transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded-md';
+                    tab.className = 'px-3 py-1.5 font-medium text-xs transition border border-neutral-200 text-neutral-500 hover:border-neutral-300 hover:text-neutral-700 rounded';
                 }
             });
 
