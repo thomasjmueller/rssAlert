@@ -86,21 +86,18 @@
                 <table class="w-full">
                     <thead class="bg-gray-200 border-b border-gray-300">
                         <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider cursor-pointer hover:bg-gray-300 transition" onclick="sortByDate()">
-                                Date <span id="sortIndicator">▼</span>
-                            </th>
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                                 Title & Preview
                             </th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider hidden sm:table-cell">
-                                Source
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
+                                Source & Keywords
                             </th>
                         </tr>
                     </thead>
                     <tbody id="feedTable" class="divide-y divide-gray-200">
                         <!-- Content will be loaded here -->
                         <tr>
-                            <td colspan="3" class="px-6 py-8 text-center text-gray-500">
+                            <td colspan="2" class="px-6 py-8 text-center text-gray-500">
                                 Loading feed...
                             </td>
                         </tr>
@@ -129,7 +126,7 @@
                 console.error('Error loading feed:', error);
                 document.getElementById('feedTable').innerHTML = `
                     <tr>
-                        <td colspan="3" class="px-6 py-8 text-center text-gray-500">
+                        <td colspan="2" class="px-6 py-8 text-center text-gray-500">
                             No feed data available. Run the Python script to fetch your RSS feed.
                         </td>
                     </tr>
@@ -206,7 +203,7 @@
             if (items.length === 0) {
                 tbody.innerHTML = `
                     <tr>
-                        <td colspan="3" class="px-6 py-8 text-center text-gray-500">
+                        <td colspan="2" class="px-6 py-8 text-center text-gray-500">
                             No items match your filters
                         </td>
                     </tr>
@@ -229,7 +226,7 @@
                 });
 
                 // Check if this is a new day
-                const isNewDay = lastDate !== null && lastDate !== dateString;
+                const isNewDay = lastDate !== dateString;
                 lastDate = dateString;
 
                 const description = item.description || '';
@@ -242,33 +239,28 @@
                     ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-gray-100 text-gray-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
                     : '';
 
-                // Add day separator row
-                const daySeparator = isNewDay ? `
-                    <tr class="day-separator">
-                        <td colspan="3" class="py-3 bg-gray-100"></td>
+                // Add date header row
+                const dateHeader = isNewDay ? `
+                    <tr class="date-header">
+                        <td colspan="2" class="px-6 py-3 bg-gray-50 border-t-2 border-gray-200">
+                            <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide cursor-pointer hover:text-gray-800 transition" onclick="sortByDate()">
+                                ${formattedDate} <span id="sortIndicator-${dateString}" class="text-gray-400">${currentSort === 'desc' ? '▼' : '▲'}</span>
+                            </div>
+                        </td>
                     </tr>
                 ` : '';
 
-                return daySeparator + `
+                return dateHeader + `
                     <tr class="hover:bg-gray-50 transition">
-                        <td class="px-6 py-4 text-xs text-gray-400 align-top">
-                            <div class="whitespace-nowrap mb-2">${formattedDate}</div>
-                            ${keywordPills ? `<div class="flex flex-wrap gap-1 max-w-[120px]">${keywordPills}</div>` : ''}
-                        </td>
                         <td class="px-6 py-4 text-sm">
                             <a href="${item.link}" target="_blank" rel="noopener noreferrer"
                                class="text-gray-800 hover:text-gray-600 hover:underline font-medium">
                                 ${stripHtml(item.title)}
                             </a>
                             ${displayText ? `<div class="text-gray-600 text-sm mt-2 leading-relaxed">${escapeHtml(displayText)}</div>` : ''}
-                            <div class="sm:hidden text-xs text-gray-400 mt-2">
-                                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:underline text-gray-400">
-                                    ${escapeHtml(item.source)}
-                                </a>
-                            </div>
                         </td>
-                        <td class="px-6 py-4 text-sm hidden sm:table-cell align-top">
-                            <div class="flex items-center gap-2">
+                        <td class="px-6 py-4 text-sm align-top">
+                            <div class="flex items-start gap-2 mb-2">
                                 <a href="${item.link}" target="_blank" rel="noopener noreferrer"
                                    class="text-gray-400 hover:text-gray-600 hover:underline text-sm">
                                     ${escapeHtml(item.source)}
@@ -285,6 +277,7 @@
                                     </div>
                                 ` : ''}
                             </div>
+                            ${keywordPills ? `<div class="flex flex-wrap gap-1">${keywordPills}</div>` : ''}
                         </td>
                     </tr>
                 `;
@@ -350,21 +343,21 @@
 
         // Update top devices widget
         function updateTopDevices(items) {
-            // Common device keywords
-            const deviceKeywords = [
-                'iphone', 'android', 'dualsense', 'xbox', 'quest', 'ps5', 'playstation',
-                'switch', 'steam deck', 'apple watch', 'pixel', 'oneplus', 'samsung',
-                'controller', 'headset', 'watch', 'phone', 'console', 'vr', 'ar'
+            // Generic terms to exclude
+            const excludedTerms = [
+                'hardware', 'wearable', 'vr', 'controller', 'headset',
+                'watch', 'phone', 'console', 'ar', 'device', 'gadget'
             ];
 
             const deviceCounts = {};
 
-            // Count device keyword frequency
+            // Count all keyword frequencies
             items.forEach(item => {
                 if (item.keywords && Array.isArray(item.keywords)) {
                     item.keywords.forEach(keyword => {
-                        // Check if keyword matches any device keyword
-                        if (deviceKeywords.some(device => keyword.toLowerCase().includes(device) || device.includes(keyword.toLowerCase()))) {
+                        const keywordLower = keyword.toLowerCase();
+                        // Exclude generic terms
+                        if (!excludedTerms.some(term => keywordLower === term || keywordLower.includes(term))) {
                             deviceCounts[keyword] = (deviceCounts[keyword] || 0) + 1;
                         }
                     });
