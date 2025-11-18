@@ -7,14 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background-color: #f7f6f5;
-        }
-        .text-content {
-            font-family: 'Lora', Georgia, serif;
+            background-color: #f8f8f8;
         }
         input::placeholder {
             color: #a3a3a3;
@@ -40,7 +37,7 @@
 
         <!-- Time Filter Tabs -->
         <div class="mb-6">
-            <div class="flex gap-2 border-b border-neutral-200">
+            <div class="flex gap-2 border-b border-neutral-100">
                 <button
                     id="tabAll"
                     onclick="filterByTime('all')"
@@ -74,19 +71,19 @@
                 type="text"
                 id="searchBox"
                 placeholder="Search by keyword, title, summary, or source..."
-                class="w-full px-4 py-3 rounded-lg border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-neutral-400 transition"
+                class="w-full px-4 py-3 rounded-lg border border-neutral-100 bg-white focus:outline-none focus:ring-2 focus:ring-neutral-300 transition"
             />
         </div>
 
         <!-- Stats -->
-        <div class="mb-4 text-sm text-neutral-600">
+        <div class="mb-4 text-sm text-neutral-500">
             <span id="itemCount">Loading...</span>
         </div>
 
         <!-- Feed Items -->
         <div id="feedTable">
             <!-- Content will be loaded here -->
-            <div class="bg-white rounded-lg shadow-sm border border-neutral-200 px-6 py-8 text-center text-neutral-500">
+            <div class="bg-white rounded-lg border border-neutral-100 px-6 py-8 text-center text-neutral-500">
                 Loading feed...
             </div>
     </div>
@@ -109,7 +106,7 @@
             } catch (error) {
                 console.error('Error loading feed:', error);
                 document.getElementById('feedTable').innerHTML = `
-                    <div class="bg-white rounded-lg shadow-sm border border-neutral-200 px-6 py-8 text-center text-neutral-500">
+                    <div class="bg-white rounded-lg border border-neutral-100 px-6 py-8 text-center text-neutral-500">
                         No feed data available. Run the Python script to fetch your RSS feed.
                     </div>
                 `;
@@ -183,7 +180,7 @@
 
             if (items.length === 0) {
                 container.innerHTML = `
-                    <div class="bg-white rounded-lg shadow-sm border border-neutral-200 px-6 py-8 text-center text-neutral-500">
+                    <div class="bg-white rounded-lg border border-neutral-100 px-6 py-8 text-center text-neutral-500">
                         No items match your filters
                     </div>
                 `;
@@ -222,25 +219,25 @@
 
                     // Generate keyword pills
                     const keywordPills = keywords.length > 0
-                        ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-neutral-100 text-neutral-700 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
+                        ? keywords.map(kw => `<span class="inline-block px-2 py-0.5 text-xs bg-neutral-50 text-neutral-500 rounded-full">${escapeHtml(kw)}</span>`).join(' ')
                         : '';
 
-                    const separator = index > 0 ? '<div class="border-t border-neutral-200"></div>' : '';
+                    const separator = index > 0 ? '<div class="border-t border-neutral-100"></div>' : '';
 
                     return `
                         ${separator}
                         <div class="flex hover:bg-neutral-50 transition">
-                            <div class="px-6 py-4 text-sm text-content" style="width: 55%">
+                            <div class="px-6 py-4" style="width: 55%">
                                 <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                                   class="text-neutral-600 hover:text-neutral-600 hover:underline font-medium">
+                                   class="text-neutral-700 hover:text-neutral-900 hover:underline font-medium text-base">
                                     ${stripHtml(item.title)}
                                 </a>
-                                ${displayText ? `<div class="text-neutral-600 text-sm mt-2 leading-relaxed">${escapeHtml(displayText)}</div>` : ''}
+                                ${displayText ? `<div class="text-neutral-600 mt-2 leading-relaxed">${escapeHtml(displayText)}</div>` : ''}
                             </div>
                             <div class="px-6 py-4 text-sm" style="width: 45%">
                                 <div class="flex items-start gap-2 mb-2">
                                     <a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                                       class="text-neutral-400 hover:text-neutral-600 hover:underline text-sm">
+                                       class="text-neutral-500 hover:text-neutral-700 hover:underline text-sm">
                                         ${escapeHtml(item.source)}
                                     </a>
                                     ${description && aiSummary ? `
@@ -262,10 +259,10 @@
                 }).join('');
 
                 return `
-                    <div class="bg-white rounded-lg shadow-sm border border-neutral-200 overflow-hidden mb-6">
-                        <div class="px-6 py-3 bg-neutral-50 border-b border-neutral-200">
-                            <div class="text-xs font-semibold text-neutral-600 uppercase tracking-wide cursor-pointer hover:text-neutral-600 transition" onclick="sortByDate()">
-                                ${formattedDate} <span class="text-neutral-400">${currentSort === 'desc' ? '▼' : '▲'}</span>
+                    <div class="bg-white rounded-lg border border-neutral-100 overflow-hidden mb-6">
+                        <div class="px-6 py-3 bg-neutral-50 border-b border-neutral-100">
+                            <div class="text-xs font-semibold text-neutral-500 uppercase tracking-wide">
+                                ${formattedDate}
                             </div>
                         </div>
                         ${postsHtml}
@@ -323,7 +320,7 @@
 
             container.innerHTML = topKeywords.map(([keyword, count]) => {
                 return `
-                    <div class="flex items-center justify-between text-neutral-700">
+                    <div class="flex items-center justify-between text-neutral-600">
                         <span>${escapeHtml(keyword)}</span>
                         <span class="text-neutral-500">${count}</span>
                     </div>
