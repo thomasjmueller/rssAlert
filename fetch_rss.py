@@ -163,22 +163,45 @@ def save_feed(items, filename="feed.json"):
 
 
 def main():
-    # RSS feed URL - replace with your actual feed URL
-    RSS_FEED_URL = os.environ.get("RSS_FEED_URL", "[INSERT YOUR RSS FEED URL]")
+    # RSS feed URLs - add your RSS feed URLs here
+    RSS_FEED_URLS = [
+        "https://www.reddit.com/search.rss?q=haptics&cId=eb95654f-ed4b-4d4b-bc90-34f89c315d08&iId=06497d47-4db9-46c6-a425-3776d68fd7f4",
+        "https://www.google.com/alerts/feeds/13434099267717249872/5616231719166364050",
+    ]
 
-    if RSS_FEED_URL == "[INSERT YOUR RSS FEED URL]":
-        print("Error: Please set RSS_FEED_URL environment variable or update the script")
+    # Backward compatibility: check for old single URL env var
+    old_url = os.environ.get("RSS_FEED_URL", "")
+    if old_url and old_url != "[INSERT YOUR RSS FEED URL]":
+        RSS_FEED_URLS.append(old_url)
+
+    # Can also load from environment variable (comma-separated)
+    env_urls = os.environ.get("RSS_FEED_URLS", "")
+    if env_urls:
+        RSS_FEED_URLS.extend([url.strip() for url in env_urls.split(",") if url.strip()])
+
+    if not RSS_FEED_URLS:
+        print("Error: Please add RSS feed URLs to the RSS_FEED_URLS list or set RSS_FEED_URLS environment variable")
+        print("Example: export RSS_FEED_URLS='https://example.com/feed.xml,https://another.com/rss'")
         return
 
     # Load existing feed
     existing_items = load_existing_feed()
     print(f"Loaded {len(existing_items)} existing items")
 
-    # Fetch new items
-    new_items = fetch_rss(RSS_FEED_URL)
+    # Fetch from all feeds
+    all_new_items = []
+    for feed_url in RSS_FEED_URLS:
+        try:
+            new_items = fetch_rss(feed_url)
+            all_new_items.extend(new_items)
+        except Exception as e:
+            print(f"Error fetching {feed_url}: {e}")
+            continue
+
+    print(f"\nTotal fetched: {len(all_new_items)} items from {len(RSS_FEED_URLS)} feeds")
 
     # Deduplicate
-    unique_new_items = deduplicate_items(new_items, existing_items)
+    unique_new_items = deduplicate_items(all_new_items, existing_items)
 
     # Combine and save
     all_items = existing_items + unique_new_items
