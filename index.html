@@ -114,6 +114,38 @@
         let currentFeedSource = 'all';
         let currentSearchQuery = '';
         let availableFeedSources = new Set();
+        let readArticles = new Set();
+
+        // Load read articles from localStorage
+        function loadReadArticles() {
+            try {
+                const saved = localStorage.getItem('readArticles');
+                if (saved) {
+                    readArticles = new Set(JSON.parse(saved));
+                }
+            } catch (e) {
+                console.error('Error loading read articles:', e);
+            }
+        }
+
+        // Save read articles to localStorage
+        function saveReadArticles() {
+            try {
+                localStorage.setItem('readArticles', JSON.stringify(Array.from(readArticles)));
+            } catch (e) {
+                console.error('Error saving read articles:', e);
+            }
+        }
+
+        // Mark article as read
+        function markAsRead(articleLink) {
+            readArticles.add(articleLink);
+            saveReadArticles();
+            applyFilters(); // Refresh display
+        }
+
+        // Initialize
+        loadReadArticles();
 
         // Load feed data
         async function loadFeed() {
@@ -307,9 +339,14 @@
                         ? '<span class="absolute -left-4 top-0 translate-y-1/2 w-2 h-2 bg-yellow-400 rounded-full"></span>'
                         : '';
 
+                    // Check if article has been read
+                    const isRead = readArticles.has(item.link);
+                    const readClass = isRead ? 'bg-neutral-50' : '';
+                    const hoverClass = isRead ? 'hover:bg-neutral-100' : 'hover:bg-neutral-50';
+
                     return `
                         ${separator}
-                        <div class="flex hover:bg-neutral-50 transition">
+                        <div class="flex ${readClass} ${hoverClass} transition cursor-pointer" onclick="markAsRead('${item.link.replace(/'/g, "\\'")}')">
                             <div class="px-6 py-4" style="width: 75%">
                                 <div class="relative">
                                     ${relevanceIndicator}
