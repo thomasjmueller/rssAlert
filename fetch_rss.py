@@ -151,13 +151,27 @@ def fetch_rss(feed_url):
 
 def deduplicate_items(new_items, existing_items):
     """Deduplicate items by URL and title"""
-    # Create sets of existing URLs and titles
+    # First, deduplicate within new_items themselves
+    seen_urls = set()
+    seen_titles = set()
+    deduped_new_items = []
+
+    for item in new_items:
+        if item["link"] not in seen_urls and item["title"] not in seen_titles:
+            deduped_new_items.append(item)
+            seen_urls.add(item["link"])
+            seen_titles.add(item["title"])
+
+    if len(deduped_new_items) < len(new_items):
+        print(f"Removed {len(new_items) - len(deduped_new_items)} duplicates from new items")
+
+    # Then filter against existing items
     existing_urls = {item["link"] for item in existing_items}
     existing_titles = {item["title"] for item in existing_items}
 
     # Filter out duplicates (skip if URL or title already exists)
     unique_items = [
-        item for item in new_items
+        item for item in deduped_new_items
         if item["link"] not in existing_urls and item["title"] not in existing_titles
     ]
 
