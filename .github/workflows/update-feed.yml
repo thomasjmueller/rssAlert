@@ -49,6 +49,17 @@ jobs:
             python summarize_with_gemini.py
           fi
 
+      - name: Score relevance with AI
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "⚠️  WARNING: GEMINI_API_KEY secret is not set!"
+            echo "Skipping relevance scoring. Add GEMINI_API_KEY in Settings → Secrets"
+          else
+            python score_relevance.py
+          fi
+
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
