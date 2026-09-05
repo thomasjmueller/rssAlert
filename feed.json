@@ -1,5 +1,237 @@
 [
   {
+    "title": "Taptic Engine Explained: How Apple's Haptic System Works | Leader - openPR.com",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.openpr.com/news/4622747/taptic-engine-explained-how-apple-s-haptic-system-works&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1prfzdpMn5LPYMIcAQjQMp",
+    "date": "2026-09-04T22:57:51",
+    "source": "openpr",
+    "description": "... haptic technology ... Choosing the right vibration motor is crucial for various applications that require haptic feedback , tactile feedback , or motion- ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Apple's Taptic Engine delivers precise tactile sensations through specialized actuator technology. Selecting the appropriate vibration motor is critical for achieving optimal tactile and motion-based feedback across various device applications.",
+    "keywords": [
+      "apple",
+      "taptic engine",
+      "motor",
+      "linear motor"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Play on itch.io with DualSense + Bluetooth Audio <b>Haptics</b> (Full Tutorial) - YouTube",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DYfGAkdejegI&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw3t7vUiNdniIdtZ1InPWQZz",
+    "date": "2026-09-04T22:46:44",
+    "source": "youtube",
+    "description": "... haptic feedback converted from audio via Bluetooth. The setup uses the open-source DSS Web Audio Haptics Bluetooth extension in conjunction with ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Audio signals are converted into feedback on the DualSense controller via Bluetooth. The setup utilizes the open-source DSS Web Audio Haptics Bluetooth extension to deliver audio-driven feedback during gameplay on itch.io.",
+    "keywords": [
+      "dualsense",
+      "bluetooth",
+      "controller",
+      "gaming"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Apple code points to two unreleased game controllers - MacDailyNews",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://macdailynews.com/2026/09/04/apple-code-points-to-two-unreleased-game-controllers/amp/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1N1nOov1dTE7UcmVWHZvNs",
+    "date": "2026-09-04T21:56:31",
+    "source": "macdailynews",
+    "description": "The two designs differ in haptics . T1057 also includes accelerometer and gyroscope support; T6502 does not. Dedicated hardware plug-ins for each ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Code reveals two unreleased Apple game controller designs, designated T1057 and T6502, that differ in their tactile feedback capabilities. Dedicated hardware plug-ins are utilized for each model to support their distinct feedback implementations.",
+    "keywords": [
+      "apple",
+      "controller",
+      "hardware",
+      "leak"
+    ],
+    "relevance_level": "high"
+  },
+  {
+    "title": "I turned off what Samsung forces on us all. My phone literally came to life, but you won't like it",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://samsungmagazine.eu/en/2026/09/04/vypnul-jsem-co-nam-vsem-samsung-nuti-telefon-mi-doslova-ozil-nebude-se-vam-ale-libit/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw04mPOB66epaAkX9Zqx_lys",
+    "date": "2026-09-04T18:25:22",
+    "source": "samsungmagazine",
+    "description": "If you want your Samsung to respond really instantly, just turn off the animation and haptic feedback settings. (vibration). The procedure is ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Disabling haptic feedback and animation settings on Samsung smartphones allows the interface to respond instantly to user touch. Eliminating the device's vibration feedback during daily navigation significantly alters the user interaction while maximizing perceived operational speed.",
+    "keywords": [
+      "samsung",
+      "smartphone",
+      "settings",
+      "optimization"
+    ],
+    "relevance_level": "low"
+  },
+  {
+    "title": "Best iWatch metronome apps with <b>haptic feedback</b>? - Facebook",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/groups/217081992029067/posts/2341783159558929/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1HR1OVrjebssaUwQkuAW7L",
+    "date": "2026-09-04T16:45:22",
+    "source": "facebook",
+    "description": "Log in · Best iWatch metronome apps with haptic feedback ? Best iWatch metronome apps with haptic feedback ? Summarized by AI from ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Apple Watch metronome applications utilize wrist-based physical pulses to silently convey rhythmic beats and tempo to musicians. These applications replace audible clicks with synchronized tap sensations delivered directly to the user's skin.",
+    "keywords": [
+      "apple watch",
+      "app",
+      "wearable",
+      "music"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Circular Ring 3 Adds NFC Payments, <b>Haptics</b>, and Health Tracking - Yahoo Tech",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://tech.yahoo.com/wearables/articles/circular-ring-3-adds-nfc-154406039.html&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2ayCSu1IMPQ55yUiew1j7b",
+    "date": "2026-09-04T16:03:54",
+    "source": "tech",
+    "description": "Circular Ring 3 adds NFC payments, haptics , and health tracking — two ... That haptic feedback is underrated. A ring that taps your finger ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "The Circular Ring 3 integrates tactile feedback designed to physically tap the wearer's finger. This on-device haptic actuation delivers localized touch alerts directly through the ring's compact form factor.",
+    "keywords": [
+      "circular ring",
+      "smart ring",
+      "wearable",
+      "finger"
+    ],
+    "relevance_level": "high"
+  },
+  {
+    "title": "Fancy <b>Haptics</b> released on Steam! : r/SteamController - Reddit",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/SteamController/comments/1w73f5v/fancy_haptics_released_on_steam/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1LfN0FuwgW5FaFnlZo0Y42",
+    "date": "2026-09-04T15:19:05",
+    "source": "reddit",
+    "description": "58 votes, 10 comments. Turn any sound on your PC into real-time haptics on your Steam Controller. Fancy Haptics captures your desktop audio and…",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Fancy Haptics has released on Steam, enabling users to convert PC sound into real-time tactile feedback. The software captures desktop audio directly to generate responsive touch feedback through the Steam Controller.",
+    "keywords": [
+      "steam controller",
+      "steam",
+      "controller",
+      "audio"
+    ],
+    "relevance_level": "high"
+  },
+  {
+    "title": "Rumoured Massive 26-Teraflop Xbox Project Helix Pits It Against PlayStation 6",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.geeky-gadgets.com/ps6-vs-xbox-project-helix/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0SLqqZDTN4t2J_znY-vJpZ",
+    "date": "2026-09-04T15:14:22",
+    "source": "geeky-gadgets",
+    "description": "Controller innovations differ: Xbox introduces modular stick replacements, motion controls and enhanced haptics , while PlayStation refines its ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Xbox's next-generation controller introduces enhanced feedback mechanisms alongside modular stick replacements and motion controls. In contrast, PlayStation aims to refine its established feedback system for the PlayStation 6 generation.",
+    "keywords": [
+      "xbox",
+      "ps6",
+      "controller",
+      "console"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "The <b>Haptic Technology</b> Market Report: Analyzing Competitive Dynamics and Forecasting a ...",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.linkedin.com/pulse/haptic-technology-market-report-analyzing-competitive-dynamics-yjsde&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2L0KoBH0zO0xHzHyFrbnW8",
+    "date": "2026-09-04T15:13:03",
+    "source": "linkedin",
+    "description": "In Consumer Electronics, it enables tactile feedback in smartphones, wearables, and touchscreens. Healthcare uses haptics for surgical simulation, ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Tactile feedback enables physical interaction across consumer electronics, including smartphones, wearables, and touchscreens. In healthcare, touch feedback is deployed for surgical simulation applications.",
+    "keywords": [
+      "smartphones",
+      "wearable",
+      "touchscreens",
+      "healthcare"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "PlayStation unveils GTA VI DualSense controllers: Check price, features - CNBC TV18",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.cnbctv18.com/technology/playstation-gta-vi-dualsense-controller-limited-edition-price-features-pre-order-date-19984230.htm&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw00hyMiT8_5DgKNdKuBf-GB",
+    "date": "2026-09-04T13:33:26",
+    "source": "cnbctv18",
+    "description": "The haptic feedback and adaptive triggers of the controllers will instantly respond to the action in Grand Theft Auto VI. The devices provide dynamic ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "The DualSense controllers incorporate adaptive triggers and tactile feedback systems engineered to respond instantly to in-game events in Grand Theft Auto VI. These mechanisms provide dynamic resistance and responsive feedback synchronized directly with the title's gameplay action.",
+    "keywords": [
+      "dualsense",
+      "gta vi",
+      "adaptive triggers",
+      "controller"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "I drew custom gestures on my Android phone, then ditched half my navigation buttons",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.androidpolice.com/glyf-custom-gestures-android/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2ce_oF088G9GYxb17t5vci",
+    "date": "2026-09-04T12:19:07",
+    "source": "androidpolice",
+    "description": "... haptic feedback and more; Glyf settings menu showing gesture triggers including notifications and more; Upgrade screen detailing premium features ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "<b>Haptics</b> Rendering Pipeline - Part 3 - YouTube",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DnUWnF1cC47E&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2DhjEz_HbmiwaN7sS1Z9zP",
+    "date": "2026-09-04T12:12:17",
+    "source": "youtube",
+    "description": "This content isn't available. Haptics Rendering Pipeline - Part 3. @nptel-nociitm9240No likes177 views15 minutes ago more. Subscribe ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "mid"
+  },
+  {
+    "title": "<b>Haptics</b> Rendering Pipeline - Part 1 - YouTube",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dcuc0fwoju3o&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0dDi7e7ZRQ0f8PzL2bMeI4",
+    "date": "2026-09-04T12:11:03",
+    "source": "youtube",
+    "description": "This content isn't available. Haptics Rendering Pipeline - Part 1. @nptel-nociitm9240No likes180 views13 minutes ago more. Subscribe ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Palms, neon, and Vice City vibes: How to preorder the limited-edition 'GTA 6' PS5 controllers",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://sea.mashable.com/games/54576/palms-neon-and-vice-city-vibes-how-to-preorder-the-limited-edition-gta-6-ps5-controllers&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0YD7g-gvfTz1ilvJu__IfH",
+    "date": "2026-09-04T09:54:55",
+    "source": "sea",
+    "description": "Beyond their new looks, they're still standard DualSense controllers, so they include haptic feedback and adaptive triggers. You'll get what you ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "Who's behind Haptic. [forms]? - Facebook",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/haptic.store/posts/-whos-behind-haptic-forms/122240936132353085/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0zBLFZ73MkjVYkEDeob_HM",
+    "date": "2026-09-04T08:39:17",
+    "source": "facebook",
+    "description": "Using haptics in design offers unlimited possibilities, yet at the same time designing haptic feedback can be challenging. Therefore, Thomas Muller ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "high"
+  },
+  {
+    "title": "955s quit with the <b>haptic feedback</b> : r/GarminWatches - Reddit",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/GarminWatches/comments/1w6myq4/955s_quit_with_the_haptic_feedback/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw18Sum9MH5IJhGFft4HAU5_",
+    "date": "2026-09-04T07:57:21",
+    "source": "reddit",
+    "description": "955s quit with the haptic feedback ... Anyone have any insight to their watch suddenly stopping with the vibration feedback? I rely pretty heavily on my ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "Sony and Rockstar Announce Limited-Edition GTA VI DualSense Controllers",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://english.mathrubhumi.com/amp/technology/gta-6-limited-edition-dualsense-controllers-sony-rockstar-eg5832sc&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2n8PZ6zE2V-7xY1l3ePU_t",
+    "date": "2026-09-04T02:44:48",
+    "source": "english",
+    "description": "The hardware includes custom palm-tree graphics moulded directly into the side grips for enhanced tactile feedback , alongside a stylised \"VI ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "It even has a haptic motor - Read more! ⬇️ - Facebook",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/AndroidPolice/posts/it-even-has-a-haptic-motor-read-more-%25EF%25B8%258F/1524612373040684/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1aDRRmHf2dUG0z_VLExQlS",
+    "date": "2026-09-04T02:40:38",
+    "source": "facebook",
+    "description": "... haptic feedback practical for everyday applications rather than being limited to bulky laboratory equipment. ... Ahh yep, haptics — everything ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "mid"
+  },
+  {
     "title": "Limited Edition GTA 6 DualSense Controllers Revealed - RockstarINTEL",
     "link": "https://www.google.com/url?rct=j&sa=t&url=https://rockstarintel.com/limited-edition-gta-6-dualsense-controllers-revealed/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1SPRQx8NQylr29TFXearde",
     "date": "2026-09-04T01:37:57",
@@ -14,6 +246,15 @@
       "controller"
     ],
     "relevance_level": "mid"
+  },
+  {
+    "title": "Terms of Use - Haptics Connect",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://hapticsconnect.com/terms-of-use&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2BIMzVeO5U2fs9Q5XSOMIv",
+    "date": "2026-09-04T01:35:55",
+    "source": "hapticsconnect",
+    "description": "TERMS OF USE WARNING: The Haptics Connect software, including but not limited to mobile and desktop applications (the “App”), may be used to connect ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
   },
   {
     "title": "Whole Mars Catalog on X: &quot;Cybercab's motorized seat belts do more than tighten ...",
@@ -74245,6 +74486,15 @@
     "description": "When I’m in silent mode, I usually have it such that my phone vibrates. However it’s common for me to not want it to vibrate on silent mode (but not have it on do not disturb as I still want to receive the notifications). I’m trying to create a shortcut so I can toggle this and connect it to my...",
     "feed_source": "Reddit",
     "relevance_level": "low"
+  },
+  {
+    "title": "Add a BassShaker on PS4, PS5 (and PC), PERFECT with a Steering Wheel",
+    "link": "https://www.reddit.com/r/granturismo/comments/14bkdks/add_a_bassshaker_on_ps4_ps5_and_pc_perfect_with_a/",
+    "date": "2023-06-17T07:21:32",
+    "source": "reddit",
+    "description": "You can add a BassShaker (in fact simply a Bass but that we use for haptics) on your Seat or Pedals... +50% immersive. A lot more informations feedback : the different engines and their variations, the climbs and gear changes, the subtleties of the roads, even the load transfers... I do that on PS4...",
+    "feed_source": "Reddit",
+    "relevance_level": "mid"
   },
   {
     "title": "turn off „play haptics“ when I turn on „work“ focus and turn on „play haptics“ when I turn off that focus?",
