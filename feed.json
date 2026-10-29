@@ -1,5 +1,254 @@
 [
   {
+    "title": "現代のコンピューティングに「触覚」を組み込む：Surface におけるハプティクスの進化",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://blogs.windows.com/japan/2026/10/29/bringing-touch-to-modern-computing-the-evolution-of-haptics-on-surface/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw3CZZGW5dpvX8G2Jb08MyAo",
+    "date": "2026-10-29T03:49:42",
+    "source": "blogs",
+    "description": "※本ブログは、米国時間 9 月 24 日に公開された 'Engineering touch into modern computing: The evolution of haptics on Surface' の抄訳です。",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Microsoft integrates advanced sensory feedback across its Surface line to simulate physical interactions in digital environments. The Surface Slim Pen 2 utilizes an embedded motor to replicate the realistic friction and texture of writing on paper. Additionally, integrated solid-state touchpads emulate traditional mechanical clicks while offering customizable touch responses for navigation.",
+    "keywords": [
+      "slim pen 2",
+      "surface laptop",
+      "touchpad",
+      "windows 11"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "PS5 <b>Haptics</b>? : r/KingdomHearts - Reddit",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/KingdomHearts/comments/1xi5tut/ps5_haptics/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw3A5JXbtu6RhgzgAO8B9SgZ",
+    "date": "2026-10-29T00:59:43",
+    "source": "reddit",
+    "description": "Hello! Anybody who has the new version, do the games have dualsense haptics ? Thanks.",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Players are inquiring whether the PlayStation 5 versions of the Kingdom Hearts games support DualSense haptic feedback features.",
+    "keywords": [
+      "dualsense",
+      "kingdom hearts",
+      "ps5",
+      "gaming"
+    ],
+    "relevance_level": "low"
+  },
+  {
+    "title": "<b>haptic feedback</b> : r/PhantomBladeZero - Reddit",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/PhantomBladeZero/comments/1xi1440/haptic_feedback/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw3FCFBsUWRqtVRni-RVAjst",
+    "date": "2026-10-28T22:59:15",
+    "source": "reddit",
+    "description": "For the people who already can play does the game have haptic feedback for attack impacts?",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Community inquiries center on the implementation of tactile feedback for attack impacts within Phantom Blade Zero. Players question whether combat strikes and weapon hits deliver corresponding physical sensations during gameplay.",
+    "keywords": [
+      "phantom blade",
+      "reddit",
+      "gaming"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Sony Announces Transparent DualSense Prism Controllers for PlayStation 5 - GameGPU",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://en.gamegpu.com/news/zhelezo/sony-anonsirovala-prozrachnye-gejmpady-dualsense-prism-dlya-playstation-5&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0WEwF5kXndciP7FSyGhVIS",
+    "date": "2026-10-28T22:53:21",
+    "source": "en",
+    "description": "Technically, the new gamepads are fully compatible with the standard version of the device, retaining haptic feedback , adaptive triggers, microphone, ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "The transparent DualSense Prism controllers for the PlayStation 5 retain full compatibility and feature parity with the standard controller's tactile systems. These gamepads continue to incorporate integrated haptic feedback alongside adaptive triggers to deliver dynamic physical resistance and sensory effects.",
+    "keywords": [
+      "dualsense",
+      "ps5",
+      "controller",
+      "adaptive triggers"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "I love it how they made use of the <b>haptic feedback</b> on switch gta5 - Facebook",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.facebook.com/groups/894567144694129/posts/2371138980370264/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw03cIYYAnWOXN8CCq3duDMb",
+    "date": "2026-10-28T22:48:05",
+    "source": "facebook",
+    "description": "PS5 GTA Online looks so good plus the haptic feedback is a game changer · No photo description available. 38.",
+    "feed_source": "Google Alerts",
+    "ai_summary": "The implementation of haptic feedback in Grand Theft Auto Online on PlayStation 5 provides a game-changing enhancement to the gameplay experience. User reactions highlight praise for how the tactile effects are integrated into the console release.",
+    "keywords": [
+      "ps5",
+      "gta v",
+      "console",
+      "gaming"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "ActiveAlign: Aligning Egocentric Manipulation via Active Perception - alphaXiv",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.alphaxiv.org/abs/2610.36859&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2ThNqHILmPZ2xoqXq2YPkp",
+    "date": "2026-10-28T20:19:13",
+    "source": "alphaxiv",
+    "description": "... tactile feedback to achieve millimeter-level precision. Together, these capabilities enable strong real2sim alignment. We demonstrate that ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Tactile feedback is utilized to achieve millimeter-level precision in egocentric manipulation tasks. This sensory capability facilitates robust real-to-sim alignment for accurate physical interactions.",
+    "keywords": [
+      "activealign",
+      "simulation",
+      "manipulation",
+      "precision"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "PHF pedal <b>haptics</b> on iRacing: only ABS and engine work, lockup/wheel spin/TC don't + ...",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.reddit.com/r/moza/comments/1xhx5uf/phf_pedal_haptics_on_iracing_only_abs_and_engine/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1V-jmihVEKpukwa_Qecna1",
+    "date": "2026-10-28T19:32:12",
+    "source": "reddit",
+    "description": "PHF pedal haptics on iRacing: only ABS and engine work, lockup/wheel ... Just installed the PHF Pedal Haptic Feedback Kit (brake and throttle ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "The PHF Pedal Haptic Feedback Kit for brake and throttle pedals exhibits partial telemetry functionality when used with iRacing. While tactile effects for ABS activation and engine vibration operate correctly, tactile feedback for tire lockup, wheel spin, and traction control fails to trigger.",
+    "keywords": [
+      "moza",
+      "iracing",
+      "pedals",
+      "simracing"
+    ],
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Enable Disable <b>Haptics</b> - YouTube",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/playlist%3Flist%3DPLI9QyJgwhLZY&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2Vyhd1TrRRi65dwkhgYa0O",
+    "date": "2026-10-28T19:31:36",
+    "source": "youtube",
+    "description": "Tap to unmute. Your browser can't play this video. Learn more. Enable Disable Haptics . Home. Shorts. Library. Enable Disable Haptics .",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Instructions cover enabling and disabling haptic feedback functionality within system and device controls.",
+    "keywords": [
+      "youtube",
+      "settings",
+      "controls",
+      "guide"
+    ],
+    "relevance_level": "low"
+  },
+  {
+    "title": "Logitech's Beloved MX Master 4 Gets A Cool Special Edition Developer Makeover",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://hothardware.com/news/logitechs-mx-master-4-special-edition&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1pApf0SLFymyp7w_Q7ipqw",
+    "date": "2026-10-28T18:40:02",
+    "source": "hothardware",
+    "description": "That includes haptic feedback with native integration for Windows 11 users, Actions Ring shortcuts, a free-flying MagSpeed scroll wheel that lets ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "Logitech's MX Master 4 Special Edition features integrated haptic feedback designed with native support for Windows 11 users. The mouse also incorporates a free-flying MagSpeed scroll wheel for physical tactile navigation.",
+    "keywords": [
+      "logitech mx master 4",
+      "windows 11",
+      "mouse",
+      "integration"
+    ],
+    "relevance_level": "high"
+  },
+  {
+    "title": "PS5 games on Amazon that the whole family can enjoy - Chicago Tribune",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.chicagotribune.com/2026/10/28/ps5-games-on-amazon-that-the-whole-family-can-enjoy/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw3Y3JuGVtmc09-zzjWAQ6Xb",
+    "date": "2026-10-28T18:27:05",
+    "source": "chicagotribune",
+    "description": "Things worth knowing about the PS5. Most PS4 games are compatible with the PS5, but double-check before buying. PS5 controllers have a haptic feedback ...",
+    "feed_source": "Google Alerts",
+    "ai_summary": "PlayStation 5 controllers incorporate haptic feedback technology to enhance physical immersion during gameplay. This tactile system delivers physical sensations tailored to compatible games and interactive experiences.",
+    "keywords": [
+      "ps5",
+      "controller",
+      "console",
+      "gaming"
+    ],
+    "relevance_level": "low"
+  },
+  {
+    "title": "Directing Through Every Generation: Building an AI-First Studio - Roastbrief US",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://roastbrief.us/directing-through-every-generation-building-an-ai-first-studio/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0aGTDDq8uvRVrf6Rrr5v66",
+    "date": "2026-10-28T16:28:24",
+    "source": "roastbrief",
+    "description": "Seeing how spatial audio, wearable haptics , and AI made it possible for him to sense the game made the possibilities of AI very real. In this ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "How to Turn Off Keyboard <b>Haptic Feedback</b> and Vibration - YouTube",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dr-ubtj9KGdM&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw1g08PkEcSA65orAHHfWb6e",
+    "date": "2026-10-28T15:58:02",
+    "source": "youtube",
+    "description": "... haptics is quick and easy. In this video, we guide you through the ... tactile feedback changes your daily typing flow and improves battery ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "Sega Amusements Shares New House Of The Dead Reawakened Details - UploadVR",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.uploadvr.com/sega-amusements-shares-new-house-of-the-dead-reawakened-details/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2tQxjEuWYUjFF8W5gS3UF5",
+    "date": "2026-10-28T15:53:44",
+    "source": "uploadvr",
+    "description": "The game has been developed in Unreal Engine 5 and uses DPVR E4C commercial-grade VR headsets. The guns feature haptic feedback and recoil. Much of ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "Keyboard <b>haptics</b> mysteriously came on - Apple Support Community",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://discussions.apple.com/thread/256384565&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw3GFqortSkg7hhXEc97Bl_g",
+    "date": "2026-10-28T15:39:08",
+    "source": "discussions",
+    "description": "Keyboard Haptics came on on my iPhone 16 and nothing turns them off. I've rebooted the phone 6+ times now. Checked and toggled all haptic settings ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "The Evolution of <b>Haptic Feedback</b> in Video Games - YouTube",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dug4jGVbSki0&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0CMPSAjVlSMas7-NWDPyAK",
+    "date": "2026-10-28T15:36:20",
+    "source": "youtube",
+    "description": "Which game best conveys tactile feedback ? Let us know in the comments. The Evolution of Haptic Feedback in Video Games. @igrotomia. Auto-dubbed. 77 ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Logitech turned one of my favorite Windows 11 mice into a love letter to developers, and it ...",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.windowscentral.com/microsoft/windows-11/logitechs-mx-master-4-that-lets-you-feel-windows-11-just-got-a-developer-edition&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw11I5C88tGa39kvFWD6h1JW",
+    "date": "2026-10-28T15:16:31",
+    "source": "windowscentral",
+    "description": "The special edition mouse features coding-themed engravings, developer Easter eggs, and the same Windows 11 haptics support.",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
+    "title": "Spain's OWO raises €2.7M to bring haptic tech to defense training | Dealroom.co",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://app.dealroom.co/news/note/spain-s-owo-raises-2-7m-to-bring-haptic-tech-to-defense-training&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2toOnMkT1zyBmhLQn6pz5L",
+    "date": "2026-10-28T14:04:20",
+    "source": "app",
+    "description": "What's the deal? OWO, a Málaga-based haptics startup, has raised…",
+    "feed_source": "Google Alerts",
+    "relevance_level": "high"
+  },
+  {
+    "title": "A Comprehensive Review of Haptic Gloves: Advances, Challenges, and Future Directions",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.scilit.com/publications/499617e0cd670ca28313e3788f0c48b2&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw3mCDyXKGqapgI1T2pUfxAz",
+    "date": "2026-10-28T12:44:43",
+    "source": "scilit",
+    "description": "Haptics initially were limited to the vibrotactile responses, which ... Future developments in haptic technology could lead to even more advanced and ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Workshop: <b>Haptics</b> Research and Developments: Technical Perspectives and ELSI - CBmE",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://medicine.nus.edu.sg/cbme/workshop-haptics-research-and-developments-technical-perspectives-and-elsi/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2why1iLxoapiZ95AL-LrBq",
+    "date": "2026-10-28T12:04:31",
+    "source": "medicine",
+    "description": "Workshop: Haptics Research and Developments: Technical Perspectives and ELSI. Date/Time, 03 Nov 2026, Tuesday, 02:00 PM - 04:30 PM. Venue, MD11 ...",
+    "feed_source": "Google Alerts",
+    "relevance_level": "mid"
+  },
+  {
+    "title": "Karpagam College of Engineering on X: &quot;AI is moving beyond screens! Physical AI enables ...",
+    "link": "https://www.google.com/url?rct=j&sa=t&url=https://x.com/wekceians/status/2115307576451551573&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw2gw1A5Qxv9NvCDC7ehr9iO",
+    "date": "2026-10-28T11:43:22",
+    "source": "x",
+    "description": "... the real world. From haptic technology to robotics, the future isn't just intelligent. It's interactive. #PhysicalAI #AI #Robotics #karpagam.",
+    "feed_source": "Google Alerts",
+    "relevance_level": "low"
+  },
+  {
     "title": "Logitech's $119.99 MX Master 4 Developer Edition puts code on your desk - The Gadgeteer",
     "link": "https://www.google.com/url?rct=j&sa=t&url=https://the-gadgeteer.com/2026/10/27/logitechs-119-99-mx-master-4-developer-edition-puts-code-on-your-desk/&ct=ga&cd=CAIyGzdkNjYzNDJhNWE4ZjZkY2Q6ZGU6ZW46VVM6TA&usg=AOvVaw0nRG7BwLN5F_VL8rfA9GNZ",
     "date": "2026-10-28T00:43:40",
